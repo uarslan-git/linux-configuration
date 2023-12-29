@@ -1,0 +1,152 @@
+tar -h --exclude=.idea -cf rootfs.tar -C rootfs .
+
+pkgname=linux-config
+pkgver=0.1.0
+pkgrel=17
+pkgdesc='linux config'
+url="https://github.com/uarslan-git/linux-config"
+license=('GPL3')
+arch=('x86_64')
+source=('rootfs.tar')
+noextract=('rootfs.tar')
+sha512sums=('SKIP')
+  #startPackages
+depends=(
+    amd-ucode
+    flameshot
+    autorandr
+    base
+    base-devel
+    rofi
+    blueman
+    bluez-utils
+    bottles
+    breeze-hacked-cursor-theme-git
+    btop
+    catia-git
+    clipmenu
+    curl
+    davinci-resolve-studio
+    discord
+    docker
+    dunst
+    efibootmgr
+    fcitx5-git
+    fd
+    feh
+    fzf
+    fzf-tab-git
+    gamemode
+    gdb
+    ghidra
+    gimp
+    git
+    git-delta
+    git-secret
+    github-cli
+    google-chrome
+    gradle
+    grive
+    gvfs
+    thunar
+    i3-wm
+    i3lock-color
+    ibus
+    imhex-bin
+    inkscape
+    intel-ucode
+    intellij-idea-ultimate-edition
+    intellij-idea-ultimate-edition-jre
+    jdk-openjdk
+    k9s
+    kdeconnect
+    keepassxc
+    lib32-nvidia-utils
+    libreoffice-still
+    lutris
+    man-db
+    man-pages
+    matcha-gtk-theme
+    maven
+    ly
+    nerd-fonts-complete-mono-glyphs
+    nmap
+    nodejs
+    nodejs-neovim
+    noto-fonts
+    noto-fonts-cjk
+    noto-fonts-emoji
+    noto-fonts-extra
+    npm
+    nvidia-dkms
+    nvim-packer-git
+    nvtop
+    obs-studio
+    oh-my-zsh-git
+    opencl-nvidia
+    openssh
+    papirus-icon-theme
+    paruz
+    pavucontrol
+    picom
+    pipewire-pulse
+    playerctl
+    pycharm-professional
+    python
+    python-virtualenv
+    slack
+    steam
+    systemd
+    texstudio
+    thunderbird
+    tree
+    ttf-dejavu
+    ttf-font-awesome
+    ttf-liberation
+    unzip
+    which
+    winetricks
+    xclip
+    xdg-desktop-portal-gtk
+    xorg-server
+    xorg-xinit
+    xorg-xinput
+    xorg-xkill
+    xorg-xprop
+    xorg-xwininfo
+    xss-lock-session
+    ytmdesktop-bin
+    zip
+    zoom
+    zsh
+    zsh-autosuggestions
+    zsh-completions
+    zsh-syntax-highlighting
+    zsh-theme-powerlevel10k-git
+    zsh-you-should-use
+  )
+  #endPackages
+
+  # Functions
+  paru() {
+  	if ! pacman -Qeq | grep -i paru; then
+		git clone https://aur.archlinux.org/paru.git
+		pushd paru
+		makepkg -sif
+		popd
+		rm -rf paru
+	fi
+  }
+
+  zsh() {
+	  if [ $(basename $SHELL) != "zsh" ]; then
+	  	chsh -s /usr/bin/zsh
+	  fi
+  }
+
+  paru
+  zsh
+
+package() {
+  tar -xf rootfs.tar -C "$pkgdir"
+}
