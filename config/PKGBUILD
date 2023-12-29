@@ -17,6 +17,7 @@ depends=(
     autorandr
     base
     base-devel
+    xclip
     rofi
     blueman
     bluez-utils
