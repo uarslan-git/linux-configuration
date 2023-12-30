@@ -18,6 +18,7 @@ depends=(
     base
     base-devel
     xclip
+    brightnessctl
     rofi
     blueman
     bluez-utils
