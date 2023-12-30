@@ -13,20 +13,21 @@ sha512sums=('SKIP')
   #startPackages
 depends=(
     amd-ucode
-    flameshot
+    volumeicon
+    gzip
     autorandr
     base
+    qalculate-qt
     base-devel
-    xclip
-    brightnessctl
-    rofi
     blueman
     bluez-utils
     bottles
     breeze-hacked-cursor-theme-git
+    brightnessctl
     btop
     catia-git
     clipmenu
+    copyq
     curl
     davinci-resolve-studio
     discord
@@ -36,6 +37,7 @@ depends=(
     fcitx5-git
     fd
     feh
+    flameshot
     fzf
     fzf-tab-git
     gamemode
@@ -50,11 +52,9 @@ depends=(
     gradle
     grive
     gvfs
-    thunar
     i3-wm
     i3lock-color
     ibus
-    imhex-bin
     inkscape
     intel-ucode
     intellij-idea-ultimate-edition
@@ -66,11 +66,11 @@ depends=(
     lib32-nvidia-utils
     libreoffice-still
     lutris
+    ly
     man-db
     man-pages
     matcha-gtk-theme
     maven
-    ly
     nerd-fonts-complete-mono-glyphs
     nmap
     nodejs
@@ -96,10 +96,12 @@ depends=(
     pycharm-professional
     python
     python-virtualenv
+    rofi
     slack
     steam
     systemd
     texstudio
+    thunar
     thunderbird
     tree
     ttf-dejavu

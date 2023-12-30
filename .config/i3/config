@@ -11,8 +11,35 @@
 
 set $mod Mod4
 
+# Autostart
+# ---------
+# exec
+exec --no-startup-id copyq
+exec --no-startup-id fcitx5
+exec --no-startup-id keepassxc
+exec --no-startup-id volumeicon
 
+# exec_always
 exec_always --no-startup-id feh --bg-fill ~/.config/bg.jpg
+
+# Bindsym
+# ---------
+# bindsym $mod
+
+# bindsym $mod + shift
+bindsym $mod+shift+w exec --no-startup-id i3lock
+bindsym $mod+shift+p exec --no-startup-id thunar
+bindsym $mod+shift+o exec --no-startup-id keepassxc
+bindsym $mod+shift+i exec --no-startup-id pavucontrol
+bindsym $mod+shift+s exec --no-startup-id flameshot gui
+bindsym $mod+shift+semicolon exec --no-startup-id copyq show
+
+# Window Rules
+for_window [title="Qalculate!"] floating enable
+for_window [class="steam_app.*"] floating enable
+for_window [class="jetbrains-.*" title="Welcome to IntelliJ IDEA"] floating enable
+for_window [class="jetbrains-.*" title="splash"] floating enable
+
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
