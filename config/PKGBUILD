@@ -13,16 +13,10 @@ sha512sums=('SKIP')
   #startPackages
 depends=(
     amd-ucode
-    volumeicon
-    gzip
-    cuda
-    cudnn
-    nvidia-dkms
     autorandr
     base
-    nvidia-settings
-    qalculate-qt
     base-devel
+    blender
     blueman
     bluez-utils
     bottles
@@ -32,13 +26,14 @@ depends=(
     catia-git
     clipmenu
     copyq
+    cuda
+    cudnn
     curl
     davinci-resolve-studio
     discord
     docker
     dunst
     efibootmgr
-    fcitx5-git
     fd
     feh
     flameshot
@@ -56,9 +51,11 @@ depends=(
     gradle
     grive
     gvfs
+    gzip
     i3-wm
     i3lock-color
     ibus
+    imhex-bin
     inkscape
     intel-ucode
     intellij-idea-ultimate-edition
@@ -85,6 +82,7 @@ depends=(
     noto-fonts-extra
     npm
     nvidia-dkms
+    nvidia-settings
     nvim-packer-git
     nvtop
     obs-studio
@@ -100,8 +98,9 @@ depends=(
     pycharm-professional
     python
     python-virtualenv
+    qalculate-qt
     rofi
-    slack
+    slack-desktop
     steam
     systemd
     texstudio
@@ -112,6 +111,7 @@ depends=(
     ttf-font-awesome
     ttf-liberation
     unzip
+    volumeicon
     which
     winetricks
     xclip
