@@ -25,6 +25,7 @@ depends=(
     mozc
     btop
     catia-git
+    ufw
     calibre
     clipmenu
     copyq
