@@ -15,8 +15,12 @@ depends=(
     amd-ucode
     volumeicon
     gzip
+    cuda
+    cudnn
+    nvidia-dkms
     autorandr
     base
+    nvidia-settings
     qalculate-qt
     base-devel
     blueman
