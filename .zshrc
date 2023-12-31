@@ -172,6 +172,10 @@ done | xclip -sel c
 }
 
 alias ga="git add"
+alias gs="git status"
+alias gco="git checkout"
+alias gb="git branch -a"
+alias gl="git log --graph --pretty=oneline --abbrev-commit"
 alias gc="git commit -m"
 alias gcd="git commit -m '$(date)'"
 alias gp="git push"

@@ -22,8 +22,10 @@ depends=(
     bottles
     breeze-hacked-cursor-theme-git
     brightnessctl
+    mozc
     btop
     catia-git
+    calibre
     clipmenu
     copyq
     cuda
