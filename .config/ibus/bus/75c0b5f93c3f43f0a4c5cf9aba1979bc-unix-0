@@ -1,3 +1,7 @@
-IBUS_ADDRESS=unix:path=/run/user/1000/bus,fcitx_random_string=8397645a7d964250baee21f658127e98
-IBUS_DAEMON_PID=4829
-
+# This file is created by ibus-daemon, please do not modify it.
+# This file allows processes on the machine to find the
+# ibus session bus with the below address.
+# If the IBUS_ADDRESS environment variable is set, it will
+# be used rather than this file.
+IBUS_ADDRESS=unix:path=/home/umut/.cache/ibus/dbus-NIPSiGa8,guid=2a11c2b4df06b7cd703d2b406593c2c1
+IBUS_DAEMON_PID=1650
