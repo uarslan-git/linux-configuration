@@ -182,7 +182,7 @@ pkgSync(){
 	local package
 	local packages
 	local depends
-	sed -n '/#startPackages/,/#endPackages/p;/#endPackages/q' PKGBUILD | grep -v "#"
+	sed -n '/#startPackages/,/#endPackages/p;/#endPackages/q' PKGBUILD | rg -v "#"
 	packages=$depends
 	
 	local targetPackages
@@ -190,7 +190,8 @@ pkgSync(){
 	local originalPackages=$targetPackages
 
 	local newPackages
-	newPackages=$(paru -Qqe | grep -vF "$(echo  $targetPackages | tr '\n' '|' | sed 's#|$##g')")
+	newPackages=$(paru -Qqe | rg -xv "$(echo  $targetPackages | tr '\n' '|' | sed 's#|$##g')")
+	echo $newPackages
 }
 
 convertVideo(){
