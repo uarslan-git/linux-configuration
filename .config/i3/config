@@ -86,6 +86,10 @@ exec --no-startup-id nm-applet
 bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +30
 bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 30-
 
+# Media player controls
+bindsym XF86AudioPlay exec playerctl play-pause
+bindsym XF86AudioNext exec playerctl next
+bindsym XF86AudioPrev exec playerctl previous
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
