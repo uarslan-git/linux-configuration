@@ -173,6 +173,33 @@ fi
 done | xclip -sel c
 }
 
+function google() {
+  local IFS=+
+  xdg-open "http://google.com/search?q=${*}"
+}
+
+pkgSync(){
+	local package
+	local packages
+	local depends
+	sed -n '/#startPackages/,/#endPackages/p;/#endPackages/q' PKGBUILD | grep -v "#"
+	packages=$depends
+	
+	local targetPackages
+	targetPackages=$(echo $packages | tr ' ' '\n')
+	local originalPackages=$targetPackages
+
+	local newPackages
+	newPackages=$(paru -Qqe | grep -vF "$(echo  $targetPackages | tr '\n' '|' | sed 's#|$##g')")
+}
+
+convertVideo(){
+	name=$1
+	noExt=${name%.mp4}
+	echo $noExt
+	ffmpeg -i $name -acodec pcm_s16le -vcodec copy "${noExt}.mov"
+}
+
 alias ga="git add"
 alias gs="git status"
 alias gco="git checkout"
