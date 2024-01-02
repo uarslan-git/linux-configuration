@@ -17,6 +17,7 @@ depends=(
     jdownloader2
     base
     base-devel
+    colorpicker
     blender
     blueman
     bluez-utils
