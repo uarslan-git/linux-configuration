@@ -10,31 +10,30 @@ arch=('x86_64')
 source=('rootfs.tar')
 noextract=('rootfs.tar')
 sha512sums=('SKIP')
-  #startPackages
+
+#startPackages
 depends=(
     amd-ucode
     autorandr
-    jdownloader2
     base
     base-devel
-    colorpicker
     blender
-    cron
     blueman
     bluez-utils
     bottles
     breeze-hacked-cursor-theme-git
     brightnessctl
-    mozc
     btop
-    catia-git
-    ufw
     calibre
+    catia-git
     clipmenu
+    colorpicker
     copyq
+    cron
     cuda
     cudnn
     curl
+    darktable
     davinci-resolve-studio
     discord
     docker
@@ -67,6 +66,7 @@ depends=(
     intellij-idea-ultimate-edition
     intellij-idea-ultimate-edition-jre
     jdk-openjdk
+    jdownloader2
     k9s
     kdeconnect
     keepassxc
@@ -78,6 +78,7 @@ depends=(
     man-pages
     matcha-gtk-theme
     maven
+    mozc
     nerd-fonts-complete-mono-glyphs
     nmap
     nodejs
@@ -105,6 +106,7 @@ depends=(
     python
     python-virtualenv
     qalculate-qt
+    rar
     rofi
     steam
     systemd
@@ -115,6 +117,8 @@ depends=(
     ttf-dejavu
     ttf-font-awesome
     ttf-liberation
+    ufw
+    unrar
     unzip
     volumeicon
     which
@@ -138,7 +142,7 @@ depends=(
     zsh-theme-powerlevel10k-git
     zsh-you-should-use
   )
-  #endPackages
+#endPackages
 
   # Functions
   paru() {
