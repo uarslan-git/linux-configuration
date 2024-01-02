@@ -14,6 +14,7 @@ sha512sums=('SKIP')
 depends=(
     amd-ucode
     autorandr
+    jdownloader2
     base
     base-devel
     blender
@@ -103,7 +104,6 @@ depends=(
     python-virtualenv
     qalculate-qt
     rofi
-    slack-desktop
     steam
     systemd
     texstudio
