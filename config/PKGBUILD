@@ -14,6 +14,7 @@ sha512sums=('SKIP')
 #startPackages
 depends=(
     amd-ucode
+    arandr
     base
     base-devel
     blender
@@ -21,7 +22,9 @@ depends=(
     bluez-utils
     bottles
     breeze-hacked-cursor-theme-git
+    vencord-desktop-bin
     brightnessctl
+    btop
     calibre
     catia-git
     clipmenu
@@ -29,14 +32,15 @@ depends=(
     copyq
     cron
     cuda
+    nvidia-dkms
     cudnn
     curl
     darktable
     davinci-resolve-studio
-    discord
     docker
     dunst
     efibootmgr
+    evince
     fd
     feh
     flameshot
@@ -57,6 +61,7 @@ depends=(
     gzip
     i3-wm
     i3lock-color
+    i3status
     ibus
     imhex-bin
     inkscape
@@ -68,6 +73,7 @@ depends=(
     k9s
     kdeconnect
     keepassxc
+    kitty
     lib32-nvidia-utils
     libreoffice-still
     lutris
@@ -76,7 +82,6 @@ depends=(
     man-pages
     matcha-gtk-theme
     maven
-    mozc
     nerd-fonts-complete-mono-glyphs
     nmap
     nodejs
@@ -104,12 +109,14 @@ depends=(
     python
     python-virtualenv
     qalculate-qt
+    ripgrep
     rofi
     steam
     systemd
     texstudio
     thunar
     thunderbird
+    tlp
     tree
     ttf-dejavu
     ttf-font-awesome
@@ -158,8 +165,8 @@ depends=(
 	  fi
   }
 
-#  paru
-#  zsh
+  paru
+  zsh
 
 package() {
   tar -xf rootfs.tar -C "$pkgdir"
