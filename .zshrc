@@ -130,7 +130,7 @@ source $ZSH/oh-my-zsh.sh
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # functions
-scale(){
+function scale(){
 	if [ -z $1 ]; then
 		echo "set a dpi"
 		return 1
@@ -156,7 +156,7 @@ scale(){
 	echo "xft.dpi set to $dpi"
 }
 
-evdev(){
+function evdev(){
 input_devices=$(ls /dev/input/by-id/*event* | grep -v if)
 
 for device in $input_devices
@@ -178,11 +178,11 @@ function google() {
   xdg-open "http://google.com/search?q=${*}"
 }
 
-pkgSync(){
+function pkgSync(){
 	local package
 	local packages
 	local depends
-	sed -n '/#startPackages/,/#endPackages/p;/#endPackages/q' PKGBUILD | rg -v "#"
+	sed -n '/#startPackages/,/#endPackages/p;/#endPackages/q' $HOME/config/PKGBUILD | rg -v "#"
 	packages=$depends
 	
 	local targetPackages
@@ -191,10 +191,45 @@ pkgSync(){
 
 	local newPackages
 	newPackages=$(paru -Qqe | rg -xv "$(echo  $targetPackages | tr '\n' '|' | sed 's#|$##g')")
-	echo $newPackages
+
+	if [ ! -z $newPackages ] && [[ "$(echo $newPackages | grep -v linux-config | wc -l)" -gt 0 ]]; then
+    		echo "$(<<<$newPackages | grep -v linux-config | wc -l) new Packages"
+    		while read -r package; do
+      	if [[ "$package" == "linux-config" ]]; then
+        	continue
+      	fi
+      	paru -Qi $package
+	read -k 1 "choice?[A]dd, [r]emove, [d]epends or [s]kip $package? "
+      	echo
+      	case $choice in;
+        [Aa])
+          targetPackages="$targetPackages\\n$package"
+          paru -D --asdeps $package
+          ;;
+        [Rr])
+          echo "=========="
+          echo
+          paru -R --noconfirm $package
+          ;;
+        [Dd])
+          echo "=========="
+          echo
+          paru -D --asdeps $package
+          ;;
+        *)
+          :
+          ;;
+      esac
+      echo
+      echo "=========="
+      echo
+    done <<<"$newPackages"
+  else
+    echo "No new Packages"
+  fi
 }
 
-convertVideo(){
+function convertVideo(){
 	name=$1
 	noExt=${name%.mp4}
 	echo $noExt

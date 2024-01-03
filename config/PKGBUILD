@@ -23,7 +23,6 @@ depends=(
     bottles
     breeze-hacked-cursor-theme-git
     brightnessctl
-    btop
     calibre
     catia-git
     clipmenu
