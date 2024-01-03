@@ -14,7 +14,6 @@ sha512sums=('SKIP')
 #startPackages
 depends=(
     amd-ucode
-    autorandr
     base
     base-devel
     blender
@@ -105,7 +104,6 @@ depends=(
     python
     python-virtualenv
     qalculate-qt
-    rar
     rofi
     steam
     systemd
@@ -160,8 +158,8 @@ depends=(
 	  fi
   }
 
-  paru
-  zsh
+#  paru
+#  zsh
 
 package() {
   tar -xf rootfs.tar -C "$pkgdir"
