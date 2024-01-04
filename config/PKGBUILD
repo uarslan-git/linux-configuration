@@ -1,4 +1,4 @@
-tar -h --exclude=.idea -cf rootfs.tar -C rootfs .
+# tar -h --exclude=.idea -cf rootfs.tar -C rootfs .
 
 pkgname=linux-config
 pkgver=0.1.0
@@ -37,6 +37,7 @@ depends=(
     cudnn
     curl
     darktable
+    krita
     davinci-resolve-studio
     docker
     dunst
@@ -166,5 +167,6 @@ depends=(
   zsh
 
 package() {
-  tar -xf rootfs.tar -C "$pkgdir"
+#  tar -xf rootfs.tar -C "$pkgdir"
+   echo "finished"
 }
