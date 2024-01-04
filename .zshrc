@@ -208,11 +208,18 @@ function pkgSync(){
 
 }
 
-function convertVideo(){
-	name=$1
-	noExt=${name%.mp4}
+function convertMp4(){
+	originalDir="./original"
+	if [ ! -d "$originalDir" ]; then
+		echo "creating original directory"
+		mkdir $originalDir
+	fi
+	for video in *.mp4; do
+		noExt=${video%.mp4}
+		ffmpeg -i $video -acodec pcm_s16le -vcodec copy "${noExt}.mov"
+		mv "$video" "$originalDir"
+	done
 	echo $noExt
-	ffmpeg -i $name -acodec pcm_s16le -vcodec copy "${noExt}.mov"
 }
 
 alias ga="git add"
@@ -231,3 +238,4 @@ alias edit="vim ~/config/PKGBUILD"
 alias sd="backup; shutdown now"
 alias rb="backup; reboot"
 alias chrome="google-chrome-stable"
+alias ra="ranger"

@@ -17,6 +17,7 @@ depends=(
     arandr
     base
     base-devel
+    autorandr
     blender
     blueman
     bluez-utils
@@ -86,10 +87,6 @@ depends=(
     nmap
     nodejs
     nodejs-neovim
-    noto-fonts
-    noto-fonts-cjk
-    noto-fonts-emoji
-    noto-fonts-extra
     npm
     nvidia-dkms
     nvidia-settings
