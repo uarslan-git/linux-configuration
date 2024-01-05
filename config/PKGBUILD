@@ -32,9 +32,6 @@ depends=(
     colorpicker
     copyq
     cron
-    cuda
-    nvidia-dkms
-    cudnn
     curl
     darktable
     krita
@@ -76,7 +73,6 @@ depends=(
     kdeconnect
     keepassxc
     kitty
-    lib32-nvidia-utils
     libreoffice-still
     lutris
     ly
@@ -89,13 +85,10 @@ depends=(
     nodejs
     nodejs-neovim
     npm
-    nvidia-dkms
-    nvidia-settings
     nvim-packer-git
     nvtop
     obs-studio
     oh-my-zsh-git
-    opencl-nvidia
     openssh
     papirus-icon-theme
     paruz
