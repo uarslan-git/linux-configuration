@@ -1,7 +1,9 @@
 # GIMP user context
 
-(tool "gimp-rect-select-tool")
-(paint-info "gimp-paintbrush")
+(tool "gimp-eraser-tool")
+(paint-info "gimp-eraser")
+(foreground (color-rgb 1 0.87919463087248317 0.87919463087248317))
+(opacity 0.98999999999999999)
 (brush "2. Hardness 025")
 (dynamics "Dynamics Off")
 (mybrush "100% Opaque")

@@ -1,6 +1,10 @@
 # settings
 
-(GimpGegl-gegl-high-pass-config "2020-06-01 15:02:19"
+(GimpGegl-gegl-high-pass-config "2024-01-05 10:50:59"
+    (time 1704448259)
+    (std-dev 4)
+    (contrast 1))
+(GimpGegl-gegl-high-pass-config "2020-06-01 20:02:19"
     (time 1591034539)
     (std-dev 418.10000000000002)
     (contrast 3.5499999999999998))
