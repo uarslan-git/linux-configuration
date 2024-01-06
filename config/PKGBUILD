@@ -21,6 +21,7 @@ depends=(
     blender
     blueman
     bluez-utils
+    opencl-nvidia
     bottles
     breeze-hacked-cursor-theme-git
     brightnessctl
@@ -36,6 +37,7 @@ depends=(
     davinci-resolve-studio
     dkms
     docker
+    docker-compose
     dunst
     efibootmgr
     evince
