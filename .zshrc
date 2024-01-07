@@ -10,9 +10,7 @@ ZSH_CUSTOM=/usr/share/zsh
 ZSH_THEME="../../zsh-theme-powerlevel10k/powerlevel10k"
 
 plugins=(
-	git
-	direnv
-	git-auto-fetch
+	git direnv git-auto-fetch
 	gitfast
 	fd
 	fzf
@@ -80,132 +78,20 @@ function google() {
 }
 
 function pkgSync(){
-	local package
+	cd $HOME
+	git pull
+#	command systemctl restart --user daemon-reload
+
 	local packages
 	local depends
-	sed -n '/#startPackages/,/#endPackages/p;/#endPackages/q' $HOME/config/PKGBUILD | rg -v "#"
+	eval $(sed -n "/#startPackages/,/#endPackages/p" $HOME/config/PKGBUILD | rg -v '#')
 	packages=$depends
-	
+
 	local targetPackages
 	targetPackages=$(echo $packages | tr ' ' '\n')
 	local originalPackages=$targetPackages
 
 	local newPackages
-	newPackages=$(paru -Qqe | rg -xv "$(echo  $targetPackages | tr '\n' '|' | sed 's#|$##g')")
-
-	if [ ! -z $newPackages ] && [[ "$(echo $newPackages | grep -v linux-config | wc -l)" -gt 0 ]]; then
-    		echo "$(<<<$newPackages | grep -v linux-config | wc -l) new Packages"
-    		while read -r package; do
-      	if [[ "$package" == "linux-config" ]]; then
-        	continue
-      	fi
-      	paru -Qi $package
-	read -k 1 "choice?[A]dd, [r]emove, [d]epends or [s]kip $package? "
-      	echo
-      	case $choice in;
-        [Aa])
-          targetPackages="$targetPackages\\n$package"
-          paru -D --asdeps $package
-          ;;
-        [Rr])
-          echo "=========="
-          echo
-          paru -R --noconfirm $package
-          ;;
-        [Dd])
-          echo "=========="
-          echo
-          paru -D --asdeps $package
-          ;;
-        *)
-          :
-          ;;
-      esac
-      echo
-      echo "=========="
-      echo
-    done <<<"$newPackages"
-  else
-    echo "No new Packages"
-  fi
-
-  local missingPackages
-  missingPackages=$(echo $targetPackages | rg -xv $(paru -Qqd | tr '\n' '|' | sed 's#|$##g'))
-
-  if [ ! -z $missingPackages ]; then
-    echo "$(wc -l <<<$missingPackages) missing Packages"
-    while read -r package; do
-      if paru -Qi $package >/dev/null; then
-        paru -D --asdeps $package
-        continue
-      fi
-      paru -Si $package
-      paru -Qi $package
-      read -k 1 "choice?[I]nstall, [r]emove or [s]kip $package? "
-      echo
-      case $choice in;
-        [Ii])
-          echo "=========="
-          echo
-          paru -S --noconfirm $package
-          ;;
-        [Rr])
-          targetPackages=$(echo $targetPackages | rg -xv "$package")
-          ;;
-        *)
-          :
-          ;;
-      esac
-      echo
-      echo "=========="
-      echo
-    done <<<"$missingPackages"
-  else
-    echo "No missing Packages"
-  fi
-
-  local orphanedPackages
-  orphanedPackages=$(paru -Qqtd)
-
-  if [ ! -z $orphanedPackages ]; then
-    echo "$(wc -l <<<$orphanedPackages) orphaned Packages"
-    if read -q "?Remove orphaned packages? "; then
-      while [ ! -z $orphanedPackages ]; do
-        echo "$(wc -l <<<$orphanedPackages) orphaned Packages"
-        paru -R --noconfirm $(tr '\n' ' ' <<<$orphanedPackages)
-        echo
-        orphanedPackages=$(paru -Qqtd)
-      done
-    fi
-  else
-    echo "No orphaned Packages"
-  fi
-
-  newPackages=$( (
-      echo '  #startPackages'
-      echo 'depends=('
-      echo $targetPackages | sort | uniq | sed 's#^#    #g'
-      echo '  )'
-      echo '  #endPackages'
-  ) | sed -r 's#$#\\n#g' | tr -d '\n' | sed -r 's#\\n$##g')
-
-  diff <(echo $originalPackages | sort) <(echo $targetPackages | sort)
-  if ! /usr/bin/diff <(echo $originalPackages) <(echo $targetPackages) &> /dev/null; then
-    if read -q "?Commit? "; then
-      sed -i -e "/#endPackages/a \\${newPackages}" -e '/#startPackages/,/#endPackages/d' -e 's#NewPackages#Packages#g' $HOME/config/PKGBUILD
-      local pkgrel
-      eval "$(grep pkgrel $HOME/config/PKGBUILD)"
-      sed -i -e "s#pkgrel=$pkgrel#pkgrel=$(( pkgrel + 1 ))#" $HOME/config/PKGBUILD
-      git commit -m pkgSync $HOME/config/PKGBUILD
-      git push
-    fi
-    (cd $HOME/config && makepkg -si)
-  else
-    echo "No changes to be made"
-  fi
-  cd $OLDPWD
-
-
 }
 
 function convertMp4(){
