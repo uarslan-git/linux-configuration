@@ -1,14 +1,13 @@
 # GIMP user context
 
-(tool "gimp-eraser-tool")
-(paint-info "gimp-eraser")
-(foreground (color-rgb 1 0.87919463087248317 0.87919463087248317))
-(opacity 0.98999999999999999)
+(tool "gimp-move-tool")
+(paint-info "gimp-paintbrush")
+(foreground (color-rgb 0.36241610738255037 0.77497034473436821 1))
 (brush "2. Hardness 025")
 (dynamics "Dynamics Off")
 (mybrush "100% Opaque")
 (pattern "Pine")
-(gradient "FG to BG (RGB)")
+(gradient "Abstract 1")
 (palette "Standard")
 (font "")
 (tool-preset "Core Pointer")
