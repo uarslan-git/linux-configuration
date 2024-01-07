@@ -137,6 +137,10 @@ depends=(
     xorg-xwininfo
     xss-lock-session
     youtubemusic
+    hyprland
+    swaylock
+    waybar
+    wofi
     zip
     zoom
     zsh
