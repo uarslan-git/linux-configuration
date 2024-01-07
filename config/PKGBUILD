@@ -114,7 +114,6 @@ depends=(
     steam
     systemd
     texstudio
-    thunar
     thunderbird
     tlp
     tree
