@@ -1,6 +1,41 @@
 # settings
 
-(GimpLevelsConfig "2020-06-15 18:08:11"
+(GimpLevelsConfig "2024-01-06 14:09:33"
+    (time 1704546573)
+    (linear no)
+    (clamp-input no)
+    (clamp-output no)
+    (channel value)
+    (low-input 0)
+    (high-input 0.75291375291375295)
+    (gamma 0.82999999999999996)
+    (low-output 0)
+    (high-output 1)
+    (channel red)
+    (low-input 0)
+    (high-input 1)
+    (gamma 1)
+    (low-output 0)
+    (high-output 1)
+    (channel green)
+    (low-input 0)
+    (high-input 1)
+    (gamma 1)
+    (low-output 0)
+    (high-output 1)
+    (channel blue)
+    (low-input 0)
+    (high-input 1)
+    (gamma 1)
+    (low-output 0)
+    (high-output 1)
+    (channel alpha)
+    (low-input 0)
+    (high-input 1)
+    (gamma 1)
+    (low-output 0)
+    (high-output 1))
+(GimpLevelsConfig "2020-06-15 23:08:11"
     (time 1592255291)
     (linear no)
     (clamp-input no)
@@ -35,7 +70,7 @@
     (gamma 1)
     (low-output 0)
     (high-output 1))
-(GimpLevelsConfig "2020-06-12 14:08:00"
+(GimpLevelsConfig "2020-06-12 19:08:00"
     (time 1591981680)
     (linear no)
     (clamp-input no)
@@ -70,7 +105,7 @@
     (gamma 1)
     (low-output 0)
     (high-output 1))
-(GimpLevelsConfig "2020-06-12 14:05:15"
+(GimpLevelsConfig "2020-06-12 19:05:15"
     (time 1591981515)
     (linear no)
     (clamp-input no)
@@ -105,7 +140,7 @@
     (gamma 1)
     (low-output 0)
     (high-output 1))
-(GimpLevelsConfig "2020-06-11 15:18:21"
+(GimpLevelsConfig "2020-06-11 20:18:21"
     (time 1591899501)
     (linear no)
     (clamp-input no)
@@ -140,7 +175,7 @@
     (gamma 1)
     (low-output 0)
     (high-output 1))
-(GimpLevelsConfig "2020-06-09 17:45:06"
+(GimpLevelsConfig "2020-06-09 22:45:06"
     (time 1591735506)
     (linear no)
     (clamp-input no)
@@ -175,7 +210,7 @@
     (gamma 1)
     (low-output 0)
     (high-output 1))
-(GimpLevelsConfig "2020-06-09 17:32:06"
+(GimpLevelsConfig "2020-06-09 22:32:06"
     (time 1591734726)
     (linear no)
     (clamp-input no)
@@ -210,7 +245,7 @@
     (gamma 1)
     (low-output 0)
     (high-output 1))
-(GimpLevelsConfig "2020-05-29 11:18:51"
+(GimpLevelsConfig "2020-05-29 16:18:51"
     (time 1590761931)
     (linear no)
     (clamp-input no)
@@ -245,7 +280,7 @@
     (gamma 1)
     (low-output 0)
     (high-output 1))
-(GimpLevelsConfig "2020-05-28 17:50:24"
+(GimpLevelsConfig "2020-05-28 22:50:24"
     (time 1590699024)
     (linear no)
     (clamp-input no)

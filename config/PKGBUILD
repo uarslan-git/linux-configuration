@@ -27,6 +27,7 @@ depends=(
     brightnessctl
     btop
     calibre
+    lxappearance
     catia-git
     clipmenu
     colorpicker
