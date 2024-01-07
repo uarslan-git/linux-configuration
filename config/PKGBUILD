@@ -23,6 +23,7 @@ depends=(
     bluez-utils
     opencl-nvidia
     bottles
+    ntfs-3g
     breeze-hacked-cursor-theme-git
     brightnessctl
     btop
