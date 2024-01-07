@@ -82,16 +82,44 @@ function pkgSync(){
 	git pull
 #	command systemctl restart --user daemon-reload
 
+	local package
 	local packages
 	local depends
 	eval $(sed -n "/#startPackages/,/#endPackages/p" $HOME/config/PKGBUILD | rg -v '#')
 	packages=$depends
 
 	local targetPackages
-	targetPackages=$(echo $packages | tr ' ' '\n')
+	targetPackages=$(<<< $packages | tr ' ' '\n')
 	local originalPackages=$targetPackages
 
+
 	local newPackages
+	newPackages=$(paru -Qeq | rg -xv $(<<< $targetPackages | tr '\n' '|'))
+	echo $newPackages
+
+	if [ ! -z $newPackages ]; then
+		echo "$(<<< $newPackages | grep -v linux-config | wc -l) new Packages"
+		while read -r package; do
+			if [[ "$package" == "linux-config" ]]; then
+				continue
+			fi
+			paru -Qi $package
+			read -k 1 "choice?[A]dd, [r]emove, [d]epends or [s]kip $package"
+			case $choice in;
+				[Aa])
+					echo "chose A"
+					;;
+				[Rr])
+					echo "chose R"
+					;;
+			esac
+			echo
+			echo "============"
+			echo
+		done <<<"$newPackages"
+	else
+		echo "No new Packages"
+	fi
 }
 
 function convertMp4(){
