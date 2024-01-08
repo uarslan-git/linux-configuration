@@ -1,0 +1,3 @@
+swww init &
+
+waybar &
