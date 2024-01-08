@@ -2,7 +2,7 @@
 
 pkgname=linux-config
 pkgver=0.1.0
-pkgrel=0
+pkgrel=1
 pkgdesc='linux config'
 url="https://github.com/uarslan-git/linux-config"
 license=('GPL3')
@@ -15,7 +15,6 @@ sha512sums=('SKIP')
 #startPackages
 depends=(
     amd-ucode
-    arandr
     autorandr
     base
     base-devel
@@ -36,7 +35,6 @@ depends=(
     darktable
     davinci-resolve-studio
     discord
-    dkms
     docker
     docker-compose
     dunst
