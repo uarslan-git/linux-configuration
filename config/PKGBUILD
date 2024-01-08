@@ -2,7 +2,7 @@
 
 pkgname=linux-config
 pkgver=0.1.0
-pkgrel=17
+pkgrel=0
 pkgdesc='linux config'
 url="https://github.com/uarslan-git/linux-config"
 license=('GPL3')
@@ -11,10 +11,10 @@ source=('rootfs.tar')
 noextract=('rootfs.tar')
 sha512sums=('SKIP')
 
+
 #startPackages
 depends=(
     amd-ucode
-    thunar
     arandr
     autorandr
     base
@@ -22,14 +22,11 @@ depends=(
     blender
     blueman
     bluez-utils
-    opencl-nvidia
     bottles
-    ntfs-3g
     breeze-hacked-cursor-theme-git
     brightnessctl
     btop
     calibre
-    lxappearance
     catia-git
     clipmenu
     colorpicker
@@ -38,6 +35,7 @@ depends=(
     curl
     darktable
     davinci-resolve-studio
+    discord
     dkms
     docker
     docker-compose
@@ -55,25 +53,27 @@ depends=(
     gimp
     git
     git-delta
-    git-secret
     github-cli
+    git-secret
     google-chrome
     gradle
     grive
     gvfs
     gzip
-    i3-wm
+    hyprland
     i3lock-color
     i3status
+    i3-wm
     ibus
     imhex-bin
     inkscape
-    intel-ucode
     intellij-idea-ultimate-edition
     intellij-idea-ultimate-edition-jre
+    intel-ucode
     jdk-openjdk
     jdownloader2
     k9s
+    kanshi
     kdeconnect
     keepassxc
     kitty
@@ -82,23 +82,27 @@ depends=(
     linux-zen
     linux-zen-headers
     lutris
+    lxappearance
     ly
     man-db
     man-pages
     matcha-gtk-theme
     maven
     nerd-fonts-complete-mono-glyphs
-    network-manager-applet
     networkmanager
+    network-manager-applet
     nmap
     nodejs
     nodejs-neovim
     npm
+    ntfs-3g
     nvidia-dkms
     nvim-packer-git
     nvtop
+    nwg-look
     obs-studio
     oh-my-zsh-git
+    opencl-nvidia
     openssh
     papirus-icon-theme
     paruz
@@ -110,11 +114,16 @@ depends=(
     python
     python-virtualenv
     qalculate-gtk
+    ranger
     ripgrep
     rofi
+    slack-desktop-wayland
     steam
+    swaylock-effects
+    swww
     systemd
     texstudio
+    thunar
     thunderbird
     tlp
     tree
@@ -126,8 +135,11 @@ depends=(
     unzip
     vencord-desktop-bin
     volumeicon
+    waybar
+    wdisplays
     which
     winetricks
+    wofi
     xclip
     xdg-desktop-portal-gtk
     xorg-server
@@ -137,11 +149,8 @@ depends=(
     xorg-xprop
     xorg-xwininfo
     xss-lock-session
+    xwaylandvideobridge-bin
     youtubemusic
-    hyprland
-    swaylock-effects
-    waybar
-    wofi
     zip
     zoom
     zsh
@@ -151,11 +160,13 @@ depends=(
     zsh-theme-powerlevel10k-git
     zsh-you-should-use
   )
-#endPackages
+  #endPackages
+
+  if lscpu | rg intel &>/dev/null; then depends+=(prime nvidia-prime ); fi
 
   # Functions
   paru() {
-  	if ! pacman -Qq | grep -i paru; then
+  	if ! pacman -Qq | grep -i paru &>/dev/null; then
 		git clone https://aur.archlinux.org/paru.git
 		pushd paru
 		makepkg -sif
