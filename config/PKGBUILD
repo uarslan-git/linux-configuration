@@ -137,6 +137,7 @@ depends=(
     wdisplays
     which
     winetricks
+    wlr-randr
     wofi
     xclip
     xdg-desktop-portal-gtk
