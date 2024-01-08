@@ -205,14 +205,32 @@ function pkgSync(){
 		 if read -q "?Commit? ";then
 			 local pkgrel
 			 eval "$(grep pkgrel $HOME/config/PKGBUILD)"
-			 sed -i -e "s/pkgrel=$pkgrel/pkgrel=$(( pkgrel + 1 ))#" $HOME/config/PKGBUILD
-			 backup
+			 sed -i -e "s/pkgrel=$pkgrel/pkgrel=$(( $pkgrel + 1 ))" $HOME/config/PKGBUILD #increase pkgrel
 		 fi
 		cd $HOME/config && makepkg -fsi --noconfirm &> /dev/null
 	 else
 		 echo "No changes commited"
 	 fi
+}
 
+
+declare -a tmpPackages
+function tmpPackage(){
+	paru "${@}"
+	tmpPackages+=( $(grep installed /var/log/pacman.log | awk '{print $4}' | tail -5 | tac | awk '!x[$0]++' | fzf --prompt='Choose package to be uninstalled on exit' -m ))
+}
+
+compdef _paru tmpPackage
+
+function _cleanTmpPackages() {
+  if [[ "${#tmpPackages}" -gt 0 ]]; then
+    paru -Rs --noconfirm "${tmpPackages[@]}"
+  fi
+}
+
+trap shellExit EXIT
+function shellExit() {
+  _cleanTmpPackages
 }
 
 function convertMp4(){
