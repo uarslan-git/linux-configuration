@@ -80,7 +80,7 @@ function google() {
 function pkgSync(){
 	cd $HOME
 	git pull
-#	command systemctl restart --user daemon-reload
+	#command systemctl restart --user daemon-reload
 
 	local package
 	local packages
@@ -169,10 +169,24 @@ function pkgSync(){
 		echo "No missing Packages"
 	fi
 
+	newPackages=$( (
+      		echo '  #startPackages'
+      		echo 'depends=('
+      		echo $targetPackages | sort | uniq | sed 's#^#    #g'
+      		echo '  )'
+      		echo '  #endPackages'
+  	) | sed -r 's#$#\\n#g' | tr -d '\n' | sed -r 's#\\n$##g')
+
+
+	sed -i -e "/#endPackages/a ${newPackages}" -e '/#startPackages/,/#endPackages/d' $HOME/config/PKGBUILD
+
+	cd $HOME/config && makepkg -fsi --noconfirm &> /dev/null
+
 	local orphanedPackages
 	orphanedPackages=$(paru -Qqtd)
 
 	  if [ ! -z $orphanedPackages ]; then
+		echo $orphanedPackages
     		echo "$(wc -l <<<$orphanedPackages) orphaned Packages"
     		if read -q "?Remove orphaned packages? "; then
       		while [ ! -z $orphanedPackages ]; do
@@ -186,17 +200,18 @@ function pkgSync(){
     			echo "No orphaned Packages"
   		fi
 
-	newPackages=$( (
-      		echo '  #startPackages'
-      		echo 'depends=('
-      		echo $targetPackages | sort | uniq | sed 's#^#    #g'
-      		echo '  )'
-      		echo '  #endPackages'
-  	) | sed -r 's#$#\\n#g' | tr -d '\n')
-
-	diff <(echo $originalPackages | sort) <(echo $targetPackages | sort)
-	
-	(cd $HOME/config && makepkg -si --noconfirm)
+	 diff <(echo $originalPackages | sort) <(echo $targetPackages | sort)
+	 if ! /usr/bin/diff <(echo $originalPackages) <(echo $targetPackages) &> /dev/null; then
+		 if read -q "?Commit? ";then
+			 local pkgrel
+			 eval "$(grep pkgrel $HOME/config/PKGBUILD)"
+			 sed -i -e "s/pkgrel=$pkgrel/pkgrel=$(( pkgrel + 1 ))#" $HOME/config/PKGBUILD
+			 backup
+		 fi
+		cd $HOME/config && makepkg -fsi --noconfirm &> /dev/null
+	 else
+		 echo "No changes commited"
+	 fi
 
 }
 
