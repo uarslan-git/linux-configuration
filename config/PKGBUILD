@@ -14,6 +14,7 @@ sha512sums=('SKIP')
 #startPackages
 depends=(
     amd-ucode
+    thunar
     arandr
     autorandr
     base
@@ -33,7 +34,7 @@ depends=(
     clipmenu
     colorpicker
     copyq
-    cron
+    cronie
     curl
     darktable
     davinci-resolve-studio
@@ -138,7 +139,7 @@ depends=(
     xss-lock-session
     youtubemusic
     hyprland
-    swaylock
+    swaylock-effects
     waybar
     wofi
     zip
@@ -154,7 +155,7 @@ depends=(
 
   # Functions
   paru() {
-  	if ! pacman -Qeq | grep -i paru; then
+  	if ! pacman -Qq | grep -i paru; then
 		git clone https://aur.archlinux.org/paru.git
 		pushd paru
 		makepkg -sif

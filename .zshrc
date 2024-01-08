@@ -95,7 +95,6 @@ function pkgSync(){
 
 	local newPackages
 	newPackages=$(paru -Qeq | rg -xv $(<<< $targetPackages | tr '\n' '|'))
-	echo $newPackages
 
 	if [ ! -z $newPackages ]; then
 		echo "$(<<< $newPackages | grep -v linux-config | wc -l) new Packages"
@@ -107,10 +106,23 @@ function pkgSync(){
 			read -k 1 "choice?[A]dd, [r]emove, [d]epends or [s]kip $package"
 			case $choice in;
 				[Aa])
-					echo "chose A"
+					echo "====================="
+					echo
+					targetPackages="$targetPackages\\n$package"
+					paru -D --asdeps $package
 					;;
 				[Rr])
-					echo "chose R"
+					echo "====================="
+					echo
+					paru -R --noconfirm $package
+					;;
+				[Dd])
+					echo "====================="
+					echo
+					paru -D --asdeps $package
+					;;
+				*)
+					:
 					;;
 			esac
 			echo
@@ -120,6 +132,72 @@ function pkgSync(){
 	else
 		echo "No new Packages"
 	fi
+
+	local missingPackages
+	missingPackages=$(echo $targetPackages | rg -xv $(paru -Qqd | tr '\n' '|'))
+
+	if [ ! -z $missingPackages ]; then
+		echo "$(wc -l <<< $missingPackages) missing Packages"
+		while read -r package; do
+			if paru -Qi $package >/dev/null; then
+				paru -D --asdeps $package
+				continue
+			fi
+			paru -Si $package
+			paru -Qi $package
+			read -k 1 "choice?[I]nstall, [R]emove $package"
+			case $choice in;
+				[Ii])
+					echo "====================="
+					echo
+					paru -S --noconfirm $package
+					;;
+				[Rr])
+					echo "====================="
+					echo
+					targetPackages=$(echo $targetPackages | rg -xv "$packages")
+					;;
+				*)
+					:
+					;;
+			esac
+			echo
+			echo "============"
+			echo
+		done <<<"$missingPackages"
+	else
+		echo "No missing Packages"
+	fi
+
+	local orphanedPackages
+	orphanedPackages=$(paru -Qqtd)
+
+	  if [ ! -z $orphanedPackages ]; then
+    		echo "$(wc -l <<<$orphanedPackages) orphaned Packages"
+    		if read -q "?Remove orphaned packages? "; then
+      		while [ ! -z $orphanedPackages ]; do
+        		echo "$(wc -l <<<$orphanedPackages) orphaned Packages"
+        		paru -R --noconfirm $(tr '\n' ' ' <<<$orphanedPackages)
+        		echo
+        		orphanedPackages=$(paru -Qqtd)
+      		done
+    		fi
+  		else
+    			echo "No orphaned Packages"
+  		fi
+
+	newPackages=$( (
+      		echo '  #startPackages'
+      		echo 'depends=('
+      		echo $targetPackages | sort | uniq | sed 's#^#    #g'
+      		echo '  )'
+      		echo '  #endPackages'
+  	) | sed -r 's#$#\\n#g' | tr -d '\n')
+
+	diff <(echo $originalPackages | sort) <(echo $targetPackages | sort)
+	
+	(cd $HOME/config && makepkg -si --noconfirm)
+
 }
 
 function convertMp4(){
