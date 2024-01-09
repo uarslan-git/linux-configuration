@@ -15,6 +15,7 @@ sha512sums=('SKIP')
 #startPackages
 depends=(
     amd-ucode
+    arandr
     autorandr
     base
     base-devel
@@ -58,7 +59,6 @@ depends=(
     grive
     gvfs
     gzip
-    hyprland
     i3lock-color
     i3status
     i3-wm
@@ -71,7 +71,6 @@ depends=(
     jdk-openjdk
     jdownloader2
     k9s
-    kanshi
     kdeconnect
     keepassxc
     kitty
@@ -97,7 +96,6 @@ depends=(
     nvidia-dkms
     nvim-packer-git
     nvtop
-    nwg-look
     obs-studio
     oh-my-zsh-git
     opencl-nvidia
@@ -133,8 +131,6 @@ depends=(
     unzip
     vencord-desktop-bin
     volumeicon
-    waybar
-    wdisplays
     which
     winetricks
     wlr-randr
