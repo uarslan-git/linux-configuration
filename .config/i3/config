@@ -22,8 +22,8 @@ client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
 client.background       #ffffff
 
 # Gaps and border
-default_border pixel 1
-default_floating_border pixel 1
+default_border pixel 0
+default_floating_border pixel 0
 smart_gaps on
 gaps inner 0
 gaps outer 0
@@ -85,8 +85,8 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
 
-bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +30
-bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 30-
+bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +10
+bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 10-
 
 # Media player controls
 bindsym XF86AudioPlay exec playerctl play-pause
@@ -108,7 +108,7 @@ floating_modifier $mod
 tiling_drag modifier titlebar
 
 # start a terminal
-bindsym $mod+Return exec --no-startup-id kitty
+bindsym $mod+Return exec --no-startup-id gnome-terminal
 
 # kill focused window
 bindsym $mod+Shift+q kill

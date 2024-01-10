@@ -17,7 +17,7 @@
            order += "tztime local"
 
            wireless wlan0 {
-                   format_up = "󰖩 (%quality at %essid, %bitrate) %ip"
+                   format_up = "󰖩(%quality at %essid, %bitrate) %ip"
                    format_down = "󰖪"
            }
 

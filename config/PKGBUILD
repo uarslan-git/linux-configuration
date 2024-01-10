@@ -20,22 +20,17 @@ depends=(
     base
     base-devel
     blender
-    blueman
-    bluez-utils
     bottles
     breeze-hacked-cursor-theme-git
     brightnessctl
     btop
     calibre
-    catia-git
-    clipmenu
     colorpicker
     copyq
     cronie
     curl
     darktable
     davinci-resolve-studio
-    discord
     docker
     docker-compose
     dunst
@@ -54,9 +49,11 @@ depends=(
     git-delta
     github-cli
     git-secret
+    gnome-terminal
     google-chrome
     gradle
     grive
+    gst-plugin-pipewire
     gvfs
     gzip
     i3lock-color
@@ -73,9 +70,10 @@ depends=(
     k9s
     kdeconnect
     keepassxc
-    kitty
     krita
+    libpulse
     libreoffice-still
+    linux-firmware
     linux-zen
     linux-zen-headers
     lutris
@@ -90,7 +88,6 @@ depends=(
     network-manager-applet
     nmap
     nodejs
-    nodejs-neovim
     npm
     ntfs-3g
     nvidia-dkms
@@ -101,9 +98,13 @@ depends=(
     opencl-nvidia
     openssh
     papirus-icon-theme
+    paru
     paruz
     pavucontrol
     picom
+    pipewire
+    pipewire-alsa
+    pipewire-jack
     pipewire-pulse
     playerctl
     pycharm-professional
@@ -113,28 +114,23 @@ depends=(
     ranger
     ripgrep
     rofi
-    slack-desktop-wayland
     steam
-    swaylock-effects
-    swww
     systemd
     texstudio
     thunar
     thunderbird
     tlp
     tree
-    ttf-dejavu
-    ttf-font-awesome
-    ttf-liberation
     ufw
     unrar
     unzip
     vencord-desktop-bin
     volumeicon
+    webstorm
+    webstorm-jre
     which
     winetricks
-    wlr-randr
-    wofi
+    wireplumber
     xclip
     xdg-desktop-portal-gtk
     xorg-server
@@ -144,7 +140,6 @@ depends=(
     xorg-xprop
     xorg-xwininfo
     xss-lock-session
-    xwaylandvideobridge-bin
     youtubemusic
     zip
     zoom
@@ -157,7 +152,7 @@ depends=(
   )
   #endPackages
 
-  if lscpu | rg intel &>/dev/null; then depends+=(prime nvidia-prime ); fi
+  if lscpu | rg intel &>/dev/null; then depends+=(prime nvidia-prime blueman bluez-utils); fi
 
   # Functions
   paru() {
