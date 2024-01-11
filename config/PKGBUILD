@@ -39,6 +39,7 @@ depends=(
     fd
     feh
     flameshot
+    foundry-nuke
     fzf
     fzf-tab-git
     gamemode
@@ -128,6 +129,7 @@ depends=(
     unrar
     unzip
     vencord-desktop-bin
+    vlc
     volumeicon
     webstorm
     webstorm-jre
