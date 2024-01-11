@@ -57,6 +57,7 @@ bindsym $mod+shift+semicolon exec --no-startup-id copyq show
 for_window [title="Qalculate!"] floating enable, move position center
 for_window [title="Fusion Reactor"] floating enable, move position center
 for_window [class="copyq"] floating enable, move position center
+for_window [class="steamwebhelper"] floating enable, move position center
 for_window [class="steam_app.*"] floating enable
 for_window [class="jetbrains-.*" title="Welcome to IntelliJ IDEA"] floating enable
 for_window [class="jetbrains-.*" title="splash"] floating enable
