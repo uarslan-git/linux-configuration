@@ -49,7 +49,6 @@ depends=(
     git-delta
     github-cli
     git-secret
-    gnome-terminal
     google-chrome
     gradle
     grive
@@ -70,6 +69,7 @@ depends=(
     k9s
     kdeconnect
     keepassxc
+    kitty
     krita
     libpulse
     libreoffice-still
