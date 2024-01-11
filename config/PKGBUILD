@@ -91,6 +91,7 @@ depends=(
     npm
     ntfs-3g
     nvidia-dkms
+    nvidia-settings
     nvim-packer-git
     nvtop
     obs-studio
@@ -101,6 +102,7 @@ depends=(
     paru
     paruz
     pavucontrol
+    pcmanfm
     picom
     pipewire
     pipewire-alsa
