@@ -46,7 +46,7 @@ exec_always --no-startup-id feh --bg-fill ~/.config/bg.jpg
 
 # bindsym $mod + shift
 bindsym $mod+shift+w exec --no-startup-id i3lock
-bindsym $mod+shift+p exec --no-startup-id thunar
+bindsym $mod+shift+p exec --no-startup-id pcmanfm
 bindsym $mod+shift+o exec --no-startup-id keepassxc
 bindsym $mod+shift+u exec --no-startup-id arandr
 bindsym $mod+shift+i exec --no-startup-id pavucontrol
@@ -108,7 +108,7 @@ floating_modifier $mod
 tiling_drag modifier titlebar
 
 # start a terminal
-bindsym $mod+Return exec --no-startup-id gnome-terminal
+bindsym $mod+Return exec --no-startup-id kitty
 
 # kill focused window
 bindsym $mod+Shift+q kill
