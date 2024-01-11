@@ -114,10 +114,11 @@ depends=(
     ranger
     ripgrep
     rofi
+    slack-desktop
+    sof-firmware
     steam
     systemd
     texstudio
-    thunar
     thunderbird
     tlp
     tree

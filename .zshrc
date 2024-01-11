@@ -3,7 +3,6 @@ export EDITOR=/usr/bin/nvim
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
-
 ZSH=/usr/share/oh-my-zsh/
 ZSH_CUSTOM=/usr/share/zsh
 
@@ -186,6 +185,7 @@ function pkgSync(){
 	orphanedPackages=$(paru -Qqtd)
 
 	  if [ ! -z $orphanedPackages ]; then
+		echo "===================="
 		echo $orphanedPackages
     		echo "$(wc -l <<<$orphanedPackages) orphaned Packages"
     		if read -q "?Remove orphaned packages? "; then
