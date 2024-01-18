@@ -35,7 +35,6 @@ depends=(
     docker-compose
     dunst
     efibootmgr
-    evince
     fd
     feh
     flameshot
@@ -54,7 +53,6 @@ depends=(
     gradle
     grive
     gst-plugin-pipewire
-    gvfs
     gzip
     i3lock-color
     i3status
@@ -84,7 +82,6 @@ depends=(
     man-pages
     matcha-gtk-theme
     maven
-    nerd-fonts-complete-mono-glyphs
     networkmanager
     network-manager-applet
     nmap
@@ -128,7 +125,6 @@ depends=(
     ufw
     unrar
     unzip
-    vencord-desktop-bin
     vlc
     volumeicon
     webstorm
