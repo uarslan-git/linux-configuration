@@ -31,6 +31,7 @@ depends=(
     curl
     darktable
     davinci-resolve-studio
+    displaylink
     docker
     docker-compose
     dunst
@@ -70,6 +71,7 @@ depends=(
     keepassxc
     kitty
     krita
+    lib32-nvidia-utils
     libpulse
     libreoffice-still
     linux-firmware
@@ -82,6 +84,7 @@ depends=(
     man-pages
     matcha-gtk-theme
     maven
+    nerd-fonts-complete-mono-glyphs
     networkmanager
     network-manager-applet
     nmap
@@ -125,6 +128,7 @@ depends=(
     ufw
     unrar
     unzip
+    vesktop-bin
     vlc
     volumeicon
     webstorm
@@ -134,12 +138,42 @@ depends=(
     wireplumber
     xclip
     xdg-desktop-portal-gtk
+    xf86-video-vesa
+    xorg-bdftopcf
+    xorg-docs
+    xorg-fonts-100dpi
+    xorg-fonts-75dpi
+    xorg-font-util
+    xorg-iceauth
     xorg-server
+    xorg-server-devel
+    xorg-server-xephyr
+    xorg-server-xnest
+    xorg-server-xvfb
+    xorg-sessreg
+    xorg-smproxy
+    xorg-x11perf
+    xorg-xbacklight
+    xorg-xcmsdb
+    xorg-xcursorgen
+    xorg-xdriinfo
+    xorg-xev
+    xorg-xgamma
     xorg-xinit
     xorg-xinput
+    xorg-xkbevd
+    xorg-xkbutils
     xorg-xkill
+    xorg-xlsatoms
+    xorg-xlsclients
+    xorg-xpr
     xorg-xprop
+    xorg-xrefresh
+    xorg-xsetroot
+    xorg-xvinfo
+    xorg-xwd
     xorg-xwininfo
+    xorg-xwud
     xss-lock-session
     youtubemusic
     zip
