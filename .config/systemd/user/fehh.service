@@ -1,0 +1,13 @@
+[Unit]
+Description=Feh
+Requires=i3-session.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/feh --bg-fill %E/bg.jpg
+ExecReload=/usr/bin/feh --bg-fill %E/bg.jpg
+RestartSec=0
+RemainAfterExit=true
+
+[Install]
+WantedBy=i3-session.target
