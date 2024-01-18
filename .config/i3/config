@@ -32,13 +32,13 @@ gaps outer 0
 # ---------
 # exec
 exec --no-startup-id copyq
-exec --no-startup-id picom --backend glx
+# exec --no-startup-id picom --backend glx
 exec --no-startup-id ibus start
 exec --no-startup-id keepassxc
 exec --no-startup-id volumeicon
 
 # exec_always
-exec_always --no-startup-id feh --bg-fill ~/.config/bg.jpg
+# exec_always --no-startup-id feh --bg-fill ~/.config/bg.jpg
 
 # Bindsym
 # ---------
