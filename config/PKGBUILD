@@ -124,6 +124,7 @@ depends=(
     texstudio
     thunderbird
     tlp
+    torbrowser-launcher
     tree
     ufw
     unrar
