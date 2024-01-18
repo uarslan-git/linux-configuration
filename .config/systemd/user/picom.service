@@ -1,0 +1,23 @@
+[Unit]
+Description=Picom
+Requires=i3-session.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/picom
+ExecReload=/usr/bin/kill -HUP $MAINPID
+RestartSec=0
+Restart=always
+
+ProtectSystem=strict
+NoNewPrivileges=true
+ProtectKernelTunables=true
+ProtectControlGroups=true
+RestrictNamespaces=true
+MemoryMax=4G
+Nice=-5
+ManagedOOMMemoryPressure=kill
+ManagedOOMMemoryPressureLimit=10%
+
+[Install]
+WantedBy=i3-session.target

@@ -1,0 +1,8 @@
+[Unit]
+Description=i3
+After=graphical-session.target
+BindsTo=graphical-session.target
+Wants=picom.service
+Wants=youtubemusic.service
+Wants=feh.service
+Wants=ly.service
