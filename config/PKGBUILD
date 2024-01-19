@@ -1,4 +1,4 @@
-# tar -h --exclude=.idea -cf rootfs.tar -C rootfs .
+tar -h --exclude=.idea -cf rootfs.tar -C rootfs .
 
 pkgname=linux-config
 pkgver=0.1.0
@@ -25,7 +25,6 @@ depends=(
     brightnessctl
     btop
     calibre
-    colorpicker
     copyq
     cronie
     curl
@@ -35,6 +34,7 @@ depends=(
     docker-compose
     dunst
     efibootmgr
+    evince
     fd
     feh
     flameshot
@@ -52,6 +52,7 @@ depends=(
     gradle
     grive
     gst-plugin-pipewire
+    gvfs
     gzip
     i3lock-color
     i3status
@@ -161,6 +162,7 @@ depends=(
     xorg-xinit
     xorg-xinput
     xorg-xkbevd
+    xorg-xkbprint
     xorg-xkbutils
     xorg-xkill
     xorg-xlsatoms
@@ -209,6 +211,6 @@ depends=(
   zsh
 
 package() {
-#  tar -xf rootfs.tar -C "$pkgdir"
+   tar -xf rootfs.tar -C "$pkgdir"
    echo "finished"
 }
