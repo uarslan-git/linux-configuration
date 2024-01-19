@@ -5,4 +5,4 @@ BindsTo=graphical-session.target
 Wants=picom.service
 Wants=youtubemusic.service
 Wants=feh.service
-Wants=ly.service
+#Wants=ly.service
