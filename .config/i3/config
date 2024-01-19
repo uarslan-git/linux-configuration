@@ -33,7 +33,7 @@ gaps outer 0
 # exec
 exec --no-startup-id copyq
 # exec --no-startup-id picom --backend glx
-exec --no-startup-id ibus start
+exec --no-startup-id fcitx5
 exec --no-startup-id keepassxc
 exec --no-startup-id volumeicon
 
