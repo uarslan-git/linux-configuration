@@ -31,7 +31,6 @@ depends=(
     curl
     darktable
     davinci-resolve-studio
-    displaylink
     docker
     docker-compose
     dunst
@@ -39,7 +38,6 @@ depends=(
     fd
     feh
     flameshot
-    foundry-nuke
     fzf
     fzf-tab-git
     gamemode
