@@ -35,6 +35,9 @@ depends=(
     dunst
     efibootmgr
     evince
+    fcitx5-configtool
+    fcitx5
+    fcitx5-mozc
     fd
     feh
     flameshot
@@ -57,7 +60,6 @@ depends=(
     i3lock-color
     i3status
     i3-wm
-    ibus
     imhex-bin
     inkscape
     intellij-idea-ultimate-edition
