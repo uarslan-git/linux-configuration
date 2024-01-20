@@ -213,6 +213,6 @@ depends=(
   zsh
 
 package() {
-   tar -xf rootfs.tar -C "$pkgdir"
+   tar -xf rootfs.tar -C "$pkgdir" --overwrite
    echo "finished"
 }
