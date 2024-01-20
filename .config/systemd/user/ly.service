@@ -1,0 +1,13 @@
+[Unit]
+Description=Ly Display-Manager
+Requires=i3-session.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/ly-dm
+ExecReload=/usr/bin/kill -HUP $MAINPID
+RestartSec=0
+Restart=always
+
+[Install]
+WantedBy=i3-session.target
