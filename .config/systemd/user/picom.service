@@ -9,11 +9,6 @@ ExecReload=/usr/bin/kill -HUP $MAINPID
 RestartSec=0
 Restart=always
 
-ProtectSystem=strict
-NoNewPrivileges=true
-ProtectKernelTunables=true
-ProtectControlGroups=true
-RestrictNamespaces=true
 MemoryMax=2
 Nice=-5
 ManagedOOMMemoryPressure=kill

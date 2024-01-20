@@ -1,0 +1,39 @@
+{
+    "bibitems": [
+    ],
+    "bibtexfiles": [
+        "/home/umut/Drive/Important/CV/new/moderncv/publications.bib#publications"
+    ],
+    "childdocs": [
+    ],
+    "filename": "/home/umut/Drive/Important/CV/new/moderncv/template.tex",
+    "labels": [
+    ],
+    "modified": "Wed Dec 27 09:56:07 2023",
+    "packages": [
+        "scale=0.75#geometry",
+        "11pt,a4paper,sans#class-moderncv",
+        "11pt,a4paper,sans#latex-document",
+        "11pt,a4paper,sans#tex",
+        "T1#fontenc",
+        "#fontspec",
+        "english#babel",
+        "#lmodern",
+        "utf8#inputenc",
+        "#unicode-math"
+    ],
+    "refs": [
+    ],
+    "toc": [
+        "2#Education#78",
+        "2#Experience#83",
+        "3#Vocational#84",
+        "3#Internships#90",
+        "2#Languages#96",
+        "2#Computer skills#102",
+        "2#Interests#108"
+    ],
+    "usercommands": [
+        "\\bibliographyitemlabel"
+    ]
+}
