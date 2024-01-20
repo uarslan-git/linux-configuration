@@ -213,13 +213,11 @@ function pkgSync(){
 	 fi
 }
 
-
 declare -a tmpPackages
-function tmpPackage(){
-	paru "${@}"
-	tmpPackages+=( $(grep installed /var/log/pacman.log | awk '{print $4}' | tail -5 | tac | awk '!x[$0]++' | fzf --prompt='Choose package to be uninstalled on exit' -m ))
+function tmpPackage() {
+  paru "${@}"
+  tmpPackages+=( $(grep installed /var/log/pacman.log | awk '{print $4}' | tail -5 | tac | awk '!x[$0]++' | fzf --prompt='Choose package to be uninstalled on exit' -m) )
 }
-
 compdef _paru tmpPackage
 
 function _cleanTmpPackages() {
@@ -228,9 +226,13 @@ function _cleanTmpPackages() {
   fi
 }
 
-trap shellExit EXIT
-function shellExit() {
+function TRAPEXIT() {
   _cleanTmpPackages
+}
+
+function () :r(){
+  _cleanTmpPackages
+  exec zsh
 }
 
 function convertVideos(){
