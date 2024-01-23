@@ -11,16 +11,16 @@
     ],
     "modified": "Wed Dec 27 09:56:07 2023",
     "packages": [
+        "#fontspec",
         "scale=0.75#geometry",
         "11pt,a4paper,sans#class-moderncv",
         "11pt,a4paper,sans#latex-document",
         "11pt,a4paper,sans#tex",
         "T1#fontenc",
-        "#fontspec",
-        "english#babel",
         "#lmodern",
-        "utf8#inputenc",
-        "#unicode-math"
+        "#unicode-math",
+        "english#babel",
+        "utf8#inputenc"
     ],
     "refs": [
     ],
