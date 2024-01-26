@@ -11,9 +11,8 @@
 
 set $mod Mod4
 
-# Colors
 # class                 border  backgr. text    indicator child_border
-client.focused          #4c7899 #285577 #ffffff #2e9ef4   #285577
+client.focused          #FE116C #285577 #ffffff #2e9ef4   #FE116C
 client.focused_inactive #333333 #5f676a #ffffff #484e50   #5f676a
 client.unfocused        #333333 #222222 #888888 #292d2e   #222222
 client.urgent           #2f343a #900000 #ffffff #900000   #900000
@@ -21,37 +20,40 @@ client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
 
 client.background       #ffffff
 
-# Gaps and border
-default_border pixel 0
-default_floating_border pixel 0
+# Borders and Gaps
+default_border pixel 1
+default_floating_border pixel 1
 smart_gaps on
-gaps inner 0
-gaps outer 0
+gaps inner 10
+gaps outer 10
 
-# Autostart
-# ---------
-# exec
-exec --no-startup-id copyq
-# exec --no-startup-id picom --backend glx
-exec --no-startup-id fcitx5
-exec --no-startup-id keepassxc
-exec --no-startup-id volumeicon
+# Window Rule
+#default_border pixel 1
+#for_window [class=".*"] border pixel 1
+#hide_edge_borders both
+#for_window [class="steam_app.*"] floating enable
 
-# exec_always
-# exec_always --no-startup-id feh --bg-fill ~/.config/bg.jpg
-
-# Bindsym
-# ---------
-# bindsym $mod
-
-# bindsym $mod + shift
-bindsym $mod+shift+w exec --no-startup-id i3lock
-bindsym $mod+shift+p exec --no-startup-id pcmanfm
+# Key binding
+bindsym $mod+shift+p exec --no-startup-id thunar
 bindsym $mod+shift+o exec --no-startup-id keepassxc
-bindsym $mod+shift+u exec --no-startup-id arandr
 bindsym $mod+shift+i exec --no-startup-id pavucontrol
-bindsym $mod+shift+s exec --no-startup-id flameshot gui
+bindsym $mod+shift+u exec --no-startup-id arandr
 bindsym $mod+shift+semicolon exec --no-startup-id copyq show
+bindsym $mod+shift+s exec --no-startup-id flameshot gui
+bindsym $mod+shift+w exec --no-startup-id lock
+bindsym $mod+p exec --no-startup-id ranger
+
+# Auto start
+exec --no-startup-id cd ~/.dotfiles && git pull
+exec_always --no-startup-id feh --bg-fill ~/.config/bg.jpg
+exec_always --no-startup-id autorandr -l $(autorandr)
+exec_always --no-startup-id autotiling
+exec --no-startup-id fcitx5
+exec --no-startup-id keepassc
+exec --no-startup-id nm-applet
+exec --no-startup-id flameshot
+exec --no-startup-id copyq
+exec --no-startup-id volumeicon
 
 # Window Rules
 for_window [title="Qalculate!"] floating enable, move position center
