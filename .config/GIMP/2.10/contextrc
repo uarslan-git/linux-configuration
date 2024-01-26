@@ -1,6 +1,6 @@
 # GIMP user context
 
-(tool "gimp-operation-tool")
+(tool "gimp-rect-select-tool")
 (paint-info "gimp-paintbrush")
 (foreground (color-rgb 0.36241610738255037 0.77497034473436821 1))
 (brush "2. Hardness 025")
