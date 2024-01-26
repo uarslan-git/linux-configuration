@@ -73,6 +73,8 @@ depends=(
     kitty
     krita
     lib32-nvidia-utils
+    lib32-pipewire
+    lib32-pipewire-jack
     libpulse
     libreoffice-still
     linux-firmware
@@ -104,7 +106,6 @@ depends=(
     paru
     paruz
     pavucontrol
-    pcmanfm
     picom
     pipewire
     pipewire-alsa
@@ -123,6 +124,7 @@ depends=(
     steam
     systemd
     texstudio
+    thunar
     thunderbird
     tlp
     torbrowser-launcher

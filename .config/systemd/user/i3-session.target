@@ -1,8 +1,6 @@
 [Unit]
 Description=i3
-After=graphical-session.target
-BindsTo=graphical-session.target
-Wants=picom.service
-Wants=youtubemusic.service
+After=graphical-session-pre.target
+BindsTo=graphical-session-pre.target
 Wants=feh.service
-Wants=ly.service
+Wants=xss-lock.service
