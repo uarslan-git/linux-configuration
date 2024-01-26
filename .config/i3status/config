@@ -1,12 +1,18 @@
-  general {
+general {
                    colors = true
                    interval = 5
+				   color_good = '#88b090'  
+				   color_degraded = '#ccdc90'  
+				   color_bad = '#e89393'   
            }
 
            order += "ethernet lo"
            order += "wireless wlan0"
            order += "ipv6"
            order += "disk /"
+           order += "run_watch DHCP"
+           order += "run_watch VPNC"
+           order += "path_exists VPN"
            order += "battery 0"
            order += "cpu_temperature 0"
            order += "memory"
@@ -14,7 +20,7 @@
            order += "tztime local"
 
            wireless wlan0 {
-                   format_up = "󰖩(%quality at %essid, %bitrate) %ip"
+                   format_up = "󰖩 (%quality at %essid, %bitrate) %ip"
                    format_down = "󰖪"
            }
 
@@ -33,6 +39,20 @@
                    path = "/sys/class/power_supply/BAT%d/uevent"
                    low_threshold = 10
 				   last_full_capacity = true
+           }
+
+           run_watch DHCP {
+                   pidfile = "/var/run/dhclient*.pid"
+           }
+
+           run_watch VPNC {
+                   # file containing the PID of a vpnc process
+                   pidfile = "/var/run/vpnc/pid"
+           }
+
+           path_exists VPN {
+                   # path exists when a VPN tunnel launched by nmcli/nm-applet is active
+                   path = "/proc/sys/net/ipv4/conf/tun0"
            }
 
            tztime local {
