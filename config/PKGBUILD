@@ -15,9 +15,8 @@ sha512sums=('SKIP')
 #startPackages
 depends=(
     amd-ucode
-    arandr
-    autorandr
     baobab
+    anki-bin
     base
     base-devel
     blender
@@ -79,6 +78,8 @@ depends=(
     gnome-shell-extension-dash-to-dock
     gnome-shell-extension-gtile
     gnome-shell-extensions
+    gnome-shell-extension-tray-icons-reloaded
+    gnome-shell-extension-vitals
     gnome-software
     gnome-system-monitor
     gnome-terminal
@@ -102,6 +103,7 @@ depends=(
     gvfs-nfs
     gvfs-smb
     gzip
+    ibus-mozc
     imhex-bin
     inkscape
     intellij-idea-ultimate-edition
@@ -130,6 +132,7 @@ depends=(
     man-pages
     matcha-gtk-theme
     maven
+    mozc
     mutter-x11-scaling
     nautilus
     nerd-fonts-complete-mono-glyphs
@@ -286,9 +289,13 @@ depends=(
 	  	chsh -s /usr/bin/zsh
 	  fi
   }
+  groups() {
+	sudo usermod -aG docker umut
+  }
 
   paru
   zsh
+  groups
 
 package() {
    tar -xf rootfs.tar -C "$pkgdir" --overwrite
