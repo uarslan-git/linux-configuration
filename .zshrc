@@ -252,7 +252,7 @@ function convertVideos(){
 function extractAudio(){
 }
 
-alias backup="pushd ~/; ga -u; gcd; gp; popd"
+alias backup="pushd ~/; dconf-save; ga -u; gcd; gp; popd"
 alias cal="cal -wm"
 alias chrome="google-chrome-stable"
 alias dconf-load="pushd ~/.config; dconf load / < dconf-settings; popd"
