@@ -1,21 +1,21 @@
 {
     "InternalPDFViewer": {
-        "Embedded": false,
-        "File": ""
+        "Embedded": true,
+        "File": "../../Drive/Important/CV/new/moderncv/template.pdf"
     },
     "Session": {
         "Bookmarks": [
         ],
-        "CurrentFile": "../../Drive/Important/CV/new/moderncv/moderncvskillmatrix.sty",
+        "CurrentFile": "../../Drive/Important/CV/new/moderncv/template.tex",
         "FileVersion": 1,
         "Files": [
             {
-                "Col": 0,
+                "Col": 20,
                 "EditorGroup": 0,
                 "FileName": "../../Drive/Important/CV/new/moderncv/template.tex",
-                "FirstLine": 4,
+                "FirstLine": 18,
                 "FoldedLines": "",
-                "Line": 37
+                "Line": 36
             },
             {
                 "Col": 0,
@@ -26,12 +26,12 @@
                 "Line": 0
             },
             {
-                "Col": 0,
+                "Col": 10,
                 "EditorGroup": 0,
                 "FileName": "../../Drive/Important/CV/new/moderncv/moderncvskillmatrix.sty",
-                "FirstLine": 165,
+                "FirstLine": 164,
                 "FoldedLines": "",
-                "Line": 230
+                "Line": 191
             }
         ],
         "MasterFile": "",
