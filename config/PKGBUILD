@@ -39,9 +39,6 @@ depends=(
     epiphany
     evdi
     evince
-    fcitx5
-    fcitx5-configtool
-    fcitx5-mozc
     fd
     feh
     firefox
@@ -154,7 +151,6 @@ depends=(
     papirus-icon-theme
     paru
     paruz
-    pavucontrol
     pipewire
     pipewire-alsa
     pipewire-jack
