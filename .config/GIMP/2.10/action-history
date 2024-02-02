@@ -5,7 +5,7 @@
 (history-item "edit-copy" 0)
 (history-item "edit-paste" 0)
 (history-item "tools-scale" 1)
-(history-item "layers-delete" 1)
+(history-item "layers-delete" 0)
 (history-item "file-quit" 1)
 (history-item "image-new" 3)
 (history-item "layers-new-last-values" 3)
