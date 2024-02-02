@@ -17,6 +17,7 @@ depends=(
     amd-ucode
     arandr
     autorandr
+    baobab
     base
     base-devel
     blender
@@ -30,36 +31,80 @@ depends=(
     curl
     darktable
     davinci-resolve-studio
+    displaylink
     docker
     docker-compose
     dunst
     efibootmgr
+    epiphany
+    evdi
     evince
     fcitx5
     fcitx5-configtool
     fcitx5-mozc
     fd
     feh
+    firefox
     flameshot
     fzf
     fzf-tab-git
     gamemode
     gdb
+    gdm
     ghidra
     gimp
     git
     git-delta
     github-cli
     git-secret
+    gnome-backgrounds
+    gnome-calculator
+    gnome-calendar
+    gnome-characters
+    gnome-clocks
+    gnome-color-manager
+    gnome-connections
+    gnome-console
+    gnome-contacts
+    gnome-control-center-x11-scaling
+    gnome-disk-utility
+    gnome-font-viewer
+    gnome-keyring
+    gnome-logs
+    gnome-maps
+    gnome-menus
+    gnome-music
+    gnome-remote-desktop
+    gnome-session
+    gnome-settings-daemon
+    gnome-shell
+    gnome-shell-extension-arc-menu
+    gnome-shell-extension-dash-to-dock
+    gnome-shell-extension-gtile
+    gnome-shell-extensions
+    gnome-software
+    gnome-system-monitor
+    gnome-terminal
+    gnome-text-editor
+    gnome-tour
+    gnome-tweaks
+    gnome-user-docs
+    gnome-user-share
+    gnome-weather
     google-chrome
     gradle
+    grilo-plugins
     grive
     gst-plugin-pipewire
     gvfs
+    gvfs-afc
+    gvfs-goa
+    gvfs-google
+    gvfs-gphoto2
+    gvfs-mtp
+    gvfs-nfs
+    gvfs-smb
     gzip
-    i3lock-color
-    i3status
-    i3-wm
     imhex-bin
     inkscape
     intellij-idea-ultimate-edition
@@ -80,13 +125,17 @@ depends=(
     linux-firmware
     linux-zen
     linux-zen-headers
+    loupe
     lutris
     lxappearance
     ly
+    malcontent
     man-db
     man-pages
     matcha-gtk-theme
     maven
+    mutter-x11-scaling
+    nautilus
     nerd-fonts-complete-mono-glyphs
     networkmanager
     network-manager-applet
@@ -102,6 +151,7 @@ depends=(
     oh-my-zsh-git
     opencl-nvidia
     openssh
+    orca
     papirus-icon-theme
     paru
     paruz
@@ -119,15 +169,22 @@ depends=(
     ranger
     ripgrep
     rofi
+    rygel
+    simple-scan
     slack-desktop
+    snapshot
     sof-firmware
     steam
+    sushi
     systemd
+    tecla
     texstudio
     thunar
     thunderbird
     tlp
     torbrowser-launcher
+    totem
+    tracker3-miners
     tree
     ufw
     unrar
@@ -141,7 +198,9 @@ depends=(
     winetricks
     wireplumber
     xclip
+    xdg-desktop-portal-gnome
     xdg-desktop-portal-gtk
+    xdg-user-dirs-gtk
     xf86-video-vesa
     xorg-bdftopcf
     xorg-docs
@@ -180,6 +239,7 @@ depends=(
     xorg-xwininfo
     xorg-xwud
     xss-lock-session
+    yelp
     youtubemusic
     zip
     zoom
