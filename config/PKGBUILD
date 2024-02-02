@@ -15,8 +15,8 @@ sha512sums=('SKIP')
 #startPackages
 depends=(
     amd-ucode
-    baobab
     anki-bin
+    baobab
     base
     base-devel
     blender
@@ -200,7 +200,6 @@ depends=(
     texstudio
     thunar
     thunderbird
-    tlp
     torbrowser-launcher
     totem
     tracker3-miners
@@ -218,7 +217,6 @@ depends=(
     wireplumber
     xclip
     xdg-desktop-portal-gnome
-    xdg-desktop-portal-gtk
     xdg-user-dirs-gtk
     xf86-video-vesa
     xorg-bdftopcf
@@ -291,6 +289,11 @@ depends=(
   }
   groups() {
 	sudo usermod -aG docker umut
+  }
+
+  services() {
+	sudo systemctl enable gdm --now
+	sudo systemctl enable docker --now
   }
 
   paru
