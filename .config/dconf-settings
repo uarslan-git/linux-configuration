@@ -37,7 +37,7 @@ panel-id='timer'
 size=(870, 690)
 
 [org/gnome/control-center]
-last-panel='online-accounts'
+last-panel='display'
 window-state=(360, 518, true)
 
 [org/gnome/desktop/app-folders]
@@ -141,6 +141,9 @@ button-layout='close,minimize,maximize:appmenu'
 [org/gnome/epiphany]
 ask-for-default=false
 
+[org/gnome/evince/default]
+window-ratio=(0.7126906447474699, 0.7126906447474699)
+
 [org/gnome/evolution-data-server]
 migrated=true
 
@@ -230,7 +233,7 @@ menu-separator-color='rgba(255,255,255,0.1)'
 override-menu-theme=false
 position-in-panel='Left'
 prefs-visible-page=0
-recently-installed-apps=['kitty.desktop', 'blueman-manager.desktop', 'jshell-java11-openjdk.desktop', 'jconsole-java11-openjdk.desktop', 'xdvi.desktop', 'fcitx-configtool.desktop', 'fcitx.desktop']
+recently-installed-apps=['kitty.desktop', 'blueman-manager.desktop', 'jshell-java11-openjdk.desktop', 'jconsole-java11-openjdk.desktop', 'xdvi.desktop', 'fcitx-configtool.desktop', 'fcitx.desktop', 'xterm.desktop', 'uxterm.desktop']
 runner-position='Centered'
 search-entry-border-radius=(true, 25)
 
@@ -298,5 +301,5 @@ sort-column='name'
 sort-directories-first=false
 sort-order='ascending'
 type-format='category'
-window-position=(494, 159)
-window-size=(1203, 902)
+window-position=(166, 29)
+window-size=(1203, 889)

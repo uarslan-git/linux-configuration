@@ -304,7 +304,7 @@
        id="lpetool"
        mode="drag"
        style="fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none;"
-       unit="mm"
+       unit="px"
        show_bbox="1" />
     <eventcontext
        id="text"
@@ -607,10 +607,14 @@
        append_extension="1"
        path="">
       <group
-         id="exportarea" />
+         id="exportarea"
+         value="drawing" />
       <group
          id="defaultxdpi"
          value="192" />
+      <group
+         id="batchexportarea"
+         value="layer" />
     </group>
     <group
        id="save_as"
@@ -998,10 +1002,10 @@
      id="desktop"
      style="fill:#000000;text-anchor:middle;text-align:center">
     <group
-       width="640"
-       height="480"
+       width="1536"
+       height="484"
        x="0"
-       y="0"
+       y="29"
        maximized="1"
        fullscreen="0"
        id="geometry" />
@@ -1118,7 +1122,7 @@
      id="theme"
      defaultPreferDarkTheme="0"
      defaultIconTheme="Papirus-Dark"
-     defaultGtkTheme="Matcha-dark-azul"
+     defaultGtkTheme="Matcha-dark-sea"
      narrowSpinButton="1"
      preferDarkTheme="1"
      darkTheme="1"
