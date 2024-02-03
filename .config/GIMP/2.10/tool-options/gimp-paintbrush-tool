@@ -1,12 +1,11 @@
 # GIMP gimp-paintbrush-tool options
 
-(foreground (color-rgb 0.36241610738255037 0.77497034473436821 1))
 (opacity 0.90000000000000002)
 (brush "2. Hardness 025")
 (dynamics "Dynamics Off")
 (gradient "Abstract 1")
 (palette "Standard")
-(brush-size 119)
+(brush-size 64)
 (brush-spacing 0.050000000000000003)
 (brush-hardness 0)
 (brush-force 0.46999999999999997)
