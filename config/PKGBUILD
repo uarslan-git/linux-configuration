@@ -257,7 +257,6 @@ depends=(
     xorg-xwud
     xss-lock-session
     yelp
-    youtubemusic
     zip
     zoom
     zsh
