@@ -1,0 +1,60 @@
+{
+    "bibitems": [
+    ],
+    "bibtexfiles": [
+    ],
+    "childdocs": [
+    ],
+    "filename": "/home/umut/Drive/Important/CV/new/moderncv/moderncvskillmatrix.sty",
+    "labels": [
+    ],
+    "modified": "Fri Dec 22 11:34:14 2023",
+    "packages": [
+        "#arydshln",
+        "#tikz",
+        "#multirow"
+    ],
+    "refs": [
+    ],
+    "toc": [
+    ],
+    "usercommands": [
+        "\\@@starIndependentTabular",
+        "\\cvskillentry",
+        "\\skillPlainLegend@@defaultLevelFour",
+        "\\cvSkillMatrix@@HeadFont",
+        "\\setcvskilllegendcolumns",
+        "\\skillMatrix@@HeaderDefaultOne",
+        "\\arg",
+        "\\skillMatrix@@HeaderDefaultFour",
+        "\\@@starIndependentMatrixEntry",
+        "\\skillLegend@@FontSize",
+        "\\my@@repeat@@count",
+        "\\arg",
+        "\\skilllegend@@leftdesriptorfactor",
+        "\\cvskilllegend",
+        "\\arg",
+        "\\arg",
+        "\\setcvskillcolumns",
+        "\\arg",
+        "\\cvskillhead",
+        "\\skillLegend@@defaultLevelTwo",
+        "\\cvskill",
+        "\\skillLegend@@defaultLevelThree",
+        "\\skillMatrix@@HeaderDefaultTwo",
+        "\\skillLegend@@defaultLevelFive",
+        "\\skillMatrix@@HeaderDefaultThree",
+        "\\skillPlainLegend@@defaultLevelThree",
+        "\\cvskillplainlegend",
+        "\\arg",
+        "\\skillPlainLegend@@defaultLevelFive",
+        "\\skillLegend@@defaultLevelFour",
+        "\\arg",
+        "\\recompute@@cvskillmatrix@@lengths",
+        "\\arg",
+        "\\arg",
+        "\\skillLegend@@defaultLevelOne",
+        "\\skillPlainLegend@@defaultLevelOne",
+        "\\skillPlainLegend@@defaultLevelTwo"
+    ]
+}
