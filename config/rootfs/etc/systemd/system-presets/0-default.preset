@@ -1,4 +1,0 @@
-enable cronie.service
-enable docker.service
-enable NetworkManager.service
-enable gdm.service
