@@ -28,6 +28,11 @@ window-maximized=false
 window-size=(680, 664)
 word-size=64
 
+[org/gnome/calendar]
+active-view='month'
+window-maximized=true
+window-size=(646, 600)
+
 [org/gnome/clocks]
 timers=[{'duration': <60>, 'name': <''>}]
 
@@ -95,6 +100,9 @@ application-id='gnome-network-panel.desktop'
 [org/gnome/desktop/notifications/application/gnome-power-panel]
 application-id='gnome-power-panel.desktop'
 
+[org/gnome/desktop/notifications/application/google-chrome]
+application-id='google-chrome.desktop'
+
 [org/gnome/desktop/notifications/application/jetbrains-idea]
 application-id='jetbrains-idea.desktop'
 
@@ -118,6 +126,9 @@ application-id='org.gnome.Shell.PortalHelper.desktop'
 
 [org/gnome/desktop/notifications/application/org-gnome-terminal]
 application-id='org.gnome.Terminal.desktop'
+
+[org/gnome/desktop/notifications/application/org-inkscape-inkscape]
+application-id='org.inkscape.Inkscape.desktop'
 
 [org/gnome/desktop/notifications/application/org-keepassxc-keepassxc]
 application-id='org.keepassxc.KeePassXC.desktop'
