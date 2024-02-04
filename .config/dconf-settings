@@ -257,7 +257,7 @@ menu-separator-color='rgba(255,255,255,0.1)'
 override-menu-theme=false
 position-in-panel='Left'
 prefs-visible-page=0
-recently-installed-apps=['kitty.desktop', 'blueman-manager.desktop', 'jshell-java11-openjdk.desktop', 'jconsole-java11-openjdk.desktop', 'xdvi.desktop', 'fcitx-configtool.desktop', 'fcitx.desktop', 'xterm.desktop', 'uxterm.desktop', 'arandr.desktop']
+recently-installed-apps=['kitty.desktop', 'blueman-manager.desktop', 'jshell-java11-openjdk.desktop', 'jconsole-java11-openjdk.desktop', 'xdvi.desktop', 'fcitx-configtool.desktop', 'fcitx.desktop', 'xterm.desktop', 'uxterm.desktop', 'arandr.desktop', 'ventoy.desktop']
 runner-position='Centered'
 search-entry-border-radius=(true, 25)
 
