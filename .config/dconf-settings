@@ -37,7 +37,7 @@ panel-id='timer'
 size=(870, 690)
 
 [org/gnome/control-center]
-last-panel='display'
+last-panel='wifi'
 window-state=(360, 518, true)
 
 [org/gnome/desktop/app-folders]
@@ -76,12 +76,12 @@ cursor-theme='Breeze_Hacked'
 enable-hot-corners=false
 font-antialiasing='grayscale'
 font-hinting='slight'
-gtk-theme='Matcha-dark-sea'
+gtk-theme='Matcha-dark-aliz'
 icon-theme='Papirus-Dark'
 show-battery-percentage=true
 
 [org/gnome/desktop/notifications]
-application-children=['jetbrains-idea', 'org-gnome-console', 'org-gnome-epiphany', 'vesktop', 'org-keepassxc-keepassxc', 'org-gnome-terminal', 'firefox', 'org-mozilla-thunderbird', 'libreoffice-writer', 'gnome-power-panel', 'org-gnome-clocks', 'gnome-network-panel']
+application-children=['jetbrains-idea', 'org-gnome-console', 'org-gnome-epiphany', 'vesktop', 'org-keepassxc-keepassxc', 'org-gnome-terminal', 'firefox', 'org-mozilla-thunderbird', 'libreoffice-writer', 'gnome-power-panel', 'org-gnome-clocks', 'gnome-network-panel', 'org-gnome-settings', 'org-gnome-shell-portalhelper']
 
 [org/gnome/desktop/notifications/application/com-github-hluk-copyq]
 application-id='com.github.hluk.copyq.desktop'
@@ -109,6 +109,12 @@ application-id='org.gnome.Console.desktop'
 
 [org/gnome/desktop/notifications/application/org-gnome-epiphany]
 application-id='org.gnome.Epiphany.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-settings]
+application-id='org.gnome.Settings.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-shell-portalhelper]
+application-id='org.gnome.Shell.PortalHelper.desktop'
 
 [org/gnome/desktop/notifications/application/org-gnome-terminal]
 application-id='org.gnome.Terminal.desktop'
@@ -166,7 +172,11 @@ migrated-gtk-settings=true
 search-filter-time-type='last_modified'
 
 [org/gnome/nautilus/window-state]
-initial-size=(890, 550)
+initial-size=(890, 508)
+
+[org/gnome/nm-applet/eap/6ce1400a-1d9f-4f6e-b984-0beaadb923fa]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
 
 [org/gnome/portal/filechooser/google-chrome]
 last-folder-path='/home/umut/Drive/Uni/Bielefeld'
@@ -254,7 +264,7 @@ preferred-monitor-by-connector='DP-2-1'
 show-toggle-tiling=['<Alt>Delete']
 
 [org/gnome/shell/extensions/user-theme]
-name='Matcha-dark-sea'
+name='Matcha-dark-aliz'
 
 [org/gnome/shell/extensions/vitals]
 hide-icons=false
@@ -304,5 +314,5 @@ sort-column='name'
 sort-directories-first=false
 sort-order='ascending'
 type-format='category'
-window-position=(358, 149)
+window-position=(358, 89)
 window-size=(1203, 889)
