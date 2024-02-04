@@ -264,7 +264,7 @@ show-screenshot-ui=['<Shift><Super>s']
 locations=@av []
 
 [org/gnome/software]
-check-timestamp=int64 1706951857
+check-timestamp=int64 1707035503
 first-run=false
 flatpak-purge-timestamp=int64 1706955397
 
