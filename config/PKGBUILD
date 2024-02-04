@@ -42,6 +42,7 @@ depends=(
     feh
     firefox
     flameshot
+    foundry-nuke
     fzf
     fzf-tab-git
     gamemode
@@ -200,6 +201,7 @@ depends=(
     texstudio
     thunar
     thunderbird
+    tmux
     torbrowser-launcher
     totem
     tracker3-miners
@@ -257,6 +259,7 @@ depends=(
     xorg-xwud
     xss-lock-session
     yelp
+    ytmdesktop-git
     zip
     zoom
     zsh
