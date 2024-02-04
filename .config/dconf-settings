@@ -68,7 +68,7 @@ translate=true
 show-weekdate=true
 
 [org/gnome/desktop/input-sources]
-mru-sources=[('xkb', 'de'), ('xkb', 'us'), ('ibus', 'mozc-jp')]
+mru-sources=[('xkb', 'us'), ('xkb', 'de'), ('ibus', 'mozc-jp')]
 per-window=false
 sources=[('xkb', 'us'), ('xkb', 'de'), ('ibus', 'mozc-jp')]
 xkb-options=['terminate:ctrl_alt_bksp']
