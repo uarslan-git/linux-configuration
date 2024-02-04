@@ -1,6 +1,0 @@
-[Unit]
-Description=i3
-After=graphical-session-pre.target
-BindsTo=graphical-session-pre.target
-Wants=feh.service
-Wants=xss-lock.service
