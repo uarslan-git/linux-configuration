@@ -1,0 +1,6 @@
+[Unit]
+Description=Grive Service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/grive -p ${HOME}/Drive
