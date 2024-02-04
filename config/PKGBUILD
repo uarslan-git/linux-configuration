@@ -209,6 +209,7 @@ depends=(
     ufw
     unrar
     unzip
+    ventoy-bin
     vesktop-bin
     vlc
     volumeicon
