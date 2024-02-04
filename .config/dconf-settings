@@ -63,7 +63,7 @@ translate=true
 show-weekdate=true
 
 [org/gnome/desktop/input-sources]
-mru-sources=[('xkb', 'us'), ('xkb', 'de'), ('ibus', 'mozc-jp')]
+mru-sources=[('xkb', 'de'), ('xkb', 'us'), ('ibus', 'mozc-jp')]
 per-window=false
 sources=[('xkb', 'us'), ('xkb', 'de'), ('ibus', 'mozc-jp')]
 xkb-options=['terminate:ctrl_alt_bksp']
@@ -81,13 +81,16 @@ icon-theme='Papirus-Dark'
 show-battery-percentage=true
 
 [org/gnome/desktop/notifications]
-application-children=['jetbrains-idea', 'org-gnome-console', 'org-gnome-epiphany', 'vesktop', 'org-keepassxc-keepassxc', 'org-gnome-terminal', 'firefox', 'org-mozilla-thunderbird', 'libreoffice-writer', 'gnome-power-panel', 'org-gnome-clocks']
+application-children=['jetbrains-idea', 'org-gnome-console', 'org-gnome-epiphany', 'vesktop', 'org-keepassxc-keepassxc', 'org-gnome-terminal', 'firefox', 'org-mozilla-thunderbird', 'libreoffice-writer', 'gnome-power-panel', 'org-gnome-clocks', 'gnome-network-panel']
 
 [org/gnome/desktop/notifications/application/com-github-hluk-copyq]
 application-id='com.github.hluk.copyq.desktop'
 
 [org/gnome/desktop/notifications/application/firefox]
 application-id='firefox.desktop'
+
+[org/gnome/desktop/notifications/application/gnome-network-panel]
+application-id='gnome-network-panel.desktop'
 
 [org/gnome/desktop/notifications/application/gnome-power-panel]
 application-id='gnome-power-panel.desktop'
@@ -301,5 +304,5 @@ sort-column='name'
 sort-directories-first=false
 sort-order='ascending'
 type-format='category'
-window-position=(166, 29)
+window-position=(358, 149)
 window-size=(1203, 889)
