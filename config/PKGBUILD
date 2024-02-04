@@ -286,18 +286,9 @@ depends=(
 	  	chsh -s /usr/bin/zsh
 	  fi
   }
-  groups() {
-	sudo usermod -aG docker umut
-  }
-
-  services() {
-	sudo systemctl enable gdm --now
-	sudo systemctl enable docker --now
-  }
 
   paru
   zsh
-  groups
 
 package() {
    tar -xf rootfs.tar -C "$pkgdir" --overwrite
