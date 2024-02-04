@@ -3,7 +3,7 @@ Description=15 seconds timer to sync
 
 [Timer]
 OnBootSec=2min
-OnUnitActiveSec=30sec
+OnUnitInactiveSync=15sec
 Unit=grive.service
 
 [Install]
