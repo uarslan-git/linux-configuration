@@ -1,0 +1,5 @@
+[desktop/ibus/general]
+engines-order=['xkb:us::eng', 'xkb:us:euro:eng']
+preload-engines=['xkb:de:us:deu', 'mozc-jp']
+use-system-keyboard-layout=true
+version='1.5.30'
