@@ -3,3 +3,17 @@ engines-order=['xkb:us::eng', 'xkb:us:euro:eng']
 preload-engines=['xkb:de:us:deu', 'mozc-jp']
 use-system-keyboard-layout=true
 version='1.5.30'
+
+[org/gtk/settings/file-chooser]
+date-format='regular'
+location-mode='path-bar'
+show-hidden=false
+show-size-column=true
+show-type-column=true
+sidebar-width=148
+sort-column='name'
+sort-directories-first=false
+sort-order='ascending'
+type-format='category'
+window-position=(770, 356)
+window-size=(1018, 742)
