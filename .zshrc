@@ -11,7 +11,7 @@ ZSH_THEME="../../zsh-theme-powerlevel10k/powerlevel10k"
 plugins=(
 	git direnv git-auto-fetch
 	gitfast
-	fd
+	#fd
 	fzf
 	zsh-syntax-highlighting
 	zsh-autosuggestions
