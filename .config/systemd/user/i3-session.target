@@ -1,6 +1,6 @@
 [Unit]
 Description=i3
-After=basic.target
+After=default.target
 BindsTo=graphical-session.target
 #Wants=feh.service
 #Wants=graphical-session-pre.target
