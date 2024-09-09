@@ -1,0 +1,15 @@
+[Unit]
+Description=Picom
+Requires=i3-session.target
+
+[Service]
+Type=exec
+ExecStart=/usr/bin/picom
+ExecReload=/usr/bin/kill -s SIGUSR1 $MAINPID
+Restart=always
+
+ProtectSystem=true
+NoNewPrivileges=true
+ProtectKernelTunables=true
+ProtectControlGroups=true
+RestrictNamespaces=true
