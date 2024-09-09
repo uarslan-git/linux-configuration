@@ -24,7 +24,7 @@ general {
                    format_down = "󰖪"
            }
 
-		   ethernet lo {
+           ethernet lo {
                    format_up = "󰈁 %ip (%speed)"
                    format_down = "󰈂"
            }
