@@ -49,7 +49,6 @@ depends=(
     git-secret
     google-chrome
     gradle
-    grive
     gst-plugin-pipewire
     gvfs
     gvfs-afc
@@ -173,8 +172,6 @@ depends=(
     zsh-you-should-use
   )
   #endPackages
-
-  if lscpu | rg intel &>/dev/null; then depends+=(prime nvidia-prime blueman bluez-utils); fi
 
   # Functions
   paru() {
