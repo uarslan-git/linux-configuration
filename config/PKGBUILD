@@ -16,7 +16,6 @@ sha512sums=('SKIP')
 depends=(
     amd-ucode
     anki-bin
-    baobab
     base
     base-devel
     blender
@@ -26,73 +25,30 @@ depends=(
     btop
     calibre
     copyq
-    cronie
     curl
     darktable
     davinci-resolve-studio
-    displaylink
     docker
     docker-compose
     dunst
     efibootmgr
-    epiphany
-    evdi
     evince
     fd
     feh
     firefox
     flameshot
-    foundry-nuke
     fzf
     fzf-tab-git
     gamemode
     gdb
-    gdm
     ghidra
     gimp
     git
     git-delta
     github-cli
     git-secret
-    gnome-backgrounds
-    gnome-calculator
-    gnome-calendar
-    gnome-characters
-    gnome-clocks
-    gnome-color-manager
-    gnome-connections
-    gnome-console
-    gnome-contacts
-    gnome-control-center-x11-scaling
-    gnome-disk-utility
-    gnome-font-viewer
-    gnome-keyring
-    gnome-logs
-    gnome-maps
-    gnome-menus
-    gnome-music
-    gnome-remote-desktop
-    gnome-session
-    gnome-settings-daemon
-    gnome-shell
-    gnome-shell-extension-arc-menu
-    gnome-shell-extension-dash-to-dock
-    gnome-shell-extension-gtile
-    gnome-shell-extensions
-    gnome-shell-extension-tray-icons-reloaded
-    gnome-shell-extension-vitals
-    gnome-software
-    gnome-system-monitor
-    gnome-terminal
-    gnome-text-editor
-    gnome-tour
-    gnome-tweaks
-    gnome-user-docs
-    gnome-user-share
-    gnome-weather
     google-chrome
     gradle
-    grilo-plugins
     grive
     gst-plugin-pipewire
     gvfs
@@ -110,7 +66,6 @@ depends=(
     intellij-idea-ultimate-edition
     intellij-idea-ultimate-edition-jre
     intel-ucode
-    jdk-openjdk
     jdownloader2
     k9s
     kdeconnect
@@ -124,18 +79,15 @@ depends=(
     linux-firmware
     linux-zen
     linux-zen-headers
-    loupe
     lutris
     lxappearance
     ly
-    malcontent
     man-db
     man-pages
     matcha-gtk-theme
     maven
     mozc
     mutter-x11-scaling
-    nautilus
     nerd-fonts-complete-mono-glyphs
     networkmanager
     network-manager-applet
@@ -143,7 +95,7 @@ depends=(
     nodejs
     npm
     ntfs-3g
-    nvidia-dkms
+    nvidia
     nvidia-settings
     nvim-packer-git
     nvtop
@@ -151,7 +103,6 @@ depends=(
     oh-my-zsh-git
     opencl-nvidia
     openssh
-    orca
     papirus-icon-theme
     paru
     paruz
@@ -163,19 +114,14 @@ depends=(
     pycharm-professional
     python
     python-virtualenv
+    kitty
     qalculate-gtk
     ranger
     ripgrep
     rofi
-    rygel
-    simple-scan
-    slack-desktop
     snapshot
-    sof-firmware
     steam
-    sushi
     systemd
-    tecla
     texlive-basic
     texlive-bibtexextra
     texlive-binextra
@@ -203,8 +149,6 @@ depends=(
     thunderbird
     tmux
     torbrowser-launcher
-    totem
-    tracker3-miners
     tree
     ufw
     unrar
@@ -217,49 +161,7 @@ depends=(
     webstorm-jre
     which
     winetricks
-    wireplumber
-    xclip
-    xdg-desktop-portal-gnome
-    xdg-user-dirs-gtk
-    xf86-video-vesa
-    xorg-bdftopcf
-    xorg-docs
-    xorg-fonts-100dpi
-    xorg-fonts-75dpi
-    xorg-font-util
-    xorg-iceauth
-    xorg-server
-    xorg-server-devel
-    xorg-server-xephyr
-    xorg-server-xnest
-    xorg-server-xvfb
-    xorg-sessreg
-    xorg-smproxy
-    xorg-x11perf
-    xorg-xbacklight
-    xorg-xcmsdb
-    xorg-xcursorgen
-    xorg-xdriinfo
-    xorg-xev
-    xorg-xgamma
-    xorg-xinit
-    xorg-xinput
-    xorg-xkbevd
-    xorg-xkbprint
-    xorg-xkbutils
-    xorg-xkill
-    xorg-xlsatoms
-    xorg-xlsclients
-    xorg-xpr
-    xorg-xprop
-    xorg-xrefresh
-    xorg-xsetroot
-    xorg-xvinfo
-    xorg-xwd
-    xorg-xwininfo
-    xorg-xwud
     xss-lock-session
-    yelp
     ytmdesktop-git
     zip
     zoom
