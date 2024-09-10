@@ -15,7 +15,9 @@ sha512sums=('SKIP')
 #startPackages
 depends=(
     amd-ucode
+    ani-cli
     anki-bin
+    autorandr
     base
     base-devel
     blender
@@ -41,10 +43,12 @@ depends=(
     fzf-tab-git
     gamemode
     gdb
+    gdm
     ghidra
     gimp
     git
     git-delta
+    git-filter-repo
     github-cli
     git-secret
     google-chrome
@@ -59,6 +63,10 @@ depends=(
     gvfs-nfs
     gvfs-smb
     gzip
+    i3blocks
+    i3lock
+    i3status
+    i3-wm
     ibus-mozc
     imhex-bin
     inkscape
@@ -69,15 +77,19 @@ depends=(
     k9s
     kdeconnect
     keepassxc
+    kitty
     krita
     lib32-nvidia-utils
     lib32-pipewire
     lib32-pipewire-jack
     libpulse
     libreoffice-still
+    lightdm
+    linux
     linux-firmware
     linux-zen
     linux-zen-headers
+    localsend-bin
     lutris
     lxappearance
     ly
@@ -85,8 +97,11 @@ depends=(
     man-pages
     matcha-gtk-theme
     maven
+    mov-cli
     mozc
     mutter-x11-scaling
+    neofetch
+    neovim
     nerd-fonts-complete-mono-glyphs
     networkmanager
     network-manager-applet
@@ -104,7 +119,12 @@ depends=(
     openssh
     papirus-icon-theme
     paru
+    paru-debug
     paruz
+    pavucontrol
+    pcsx2-git
+    picom
+    pince-git
     pipewire
     pipewire-alsa
     pipewire-jack
@@ -113,9 +133,10 @@ depends=(
     pycharm-professional
     python
     python-virtualenv
-    kitty
     qalculate-gtk
+    qbittorrent
     ranger
+    rclone
     ripgrep
     rofi
     snapshot
@@ -149,17 +170,55 @@ depends=(
     tmux
     torbrowser-launcher
     tree
+    ttf-iosevka-nerd
     ufw
     unrar
     unzip
     ventoy-bin
     vesktop-bin
+    vim
     vlc
     volumeicon
     webstorm
     webstorm-jre
     which
     winetricks
+    wireplumber
+    xclip
+    xf86-video-vesa
+    xorg-bdftopcf
+    xorg-docs
+    xorg-fonts-100dpi
+    xorg-fonts-75dpi
+    xorg-font-util
+    xorg-iceauth
+    xorg-server-devel
+    xorg-server-xephyr
+    xorg-server-xnest
+    xorg-server-xvfb
+    xorg-sessreg
+    xorg-smproxy
+    xorg-x11perf
+    xorg-xauth
+    xorg-xbacklight
+    xorg-xcmsdb
+    xorg-xdriinfo
+    xorg-xev
+    xorg-xgamma
+    xorg-xhost
+    xorg-xinput
+    xorg-xkbevd
+    xorg-xkbutils
+    xorg-xkill
+    xorg-xlsatoms
+    xorg-xlsclients
+    xorg-xpr
+    xorg-xrefresh
+    xorg-xsetroot
+    xorg-xvinfo
+    xorg-xwd
+    xorg-xwininfo
+    xorg-xwud
     xss-lock-session
     ytmdesktop-git
     zip
