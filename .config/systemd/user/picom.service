@@ -1,9 +1,10 @@
 [Unit]
 Description=Picom
 Requires=i3-session.target
+After=i3-session.target
 
 [Service]
-Type=exec
+Type=oneshot
 ExecStart=/usr/bin/picom
 ExecReload=/usr/bin/kill -s SIGUSR1 $MAINPID
 Restart=always

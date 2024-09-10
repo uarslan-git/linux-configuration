@@ -4,7 +4,7 @@ Description=15 seconds timer to sync
 [Timer]
 OnBootSec=2min
 OnUnitInactiveSync=15sec
-Unit=grive.service
+Unit=drive.service
 
 [Install]
 WantedBy=basic.target
