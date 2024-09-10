@@ -1,0 +1,9 @@
+[Unit]
+Description=Feh
+Requires=i3-session.target
+
+[Service]
+Type=exec
+ExecStart=/usr/bin/feh --bg-scale /home/user/.config/background.jpg
+ExecReload=/usr/bin/kill -s SIGUSR1 $MAINPID
+Restart=always

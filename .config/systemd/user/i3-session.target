@@ -1,9 +1,12 @@
 [Unit]
 Description=i3
-After=default.target
+After=graphical-session-pre.target
 BindsTo=graphical-session.target
-#Wants=feh.service
+Wants=feh.service
 #Wants=graphical-session-pre.target
 Wants=picom.service
 #Wants=restart-service@dunst.path
 #Wants=xss-lock.service
+
+[Install]
+WantedBy=default.target
