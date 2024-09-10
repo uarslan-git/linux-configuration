@@ -1,0 +1,6 @@
+[Unit]
+Description=Google Drive Mount Service
+
+[Service]
+Type=oneshot
+ExecStart=sh ${HOME}/drive.sh
