@@ -276,3 +276,4 @@ alias update="dconf-load $HOME/.config/dconf-settings && pushd ~/config; PACMAN=
 alias vi="nvim"
 alias vim="nvim"
 alias nc="--noconfirm"
+alias xclip="xclip -sel c"
