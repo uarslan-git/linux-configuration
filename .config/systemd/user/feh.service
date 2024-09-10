@@ -4,7 +4,13 @@ After=i3-session.target
 Requires=i3-session.target
 
 [Service]
-Type=exec
+Type=oneshot
 ExecStart=/usr/bin/feh --bg-scale ${HOME}/.config/background.jpg
-ExecReload=/usr/bin/feh --bg-scale ${HOME}/.config/background.jpg
-Restart=always
+#ExecReload=/usr/bin/feh --bg-scale ${HOME}/.config/background.jpg
+#Restart=always
+
+ProtectSystem=true
+NoNewPrivileges=true
+ProtectKernelTunables=true
+ProtectControlGroups=true
+RestrictNamespaces=true

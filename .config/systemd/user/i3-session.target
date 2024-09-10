@@ -3,7 +3,7 @@ Description=i3
 After=graphical-session-pre.target
 BindsTo=graphical-session.target
 Wants=feh.service
-Wants=picom.service
+#Wants=picom.service
 #Wants=xss-lock.service
 
 [Install]
