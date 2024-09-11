@@ -7,4 +7,4 @@ Wants=picom.service
 #Wants=xss-lock.service
 
 [Install]
-WantedBy=default.target
+WantedBy=graphical-session.target

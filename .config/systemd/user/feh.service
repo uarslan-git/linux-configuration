@@ -1,13 +1,14 @@
 [Unit]
 Description=feh
-After=i3-session.target
 Requires=i3-session.target
+After=i3-session.target
 
 [Service]
 Type=oneshot
-ExecStart=/usr/bin/feh --bg-scale ${HOME}/.config/background.jpg
-#ExecReload=/usr/bin/feh --bg-scale ${HOME}/.config/background.jpg
-#Restart=always
+ExecStart=/usr/bin/feh --bg-fill /home/user/.config/background.jpg
+ExecReload=/usr/bin/feh --bg-fill /home/user/.config/background.jpg
+ExecStop=/usr/bin/feh --bg-fill /home/user/.config/background.jpg
+RemainAfterExit=true
 
 ProtectSystem=true
 NoNewPrivileges=true
