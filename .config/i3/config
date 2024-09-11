@@ -9,7 +9,7 @@
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
-set $mod Mod1
+set $mod Mod4
 
 # class                 border  backgr. text    indicator child_border
 client.focused          #FE116C #285577 #ffffff #2e9ef4   #FE116C
