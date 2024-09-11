@@ -1,3 +1,8 @@
+[desktop/ibus/general]
+preload-engines=['xkb:de:us:deu']
+use-system-keyboard-layout=false
+version='1.5.30'
+
 [org/gtk/settings/file-chooser]
 date-format='regular'
 location-mode='path-bar'
