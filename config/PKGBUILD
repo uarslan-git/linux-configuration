@@ -99,7 +99,6 @@ depends=(
     maven
     mov-cli
     mozc
-    mutter-x11-scaling
     neofetch
     neovim
     nerd-fonts-complete-mono-glyphs
