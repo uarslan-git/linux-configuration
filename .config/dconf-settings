@@ -1,6 +1,8 @@
 [com/usebottles/bottles]
 show-sandbox-warning=false
 startup-view='page_list'
+window-height=1063
+window-width=1920
 
 [org/gnome/desktop/app-folders]
 folder-children=['Utilities', 'YaST', 'Pardus']
@@ -44,7 +46,7 @@ welcome-dialog-last-shown-version='46.5'
 [org/gtk/gtk4/settings/file-chooser]
 date-format='regular'
 location-mode='path-bar'
-show-hidden=false
+show-hidden=true
 sidebar-width=140
 sort-column='name'
 sort-directories-first=true
@@ -64,5 +66,5 @@ sort-column='name'
 sort-directories-first=false
 sort-order='ascending'
 type-format='category'
-window-position=(2918, 85)
+window-position=(2919, 87)
 window-size=(1203, 925)
