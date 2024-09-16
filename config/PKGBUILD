@@ -118,7 +118,6 @@ depends=(
     openssh
     papirus-icon-theme
     paru
-    paru-debug
     paruz
     pavucontrol
     pcsx2-git
