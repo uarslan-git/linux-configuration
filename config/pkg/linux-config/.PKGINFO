@@ -6,7 +6,7 @@ xdata = pkgtype=pkg
 pkgver = 0.1.0-1
 pkgdesc = linux config
 url = https://github.com/uarslan-git/linux-config
-builddate = 1726409087
+builddate = 1726490794
 packager = Unknown Packager
 size = 4824
 arch = x86_64
@@ -115,7 +115,6 @@ depend = opencl-nvidia
 depend = openssh
 depend = papirus-icon-theme
 depend = paru
-depend = paru-debug
 depend = paruz
 depend = pavucontrol
 depend = pcsx2-git

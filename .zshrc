@@ -276,4 +276,6 @@ alias update="pushd ~/config; PACMAN='paru' PACMAN_AUTH='eval' makepkg -fsi; sys
 alias vi="nvim"
 alias vim="nvim"
 alias nc="--noconfirm"
+alias zshrc="vim ~/.zshrc"
+alias rs="systemctl --user restart i3-session.target"
 alias xclip="xclip -sel c"
