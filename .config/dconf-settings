@@ -2,8 +2,8 @@
 dark-theme=true
 show-sandbox-warning=false
 startup-view='page_list'
-window-height=1023
-window-width=935
+window-height=1063
+window-width=1920
 
 [desktop/ibus/general]
 preload-engines=['xkb:de:us:deu']
@@ -13,11 +13,11 @@ version='1.5.30'
 [org/gtk/gtk4/settings/file-chooser]
 date-format='regular'
 location-mode='path-bar'
-show-hidden=false
+show-hidden=true
 sidebar-width=140
 sort-column='name'
 sort-directories-first=true
-sort-order='descending'
+sort-order='ascending'
 type-format='category'
 view-type='list'
 window-size=(859, 384)
@@ -33,5 +33,5 @@ sort-column='name'
 sort-directories-first=false
 sort-order='ascending'
 type-format='category'
-window-position=(3277, 87)
+window-position=(2919, 87)
 window-size=(1203, 925)
