@@ -32,6 +32,8 @@ depends=(
     davinci-resolve-studio
     docker
     docker-compose
+    dracula-gtk-theme-full
+    dracula-icons-git
     dunst
     efibootmgr
     evince
@@ -85,6 +87,7 @@ depends=(
     libpulse
     libreoffice-still
     lightdm
+    lightdm-gtk-greeter
     linux
     linux-firmware
     linux-zen
@@ -118,6 +121,8 @@ depends=(
     openssh
     papirus-icon-theme
     paru
+    paru-git
+    paru-git-debug
     paruz
     pavucontrol
     pcsx2-git
@@ -175,6 +180,7 @@ depends=(
     ventoy-bin
     vesktop-bin
     vim
+    visual-studio-code-bin
     vlc
     volumeicon
     webstorm
