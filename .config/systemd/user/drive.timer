@@ -3,7 +3,7 @@ Description=15 seconds timer to sync
 
 [Timer]
 OnBootSec=2min
-OnActiveSec=10min
+OnActiveSec=3min
 OnUnitInactiveSync=15sec
 Unit=drive.service
 
