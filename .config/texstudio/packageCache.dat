@@ -45,6 +45,13 @@ BOONDOX-ds
 BOONDOX-frak
 BOONDOX-uprscr
 Baskervaldx
+Beautybook-CN
+Beautybook-EN
+Beautybook-bottompage
+Beautybook-cover-birkar
+Beautybook-cover-cn
+Beautybook-cover-en
+Beautybook-cover-enfig
 Biochemistry-colors
 CV
 Carrickc
@@ -56,6 +63,7 @@ CondiTeXt
 CooperHewitt
 CormorantGaramond
 CoverPage
+CreationBoites
 CrimsonPro
 DPcircling
 DejaVuSans
@@ -73,6 +81,7 @@ EileenBl
 Elzevier
 FUbeamer
 FUpowerdot
+FenetreCas
 FiraMono
 FiraSans
 GS1
@@ -145,17 +154,21 @@ PTSansCaption
 PTSansNarrow
 PTSerif
 PTSerifCaption
+PapierGurvan
 PixelArtTikz
 PlayfairDisplay
 PoiretOne
 ProTex
+ProfMaquette
 ProjLib
+Q-and-A
 ReadableCV
 RecipeBook
 ResolSysteme
 Romantik
 Rosario
 Rothdn
+RoueQuestions
 Royal
 SASnRdisplay
 SIunits
@@ -164,6 +177,7 @@ Sanremo
 Scrabble
 ScratchX
 Starburst
+SympyCalc
 TOPletter
 Tabbing
 TangramTikz
@@ -171,6 +185,7 @@ TeXProject
 TheanoDidot
 TheanoModern
 TheanoOldStyle
+TrivialPursuit
 Typocaps
 UF-chessboard-documentation
 UKenglish
@@ -232,6 +247,7 @@ addfont
 addliga
 addlines
 addrset
+addtoluatexpath
 adfarrows
 adfathesis
 adfbullets
@@ -242,11 +258,13 @@ adjmulticol
 adjustbox
 adtrees
 advdate
+advice
 ae
 aecompl
 aer
 aertt
 aesupp
+affilauthor
 afoot
 afparticle
 afrikaans
@@ -336,6 +354,7 @@ altfont
 altsubsup
 altverse
 american
+amnestyreport
 ams-mdbch
 amsaddr
 amsart
@@ -399,15 +418,18 @@ arev
 arevmath
 arevtext
 argetabelle
+argumentation
 arimo
 array
 array-2016-10-06
 array-2020-02-10
+array-2023-11-01
 arraycols
 arrayjob
 arrayjobx
 arraysort
 arsclassica
+arsenal
 article
 articleingud
 articoletteracdp
@@ -555,6 +577,7 @@ beamercolorthemeSaintPetersburg
 beamercolorthemeSimpleDarkBlue
 beamercolorthemeSimplePlus
 beamercolorthemeTUDa
+beamercolorthemeTUDa2023
 beamercolorthemeUR
 beamercolorthemealbatross
 beamercolorthemebeaver
@@ -578,11 +601,13 @@ beamercolorthemelily
 beamercolorthememagpie
 beamercolorthememetropolis
 beamercolorthememetropolis-highcontrast
+beamercolorthememoloch
 beamercolorthememonarca
 beamercolorthemeorchid
 beamercolorthemeowl
 beamercolorthemepenn
 beamercolorthemepureminimalistic
+beamercolorthemerainbow
 beamercolorthemerose
 beamercolorthemeseagull
 beamercolorthemeseahorse
@@ -605,11 +630,13 @@ beamerfontthemeSaintPetersburg
 beamerfontthemeSimpleDarkBlue
 beamerfontthemeSimplePlus
 beamerfontthemeTUDa
+beamerfontthemeTUDa2023
 beamerfontthemeUR
 beamerfontthemedefault
 beamerfontthemefocus
 beamerfontthemelalic
 beamerfontthememetropolis
+beamerfontthememoloch
 beamerfontthemeprofessionalfonts
 beamerfontthemepureminimalistic
 beamerfontthemeserif
@@ -624,6 +651,8 @@ beamerinnerthemeBFH
 beamerinnerthemeCuerna
 beamerinnerthemeSimplePlus
 beamerinnerthemeTUDa
+beamerinnerthemeTUDa2008
+beamerinnerthemeTUDa2023
 beamerinnerthemecircles
 beamerinnerthemedefault
 beamerinnerthemefocus
@@ -631,6 +660,7 @@ beamerinnerthemehitszbeamer
 beamerinnerthemeinmargin
 beamerinnerthemelalic
 beamerinnerthememetropolis
+beamerinnerthememoloch
 beamerinnerthemepureminimalistic
 beamerinnerthemerectangles
 beamerinnerthemerounded
@@ -649,6 +679,7 @@ beamerouterthemeDetlevCM
 beamerouterthemeNPBT_FOM
 beamerouterthemeNPBT_FOM_ifes
 beamerouterthemeTUDa
+beamerouterthemeTUDa2023
 beamerouterthemeUR
 beamerouterthemedefault
 beamerouterthemefocus
@@ -659,6 +690,7 @@ beamerouterthemeinfolines
 beamerouterthemelalic
 beamerouterthememetropolis
 beamerouterthememiniframes
+beamerouterthememoloch
 beamerouterthemepureminimalistic
 beamerouterthemeshadow
 beamerouterthemesidebar
@@ -727,6 +759,8 @@ beamerthemeSingapore
 beamerthemeSzeged
 beamerthemeTUDa
 beamerthemeTUDa-mecheng
+beamerthemeTUDa2008
+beamerthemeTUDa2023
 beamerthemeTorinoTh
 beamerthemeUR
 beamerthemeVerona
@@ -734,8 +768,15 @@ beamerthemeWarsaw
 beamerthemeZH
 beamerthemebars
 beamerthemeboxes
+beamerthemecbernoulli
+beamerthemecdirichlet
+beamerthemecfermat
+beamerthemecgauss
+beamerthemeclagrange
 beamerthemeclassic
+beamerthemecmobius
 beamerthemecompatibility
+beamerthemecriemann
 beamerthemedefault
 beamerthemeepyt
 beamerthemefocus
@@ -744,6 +785,7 @@ beamerthemehohenheim
 beamerthemelalic
 beamerthemelined
 beamerthememetropolis
+beamerthememoloch
 beamerthemenirma
 beamerthemeplain
 beamerthemepureminimalistic
@@ -757,6 +799,7 @@ beamerthemetrigon
 beamerthemeuantwerpen
 bearwear
 beaulivre
+beautynote
 begriff
 begriff-bguq
 beilstein
@@ -846,11 +889,8 @@ biokey
 biolinum
 biolist
 biotex
-bitart
 bitbeamer
-bitbook
 bitelist
-bitgrad
 bithesis
 bitpattern
 bitreport
@@ -936,7 +976,6 @@ british
 bropd
 btxdockit
 bubblesort
-buctcover
 buctthesis
 bugtracker
 bulgarian
@@ -966,6 +1005,7 @@ caesar_book
 caladea
 calc
 calcage
+calcfrac
 calctab
 calculation
 calculator
@@ -1084,6 +1124,7 @@ chemcono
 chemexec
 chemfig
 chemformula
+chemformula-ru
 chemgreek
 chemist
 chemmacros
@@ -1124,6 +1165,7 @@ chronology
 chronosys
 chs-physics-report
 chscite
+cidarticle
 cinzel
 circ
 circledsteps
@@ -1139,13 +1181,20 @@ circuitikz-1.0
 circuitikz-1.1.2
 circuitikz-1.2.7
 circuitikz-1.4.6
+circularglyphs
 citation-style-language
+citation-style-language-bib
+citation-style-language-cite
+citation-style-language-compatible
+citation-style-language-data
+citation-style-language-init
 cite
 citeall
 citeref
 cje
 cjenatbib
 cjeupmath
+cjs-rcs-article
 clara
 classics
 classicthesis
@@ -1156,6 +1205,8 @@ classpack
 cleanthesis
 clefval
 cleveref
+cleveref-forward
+cleveref-usedon
 clicks
 clipboard
 clistmap
@@ -1197,13 +1248,16 @@ cntperchap
 cochineal
 codeanatomy
 codebox
+codedescribe
 codedoc
 codehigh
+codelisting
 codep
 codepage
 codesection
 coelacanth
 coffeestains
+collargs
 collcell
 collect
 collectbox
@@ -1217,6 +1271,7 @@ colorart
 colorbook
 colordoc
 colordvi
+coloredbelts
 colorframed
 colorinfo
 coloring
@@ -1262,6 +1317,7 @@ conteq
 continue
 contour
 contracard
+contract
 conv-xkv
 cooking
 cooking-units
@@ -1280,6 +1336,7 @@ copyrightbox
 correctmathalign
 coseoul
 count1to
+counterz
 countriesofeurope
 counttexruns
 courier
@@ -1325,6 +1382,7 @@ cuprum
 currency
 currfile
 currfile-abspath
+curriculum-vitae
 currvita
 curve
 curve2e
@@ -1332,6 +1390,7 @@ curve2e-v161
 curves
 curvesls
 customdice
+customenvs
 cuted
 cutwin
 cv4tw
@@ -1394,8 +1453,10 @@ ddphonism
 debate
 deccomma
 decimal
+decimalcomma
 decision-table
 decorule
+defoldfonts
 defpattern
 dejavu
 dejavu-otf
@@ -1423,6 +1484,7 @@ dialog
 dialogue
 dichokey
 dictsym
+didec
 diffcoeff
 diffcoeff4
 digiconfigs
@@ -1457,7 +1519,6 @@ docmute
 docshots
 docstrip-luacode
 doctools
-document-structure
 documentation
 docutils
 doi
@@ -1562,6 +1623,7 @@ eepicemu
 efbox
 egameps
 egothic
+egpeirce
 egplot
 ehhline
 eiad
@@ -1586,6 +1648,7 @@ elpreswhitebluescheme
 elpreswhiteredscheme
 elpreswhitetealscheme
 elsarticle
+elteiktdk
 elteikthesis
 elzcards
 emarks
@@ -1594,8 +1657,10 @@ embedfile
 embrac
 emf
 emisa
+emo
 emoji
 emojicite
+emotion
 emp
 empheq
 emptypage
@@ -1702,7 +1767,6 @@ everypage
 everypage-1x
 everysel
 everysel-2011-10-28
-everysel-ltx
 everyshi
 everyshi-2001-05-15
 exaccent
@@ -1713,6 +1777,7 @@ exam-randomizechoices
 examdesign
 example
 examplep
+examz
 exceltex
 excludeonly
 exercise
@@ -1725,6 +1790,7 @@ exp-testopt
 expdlist
 expex
 expex-acro
+expex-glossonly
 expkv
 expkv-cs
 expkv-def
@@ -1752,6 +1818,8 @@ extsizes
 facsimile
 factura
 facture-belge-simple-sans-tva
+fadingimage
+fail-fast
 faktor
 familytree
 fancybox
@@ -1827,6 +1895,7 @@ finstrut
 firamath-otf
 fistrum
 fitbox
+fitch
 fithesis
 fithesis-base
 fithesis-mu-base
@@ -1872,10 +1941,12 @@ flipbook
 flippdf
 flippdf-1x
 float
+floatbytocbasic
 floatflt
 floatpag
 floatpagestyle
 floatrow
+floatrowbytocbasic
 flowchart
 flower
 flowfram
@@ -1909,6 +1980,7 @@ fontdoc
 fontenc
 fontinst
 fontmfizz
+fontscale
 fontsetup
 fontsize
 fontsmpl
@@ -1964,25 +2036,10 @@ frame
 framed
 francais
 frcursive
+freealign
 frege
 frimurer
 froufrou
-fspconcrete
-fspdefault
-fspebgaramondot
-fspfiraot
-fspgfsartemisiaot
-fspgfsdidotclassicot
-fspgfsdidotot
-fspgfsneohellenicot
-fspkerkisot
-fspneoeulerot
-fspolddefault
-fspoldstandard
-fspstixtwoot
-fsptalos
-fsptimesot
-fspxcharter
 ftc-notebook
 ftcap
 ftnright
@@ -2031,7 +2088,9 @@ gbt7714
 gcard
 gchords
 gcite
+gelasio
 gender
+genealogy-profiles
 genealogytree
 genmpage
 gensymb
@@ -2064,6 +2123,7 @@ ginpenc
 gitexinfo
 gitfile-info
 gitinfo
+gitinfo-lua
 gitinfo2
 gitlog
 gitsetinfo
@@ -2076,6 +2136,7 @@ gloss_add
 glossaries
 glossaries-2020-03-19
 glossaries-2021-11-01
+glossaries-2022-11-03
 glossaries-accsupp
 glossaries-accsupp-2020-03-19
 glossaries-accsupp-2021-11-01
@@ -2105,6 +2166,7 @@ glossary-bookindex-2021-11-22
 glossary-hypernav
 glossary-hypernav-2020-03-19
 glossary-hypernav-2021-11-01
+glossary-hypernav-2022-11-03
 glossary-inline
 glossary-inline-2020-03-19
 glossary-inline-2021-11-01
@@ -2260,11 +2322,14 @@ helvet
 hep
 hep-acronym
 hep-bibliography
+hep-feynman
 hep-float
 hep-font
+hep-graphic
 hep-math
 hep-math-font
 hep-paper
+hep-plot
 hep-reference
 hep-text
 hep-title
@@ -2276,6 +2341,7 @@ hepthesis
 hepunits
 here
 hereapplies
+heria
 heros-otf
 hetarom
 hetaromh
@@ -2304,6 +2370,7 @@ hhtensor
 hideanswer
 hieroglf
 highlightlatex
+highlightx
 hijrical
 histogr
 hitec
@@ -2313,6 +2380,7 @@ hitszthesis
 hletter
 hlist
 hmtrump
+hobby-l3draw
 hobete
 hobsub
 hobsub-generic
@@ -2320,6 +2388,7 @@ hobsub-hyperref
 hologo
 holtpolt
 holtxdoc
+homework
 hopatch
 hopatch-2016-05-16
 horoscop
@@ -2352,6 +2421,9 @@ hpstatement-sv.inc
 href-ul
 hrefhide
 hsetup
+hsrbericht
+hsrstud
+hsrzf
 hu-berlin-base
 hu-berlin-bundle-style
 hu-berlin-letter
@@ -2431,6 +2503,7 @@ import
 incgraph
 includeRnw
 inconsolata
+inconsolata-nerd-font
 indentfirst
 index
 indextools
@@ -2490,6 +2563,7 @@ ionumbers
 ipa
 ipaex-type1
 ipalmacs
+ipsum
 irish
 irv12
 iscram
@@ -2500,15 +2574,17 @@ isomath
 isonums
 isopt
 isorot
+isosafety
 isotope
 isov2
+isphysicalmath
 issuulinks
 istgame
 isyntax
 italian
 itaxpf
-iwhdp
 iwona
+iwonamath
 jacow
 jamtimes
 jigsaw
@@ -2522,15 +2598,18 @@ jmsdelim
 jneurosci
 jnuexam
 jobname-suffix
+joinbox
 josefin
 jourcl
 journal
+jourrr
 jpsj2
 jrurstud
 jslectureplanner
 jsmembertable
 jumplines
 junicode
+junicodevf
 jupynotex
 jura
 juraabbrev
@@ -2598,6 +2677,7 @@ komacv-classic
 komacv-lco
 komacv-multilang
 komacv-oldstyle
+korigamik
 kpfonts
 kpfonts-otf
 ksp-thesis
@@ -2611,7 +2691,6 @@ kvoptions
 kvoptions-patch
 kvsetkeys
 l3benchmark
-l3bitset
 l3doc
 l3draw
 l3galley
@@ -2619,7 +2698,6 @@ l3graphics
 l3keys2e
 l3opacity
 l3pdffield-testphase
-l3ref-tmp
 l3str-format
 l3sys-shell
 labbook
@@ -2639,11 +2717,13 @@ langsci-bidi
 langsci-gb4e
 langsci-lgr
 langsci-optional
+langsci-plot-templates
 langsci-subparts
 langsci-tbls
 langsci-textipa
 langscibook
 lapdf
+lastbib
 lastpackage
 lastpage
 lastpage209
@@ -2651,14 +2731,23 @@ lastpage2e
 lastpageclassic
 lastpagemodern
 latex-lab-kernel-changes
-latex-lab-testphase-block-tagging
+latex-lab-testphase-bib
+latex-lab-testphase-block
+latex-lab-testphase-firstaid
+latex-lab-testphase-float
+latex-lab-testphase-graphic
+latex-lab-testphase-marginpar
 latex-lab-testphase-math
-latex-lab-testphase-new-or
+latex-lab-testphase-minipage
 latex-lab-testphase-new-or-1
 latex-lab-testphase-new-or-2
-latex-lab-testphase-sec-tagging
-latex-lab-testphase-toc-tagging
+latex-lab-testphase-sec
+latex-lab-testphase-table
+latex-lab-testphase-text
+latex-lab-testphase-title
+latex-lab-testphase-toc
 latex2man
+latex2pydata
 latexbug
 latexcolors
 latexdemo
@@ -2700,6 +2789,8 @@ lettrine
 lettrine-2006-03-17
 lettrine-2015-08-31
 lettrine-2018-08-18
+lettrine-2022-09-25
+lettrine-2023-04-18
 lewis
 lewisstruc
 lexend
@@ -2765,6 +2856,9 @@ listliketab
 listofitems
 listofsymbols
 listpen
+litebook
+litesolution
+litetable
 liturg
 llncs
 llncsconf
@@ -2779,6 +2873,7 @@ logbox
 logicproof
 logicpuzzle
 logix
+logoetalab
 logpap
 logreq
 logsys
@@ -2810,6 +2905,7 @@ lstlang2
 lstlang3
 lstlinebgrd
 lstmisc
+lstpatch
 lststex
 lt3graph
 lt3graph-dry
@@ -2846,8 +2942,10 @@ ltxtools-review
 ltxtools-trace
 ltxutil
 lua-check-hyphen
+lua-placeholders
 lua-typo
 lua-typo-2021-04-18
+lua-typo-2023-03-08
 lua-ul
 lua-visual-debug
 lua-widow-control
@@ -2860,6 +2958,7 @@ luacode
 luacolor
 luacomplex
 luagcd
+luahttp
 luahyphenrules
 luaimageembed
 luaindex
@@ -2874,9 +2973,11 @@ luamaths
 luamesh
 luamodulartables
 luamplib
+luanumint
 luaoptions
 luaotfload
 luapackageloader
+luaplot
 luaprogtable
 luaquotes
 luarandom
@@ -2926,6 +3027,7 @@ lwarp-amsthm
 lwarp-anonchap
 lwarp-anysize
 lwarp-appendix
+lwarp-apxproof
 lwarp-ar
 lwarp-arabicfront
 lwarp-array
@@ -3017,6 +3119,7 @@ lwarp-decimal
 lwarp-decorule
 lwarp-diagbox
 lwarp-dingbat
+lwarp-doipubmed
 lwarp-dotlessi
 lwarp-dprogress
 lwarp-draftcopy
@@ -3083,6 +3186,8 @@ lwarp-fnpara
 lwarp-fnpos
 lwarp-fontawesome
 lwarp-fontawesome5
+lwarp-fontawesome5-generic-helper
+lwarp-fontawesome5-utex-helper
 lwarp-fontaxes
 lwarp-fontenc
 lwarp-footmisc
@@ -3489,9 +3594,6 @@ lwarp-zhlineskip
 lwarp-zwpagelayout
 lxfonts
 lyluatex
-m-ch-de
-m-ch-en
-m-ch-nl
 m-pictex
 mVersion
 macrolist
@@ -3533,7 +3635,7 @@ markblog
 markdown
 markdownthemewitiko_dot
 markdownthemewitiko_graphicx_http
-markdownthemewitiko_tilde
+markdownthemewitiko_markdown_defaults
 marvosym
 matc3
 matc3mem
@@ -3599,12 +3701,15 @@ mdwtab
 mecaso
 media4svg
 media9
+medmath
 medstarbeamer
 meetingmins
 membranecomputing
 memexsupp
 memhfixc
 memoir
+memoizable
+memoize
 memory
 memorygraphs
 mensa-tex
@@ -3627,6 +3732,7 @@ method
 methylen
 metre
 metrix
+metsymb
 mfirstuc
 mfirstuc-2021-10-15
 mfirstuc-english
@@ -3651,9 +3757,12 @@ minibox
 minidocument
 minifp
 minim-doc
+minim-mp
 minimal
 minimalist
 minimalist-classical
+minimalist-classicthesis
+minimalist-default
 minimalist-flow
 minimalist-plain
 minimalist-stream
@@ -3673,6 +3782,7 @@ minutes
 mismath
 missaali
 mitpress
+mitthesis
 mla
 mleftright
 mlist
@@ -3737,6 +3847,7 @@ morefloats
 moresize
 moreverb
 morewrites
+movement-arrows
 movie
 movie15
 mparhack
@@ -3866,10 +3977,13 @@ newcomputermodern
 newenviron
 newfile
 newfloat
+newfloat_v1.0
+newfloat_v1.1
 newlfm
 newlfont
 newpax
 newproof
+newpx
 newpxmath
 newpxtext
 newspaper
@@ -3901,6 +4015,7 @@ ninecolors
 njf
 njustthesis
 njuthesis
+njuthesis-doc
 njuvisual
 nkonumbers
 nl-interval
@@ -3916,14 +4031,17 @@ nohyperref
 noindentafter
 noitcrul
 nolbreaks
+nomemoize
 nomencl
 nomentbl
+non-decimal-units
 nonfloat
 nonumonpart
 nopageno
 normalcolor
 norsk
 nostarch
+notebeamer
 notes
 notes2bib
 notespages
@@ -3990,7 +4108,9 @@ ocherokee
 ocr
 octave
 octavo
+odesandpdes
 odev
+odiadigits
 odsfile
 oegatb
 ofs
@@ -4021,6 +4141,7 @@ options
 optparams
 orcidlink
 orientation
+oststud
 ot-tableau
 othello
 othelloboard
@@ -4032,7 +4153,6 @@ outline
 outliner
 outlines
 outlining
-output-patches-tmp-ltx
 overarrows
 overcite
 overlays
@@ -4100,6 +4220,7 @@ pcode
 pdata
 pdf14
 pdfArticle
+pdfannotations
 pdfbase
 pdfcol
 pdfcolfoot
@@ -4136,6 +4257,7 @@ pdfwin
 pdfx
 pecha
 penlight
+penlightplus
 perfectcut
 perltex
 permute
@@ -4169,9 +4291,11 @@ pgfcomp-version-0-65
 pgfcomp-version-1-18
 pgfcore
 pgffor
+pgffor-ext
 pgfgantt
 pgfheaps
 pgfkeys
+pgfkeysearch
 pgfkeyx
 pgflibraryarrows
 pgflibraryautomata
@@ -4229,10 +4353,8 @@ phy-ab.braket
 phy-ab.legacy
 phy-bm-um.legacy
 phy-braket
-phy-common
 phy-diagmat
 phy-doubleprod
-phy-explsetup
 phy-nabla.legacy
 phy-op.legacy
 phy-qtext.legacy
@@ -4248,6 +4370,7 @@ pict2e
 pictex
 pictex2
 pictexwd
+pictochrono
 picture
 pifont
 pigpen
@@ -4277,6 +4400,7 @@ plantuml
 plari
 plates
 play
+playcards
 plex-mono
 plex-otf
 plex-sans
@@ -4284,6 +4408,7 @@ plex-serif
 plimsoll
 pm-isomath
 pmboxdraw
+pmdraw
 pmgraph
 pml3array
 pndraw
@@ -4297,6 +4422,7 @@ polexpr
 poligraf
 polish
 polyglossia
+polyhedra
 polymers
 polynom
 polynomial
@@ -4306,6 +4432,7 @@ portuges
 postage
 postcards
 poster
+postit
 postnotes
 powerdot
 powerdot-BerlinFU
@@ -4513,6 +4640,7 @@ pxtx-cal
 pxtx-frak
 pygmentex
 pyluatex
+pynotebook
 python
 pythonhighlight
 pythonimmediate
@@ -4535,8 +4663,11 @@ quantikz
 quantumarticle
 quantumview
 quattrocento
+quickreaction
 quicktype
+quiver
 quiz2socrative
+quizztex
 quotchap
 quoted
 quotes
@@ -4549,6 +4680,7 @@ raleway-type1-autoinst
 ran-toks
 ran_toks
 randbild
+randexam
 randomlist
 randomwalk
 randtext
@@ -4589,6 +4721,7 @@ regexpatch
 register
 regstats
 regstud
+regulatory
 relabel
 relaycircuit
 reledmac
@@ -4608,6 +4741,7 @@ reserved
 resizegather
 resmes
 resphilosophica
+responsive
 rest-api
 resumecls
 returntogrid
@@ -4620,6 +4754,7 @@ revtex4-1
 revtex4-2
 rgltxdoc
 ribbonproofs
+rit-fonts
 rjlpshap
 rkeyval
 rmathbr
@@ -4628,6 +4763,7 @@ robotarm
 roboto
 roboto-mono
 roboto-serif
+robust-externalize
 robustcommand
 robustglossary
 robustindex
@@ -4637,6 +4773,7 @@ romande
 romanian
 romanneg
 romannum
+rorlink
 rotate
 rotating
 rotchiffre
@@ -4765,6 +4902,7 @@ sdrt
 sduthesis
 se2colors
 se2fonts
+se2packages
 se2thesis
 secdot
 secnum
@@ -4809,6 +4947,7 @@ setdim
 setouterhbox
 sets
 setspace
+setspaceenhanced
 settobox
 seu-ml-assign
 seuthesix
@@ -4856,6 +4995,7 @@ sides
 signchart
 silence
 sillypage
+sim-os-menus
 simplebnf
 simplecd
 simplecv
@@ -4990,12 +5130,19 @@ standalone
 stanli
 starfn
 starfont
+starray
 statex
 statex2
 statistics
 statistik
 statmath
 staves
+stb-beamer-a
+stb-beamer-b
+stb-bib
+stb-nomencl
+stb-thesis
+stb-titlepage
 stdclsdv
 stdpage
 stealcaps
@@ -5004,8 +5151,8 @@ step
 stepv13
 steroid
 stex
+stex-highlighting
 stex-logo
-stex-tikzinput
 stexthm
 stfloats
 stickstootext
@@ -5017,6 +5164,7 @@ storebox-pgf
 storecmd
 strands
 stricttex
+string-diagrams
 stringenc
 stringstrings
 stripsemantex
@@ -5042,7 +5190,6 @@ subfloat
 sublabel
 subscript
 substances
-substitutefont
 substr
 subsupscripts
 subtext
@@ -5119,7 +5266,9 @@ tagpdf-mc-code-lua
 tagpdfdocu-patches
 talk
 tameflts
+tangocolors
 tasks
+tblr-extras
 tccompat
 tcldoc
 tclldoc
@@ -5200,6 +5349,7 @@ thb
 thc
 thcb
 thcc
+thematicpuzzle
 theorem
 theoremref
 thepdfnumber
@@ -5258,6 +5408,7 @@ tikz-layers
 tikz-mirror-lens
 tikz-network
 tikz-opm
+tikz-osci
 tikz-page
 tikz-palattice
 tikz-qtree
@@ -5276,9 +5427,12 @@ tikz-timing-nicetabs
 tikz-timing-overlays
 tikz-trackschematic
 tikz-truchet
+tikz2d-fr
+tikz3d-fr
 tikzPackets
 tikzbricks
 tikzcodeblocks
+tikzdotncross
 tikzducks
 tikzexternal
 tikzfill
@@ -5351,6 +5505,8 @@ tikzpeople.shape.surgeon
 tikzpfeile
 tikzpingus
 tikzposter
+tikzquads
+tikzquests
 tikzrput
 tikzscale
 tikzsymbols
@@ -5377,6 +5533,9 @@ titletoc
 titling
 tkz-base
 tkz-berge
+tkz-bernoulli
+tkz-doc
+tkz-elements
 tkz-euclide
 tkz-fct
 tkz-graph
@@ -5479,6 +5638,9 @@ turnpageetex
 turnpagewoetex
 turnstile
 turnthepage
+tutodoc
+tutodoc-locale-main-english.cfg
+tutodoc-locale-main-french.cfg
 tvz-code
 tvz-hax
 tvz-user
@@ -5487,6 +5649,7 @@ twemojis
 twocolfix
 twoopt
 twoup
+twoxtwogame
 tx-ds
 tx-of
 txfonts
@@ -5521,11 +5684,13 @@ ucdavisthesis
 ucharacters
 ucharcat
 ucharclasses
+ucph-revy
 ucs
 ucshyper
 ucsmonograph
 ucsutils
 ucthesis
+udepcolor
 udes-genie-these
 uebungsblatt
 uentities
@@ -5536,10 +5701,7 @@ ufrgscca-coord
 ufrgscca-core
 ufrgscca-cover
 ufrgscca-curr
-ufrgscca-curr-graph
-ufrgscca-curr-tab
 ufrgscca-forms
-ufrgscca-gen
 ufrgscca-lists
 ufrgscca-ppc
 ugarite
@@ -5558,9 +5720,11 @@ umthesis
 unam-thesis
 unbtex
 uncial
+undar-digitacion
 underlin
 underoverlap
 underscore
+underscore-ltx
 undolabl
 uni
 uni-titlepage
@@ -5568,10 +5732,12 @@ uni8
 unicode
 unicode-bidi
 unicode-math
+unicode-math-input
 unicode-math-luatex
 unicode-math-xetex
 unicodefonttable
 unifith
+unifront
 unigrazpub
 uninormalize
 unique
@@ -5595,6 +5761,8 @@ unswcover
 uol-physics-report
 uothesis
 uowthesistitlepage
+updatemarks
+updatemarks-nums
 upgreek
 upmethodology-backpage
 upmethodology-code
@@ -5614,6 +5782,7 @@ url
 urwchancal
 usbib
 usebib
+useclass
 ushort
 usnomencl
 usorbian
@@ -5646,6 +5815,7 @@ vaucanson
 vaucanson-g
 vcell
 vdmlisting
+vectorlogos
 venndiagram
 venturis
 venturis2
@@ -5658,6 +5828,7 @@ verbdef
 verbfwr
 verbments
 verifiche
+verifycommand
 verse
 version
 versions
@@ -5684,6 +5855,7 @@ wasysym
 watermark
 webquiz
 wedn
+weiqi
 wela
 welsh
 wesa
@@ -5700,6 +5872,8 @@ withargs
 withargs-dry
 withargs-packagedoc
 witharrows
+wordcloud
+wordle
 wordlike
 worksheet
 worlddev
@@ -5719,6 +5893,7 @@ xcite
 xcntperchap
 xcoffins
 xcolor
+xcolor-2022-06-12
 xcolor-material
 xcolor-patch
 xcolor-patches-tmp-ltx
@@ -5770,6 +5945,7 @@ xinttools
 xinttrig
 xistercian
 xkcdcolors
+xkeymask
 xkeyval
 xkvltxp
 xkvview
@@ -5806,6 +5982,7 @@ xspace
 xstring
 xtab
 xtemplate
+xtemplate-2023-10-10
 xucuri
 xunicode
 xurl
@@ -5844,6 +6021,7 @@ yplan
 yquant
 yquantlanguage-groups
 yquantlanguage-qasm
+ysabeau
 ytableau
 zahl2string
 zb-basics

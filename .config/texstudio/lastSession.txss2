@@ -1,38 +1,14 @@
 {
     "InternalPDFViewer": {
-        "Embedded": true,
-        "File": "../../Drive/Important/CV/new/moderncv/template.pdf"
+        "Embedded": false,
+        "File": ""
     },
     "Session": {
         "Bookmarks": [
         ],
-        "CurrentFile": "../../Drive/Important/CV/new/moderncv/template.tex",
+        "CurrentFile": "",
         "FileVersion": 1,
         "Files": [
-            {
-                "Col": 20,
-                "EditorGroup": 0,
-                "FileName": "../../Drive/Important/CV/new/moderncv/template.tex",
-                "FirstLine": 18,
-                "FoldedLines": "",
-                "Line": 36
-            },
-            {
-                "Col": 0,
-                "EditorGroup": 0,
-                "FileName": "../../Drive/Important/CV/new/moderncv/moderncviconssymbols.sty",
-                "FirstLine": 0,
-                "FoldedLines": "",
-                "Line": 0
-            },
-            {
-                "Col": 10,
-                "EditorGroup": 0,
-                "FileName": "../../Drive/Important/CV/new/moderncv/moderncvskillmatrix.sty",
-                "FirstLine": 164,
-                "FoldedLines": "",
-                "Line": 191
-            }
         ],
         "MasterFile": "",
         "VerticalSplit": false
