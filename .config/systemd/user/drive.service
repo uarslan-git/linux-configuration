@@ -1,11 +1,8 @@
 [Unit]
 Description=Drive Mount Service
-After=network.target
+After=i3-session.target
 
 [Service]
 Type=oneshot
 ExecStart=sh /home/user/drive.sh
 RemainAfterExit=true
-
-[Install]
-WantedBy=multi-user.target
