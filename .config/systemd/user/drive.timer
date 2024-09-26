@@ -1,0 +1,11 @@
+[Unit]
+Description=15 seconds timer to sync
+
+[Timer]
+OnBootSec=2min
+OnActiveSec=10min
+OnUnitInactiveSync=15sec
+Unit=drive.service
+
+[Install]
+WantedBy=timers.target
