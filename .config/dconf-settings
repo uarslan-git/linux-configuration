@@ -1,9 +1,3 @@
-[com/usebottles/bottles]
-show-sandbox-warning=false
-startup-view='page_list'
-window-height=1423
-window-width=2560
-
 [org/gnome/desktop/app-folders]
 folder-children=['Utilities', 'YaST', 'Pardus']
 
@@ -27,44 +21,13 @@ translate=true
 sources=[('xkb', 'us')]
 xkb-options=['terminate:ctrl_alt_bksp']
 
-[org/gnome/evince/default]
-continuous=true
-dual-page=false
-dual-page-odd-left=false
-enable-spellchecking=true
-fullscreen=false
-inverted-colors=false
-show-sidebar=false
-sidebar-page='links'
-sidebar-size=144
-sizing-mode='fit-page'
-window-ratio=(1.5600198204402491, 1.5007753761125362)
+[org/gnome/nm-applet/eap/1122dcf4-2b90-4c7a-9760-8a23acedda9e]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
+[org/gnome/nm-applet/eap/2a9a6ed7-4265-4e15-8dc7-b1ad2ed5225c]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
 
 [org/gnome/shell]
-welcome-dialog-last-shown-version='46.5'
-
-[org/gtk/gtk4/settings/file-chooser]
-date-format='regular'
-location-mode='path-bar'
-show-hidden=true
-sidebar-width=140
-sort-column='name'
-sort-directories-first=true
-sort-order='ascending'
-type-format='category'
-view-type='list'
-window-size=(859, 384)
-
-[org/gtk/settings/file-chooser]
-date-format='regular'
-location-mode='path-bar'
-show-hidden=false
-show-size-column=true
-show-type-column=true
-sidebar-width=161
-sort-column='name'
-sort-directories-first=false
-sort-order='ascending'
-type-format='category'
-window-position=(2919, 87)
-window-size=(1203, 925)
+welcome-dialog-last-shown-version='47.0'

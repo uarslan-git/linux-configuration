@@ -1,3 +1,4 @@
 enable docker.service
 enable NetworkManager.service
 enable gdm.service
+enable tlp.service
