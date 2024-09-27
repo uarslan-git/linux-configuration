@@ -89,8 +89,8 @@ exec --no-startup-id dex --autostart --environment i3
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
 
-bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +10
-bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 10-
+bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +2%
+bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 2%-
 
 # Media player controls
 bindsym XF86AudioPlay exec playerctl play-pause
