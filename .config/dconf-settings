@@ -29,6 +29,10 @@ ignore-phase2-ca-cert=false
 ignore-ca-cert=false
 ignore-phase2-ca-cert=false
 
+[org/gnome/nm-applet/eap/c85454fb-f667-4d0b-9de5-238b6f4fbc8a]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
 [org/gnome/shell]
 welcome-dialog-last-shown-version='47.0'
 
@@ -43,5 +47,5 @@ sort-column='name'
 sort-directories-first=false
 sort-order='ascending'
 type-format='category'
-window-position=(3277, 97)
+window-position=(678, 277)
 window-size=(1203, 902)
