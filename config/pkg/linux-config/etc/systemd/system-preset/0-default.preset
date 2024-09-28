@@ -1,6 +1,6 @@
 enable docker.service
 enable NetworkManager.service
-enable lightdm.service
+enable gdm.service
 enable tlp.service
 enable bluetooth.service
 enable autorandr.service
