@@ -1,21 +1,29 @@
 {
     "InternalPDFViewer": {
         "Embedded": true,
-        "File": "../../Drive/Drive2/template.pdf"
+        "File": "../../Drive/Drive2/Important/CV/moderncv/template.pdf"
     },
     "Session": {
         "Bookmarks": [
         ],
-        "CurrentFile": "../../Drive/Drive2/template.tex",
+        "CurrentFile": "../../Drive/Drive2/Important/CV/moderncv/template.tex",
         "FileVersion": 1,
         "Files": [
             {
                 "Col": 0,
                 "EditorGroup": 0,
-                "FileName": "../../Drive/Drive2/template.tex",
-                "FirstLine": 0,
+                "FileName": "../../Drive/Drive2/Important/CV/moderncv/moderncv_userguide.tex",
+                "FirstLine": 175,
                 "FoldedLines": "",
-                "Line": 0
+                "Line": 207
+            },
+            {
+                "Col": 19,
+                "EditorGroup": 0,
+                "FileName": "../../Drive/Drive2/Important/CV/moderncv/template.tex",
+                "FirstLine": 81,
+                "FoldedLines": "",
+                "Line": 90
             }
         ],
         "MasterFile": "",

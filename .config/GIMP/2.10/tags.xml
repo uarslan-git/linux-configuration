@@ -61,109 +61,109 @@
   <resource identifier="${gimp_dir}/brushes/floral2_brush_by hawksmont6.gbr" checksum="3a271fd95cb6751d371a9c99a184c7ba">
   </resource>
 
-  <resource identifier="${gimp_dir}/brushes/orb002.gbr" checksum="f10354d293ba63dbfde14aa0544d624f">
-  </resource>
-
-  <resource identifier="${gimp_dir}/brushes/damnicons_7.gbr" checksum="7a207869d3f0f84f65e2e2b0d16b5f9c">
-  </resource>
-
-  <resource identifier="${gimp_dir}/brushes/groove002.gbr" checksum="b56ba1d969a0af762212e34f7ebd8074">
-  </resource>
-
-  <resource identifier="${gimp_dir}/brushes/orb003.gbr" checksum="899c5796db923a44abac51f5827b6b06">
-  </resource>
-
-  <resource identifier="${gimp_dir}/brushes/damnicons_3.gbr" checksum="a60f20d0d3cc6a582f22da6e41b584d8">
-  </resource>
-
-  <resource identifier="${gimp_dir}/brushes/damnicons_2.gbr" checksum="5c1972253cbb9ce6dc77e8a2e530f893">
-  </resource>
-
-  <resource identifier="${gimp_dir}/brushes/damnicons_1.gbr" checksum="d97fb8f163419adfe8cfb38308d2ad16">
-  </resource>
-
-  <resource identifier="${gimp_dir}/brushes/damnicons_4.gbr" checksum="d0424d6391c3816ff76bdc4116386e3d">
-  </resource>
-
-  <resource identifier="${gimp_dir}/brushes/swirl001.gbr" checksum="71f772594241175764fd13bcca7e840c">
-  </resource>
-
-  <resource identifier="${gimp_dir}/brushes/icon001.gbr" checksum="9ea0c25de31f825cc2ff2c3b5c9a61dd">
-  </resource>
-
-  <resource identifier="${gimp_dir}/brushes/arrow001.gbr" checksum="3a28be6a1c4e651d97c20cf291bfad05">
-  </resource>
-
-  <resource identifier="${gimp_dir}/brushes/groove003.gbr" checksum="ab2c24bfec425fb3e5e6359e92be9e2a">
-  </resource>
-
-  <resource identifier="${gimp_dir}/brushes/damnicons_5.gbr" checksum="8f18e44bbfbb06a3b2ea013dbd714d4d">
-  </resource>
-
-  <resource identifier="${gimp_dir}/brushes/groove004.gbr" checksum="391de1f7fa353912fd3b62031e9ca0cf">
-  </resource>
-
-  <resource identifier="${gimp_dir}/brushes/starhalf.gbr" checksum="195a3ea130ccbe9d2842e8bacab350c5">
-  </resource>
-
-  <resource identifier="${gimp_dir}/brushes/groove001.gbr" checksum="733b24ea218898e5d7e2df6f4053aa5d">
-  </resource>
-
-  <resource identifier="${gimp_dir}/brushes/cloud001.gbr" checksum="d17c35b1e338795981aa76d4d74aacaf">
-  </resource>
-
   <resource identifier="${gimp_dir}/brushes/badge001.gbr" checksum="cb73552a90680e3551a2166aba301986">
-  </resource>
-
-  <resource identifier="${gimp_dir}/brushes/damnicons_8.gbr" checksum="6bac6ace29dc88365b5d0ca1953e5086">
-  </resource>
-
-  <resource identifier="${gimp_dir}/brushes/groove006.gbr" checksum="e108bda9745f97c3cf4e74c49eb1392c">
-  </resource>
-
-  <resource identifier="${gimp_dir}/brushes/honeycomb.gbr" checksum="e30095e0dbb12fb7e85bb51f8d245935">
-  </resource>
-
-  <resource identifier="${gimp_dir}/brushes/star002.gbr" checksum="c592d5a5a5e9f634556b18e13a098690">
-  </resource>
-
-  <resource identifier="${gimp_dir}/brushes/cloud002.gbr" checksum="6918224d8fe90f57c4cc857d6d42a98d">
-  </resource>
-
-  <resource identifier="${gimp_dir}/brushes/ribbon001.gbr" checksum="72302dc7283351bc57dc8166f5850987">
   </resource>
 
   <resource identifier="${gimp_dir}/brushes/startrail.gbr" checksum="245c9b9b365003dd3085c1387b563b94">
   </resource>
 
+  <resource identifier="${gimp_dir}/brushes/damnicons_2.gbr" checksum="5c1972253cbb9ce6dc77e8a2e530f893">
+  </resource>
+
+  <resource identifier="${gimp_dir}/brushes/damnicons_3.gbr" checksum="a60f20d0d3cc6a582f22da6e41b584d8">
+  </resource>
+
   <resource identifier="${gimp_dir}/brushes/orb001.gbr" checksum="816e9ed2891c531e53cb98d905dcdf12">
   </resource>
 
-  <resource identifier="${gimp_dir}/brushes/badge002.gbr" checksum="e15f48d4915a909a96ca89d3a8434bc8">
+  <resource identifier="${gimp_dir}/brushes/groove003.gbr" checksum="ab2c24bfec425fb3e5e6359e92be9e2a">
   </resource>
 
-  <resource identifier="${gimp_dir}/brushes/halftonestar.gbr" checksum="ec48e0d152ea17f523d29d0178ba05bb">
+  <resource identifier="${gimp_dir}/brushes/groove006.gbr" checksum="e108bda9745f97c3cf4e74c49eb1392c">
   </resource>
 
-  <resource identifier="${gimp_dir}/brushes/groove005.gbr" checksum="1cb01c113061904d1c00aa8798bf25eb">
-  </resource>
-
-  <resource identifier="${gimp_dir}/brushes/damnicons_6.gbr" checksum="91e5e76ac1ed25600752d08e1b2e0b22">
-  </resource>
-
-  <resource identifier="${gimp_dir}/brushes/honeycomb2.gbr" checksum="576094a7e9934e9b360f9db5b9e6881b">
-  </resource>
-
-  <resource identifier="${gimp_dir}/brushes/swirls001.gbr" checksum="2aa8b1e476db31918ae21181337cddad">
-  </resource>
-
-  <resource identifier="${gimp_dir}/brushes/halftone001.gbr" checksum="67590289d6ec8c6a242e33738dded477">
+  <resource identifier="${gimp_dir}/brushes/damnicons_4.gbr" checksum="d0424d6391c3816ff76bdc4116386e3d">
   </resource>
 
   <resource identifier="${gimp_dir}/brushes/damnicons_10.gbr" checksum="0abf7bddc0a878d4cbb875a179f040a7">
   </resource>
 
+  <resource identifier="${gimp_dir}/brushes/groove002.gbr" checksum="b56ba1d969a0af762212e34f7ebd8074">
+  </resource>
+
+  <resource identifier="${gimp_dir}/brushes/damnicons_8.gbr" checksum="6bac6ace29dc88365b5d0ca1953e5086">
+  </resource>
+
+  <resource identifier="${gimp_dir}/brushes/orb002.gbr" checksum="f10354d293ba63dbfde14aa0544d624f">
+  </resource>
+
+  <resource identifier="${gimp_dir}/brushes/badge002.gbr" checksum="e15f48d4915a909a96ca89d3a8434bc8">
+  </resource>
+
+  <resource identifier="${gimp_dir}/brushes/damnicons_5.gbr" checksum="8f18e44bbfbb06a3b2ea013dbd714d4d">
+  </resource>
+
+  <resource identifier="${gimp_dir}/brushes/cloud001.gbr" checksum="d17c35b1e338795981aa76d4d74aacaf">
+  </resource>
+
+  <resource identifier="${gimp_dir}/brushes/ribbon001.gbr" checksum="72302dc7283351bc57dc8166f5850987">
+  </resource>
+
+  <resource identifier="${gimp_dir}/brushes/starhalf.gbr" checksum="195a3ea130ccbe9d2842e8bacab350c5">
+  </resource>
+
+  <resource identifier="${gimp_dir}/brushes/honeycomb.gbr" checksum="e30095e0dbb12fb7e85bb51f8d245935">
+  </resource>
+
+  <resource identifier="${gimp_dir}/brushes/cloud002.gbr" checksum="6918224d8fe90f57c4cc857d6d42a98d">
+  </resource>
+
+  <resource identifier="${gimp_dir}/brushes/swirl001.gbr" checksum="71f772594241175764fd13bcca7e840c">
+  </resource>
+
+  <resource identifier="${gimp_dir}/brushes/halftonestar.gbr" checksum="ec48e0d152ea17f523d29d0178ba05bb">
+  </resource>
+
+  <resource identifier="${gimp_dir}/brushes/star002.gbr" checksum="c592d5a5a5e9f634556b18e13a098690">
+  </resource>
+
+  <resource identifier="${gimp_dir}/brushes/honeycomb2.gbr" checksum="576094a7e9934e9b360f9db5b9e6881b">
+  </resource>
+
+  <resource identifier="${gimp_dir}/brushes/arrow001.gbr" checksum="3a28be6a1c4e651d97c20cf291bfad05">
+  </resource>
+
+  <resource identifier="${gimp_dir}/brushes/groove004.gbr" checksum="391de1f7fa353912fd3b62031e9ca0cf">
+  </resource>
+
   <resource identifier="${gimp_dir}/brushes/damnicons_9.gbr" checksum="9e208dbe37d28558daf7371e1c85d60d">
+  </resource>
+
+  <resource identifier="${gimp_dir}/brushes/groove001.gbr" checksum="733b24ea218898e5d7e2df6f4053aa5d">
+  </resource>
+
+  <resource identifier="${gimp_dir}/brushes/orb003.gbr" checksum="899c5796db923a44abac51f5827b6b06">
+  </resource>
+
+  <resource identifier="${gimp_dir}/brushes/halftone001.gbr" checksum="67590289d6ec8c6a242e33738dded477">
+  </resource>
+
+  <resource identifier="${gimp_dir}/brushes/groove005.gbr" checksum="1cb01c113061904d1c00aa8798bf25eb">
+  </resource>
+
+  <resource identifier="${gimp_dir}/brushes/icon001.gbr" checksum="9ea0c25de31f825cc2ff2c3b5c9a61dd">
+  </resource>
+
+  <resource identifier="${gimp_dir}/brushes/swirls001.gbr" checksum="2aa8b1e476db31918ae21181337cddad">
+  </resource>
+
+  <resource identifier="${gimp_dir}/brushes/damnicons_6.gbr" checksum="91e5e76ac1ed25600752d08e1b2e0b22">
+  </resource>
+
+  <resource identifier="${gimp_dir}/brushes/damnicons_7.gbr" checksum="7a207869d3f0f84f65e2e2b0d16b5f9c">
+  </resource>
+
+  <resource identifier="${gimp_dir}/brushes/damnicons_1.gbr" checksum="d97fb8f163419adfe8cfb38308d2ad16">
   </resource>
 
   <resource identifier="${gimp_dir}/brushes/InnerUniverse_1.gbr" checksum="394915d611ef5a95a3604f8bd6458cb5">
@@ -2032,6 +2032,249 @@
   <resource identifier="Iosevka Medium Oblique" checksum="(null)">
   </resource>
 
+  <resource identifier="Iosevka Nerd Font" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Nerd Font Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Nerd Font Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Nerd Font Bold Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Nerd Font Heavy" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Nerd Font Heavy Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Nerd Font Heavy Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Nerd Font Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Nerd Font Light" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Nerd Font Light Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Nerd Font Light Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Nerd Font Medium" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Nerd Font Medium Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Nerd Font Medium Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Nerd Font Mono" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Nerd Font Mono Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Nerd Font Mono Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Nerd Font Mono Bold Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Nerd Font Mono Heavy" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Nerd Font Mono Heavy Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Nerd Font Mono Heavy Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Nerd Font Mono Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Nerd Font Mono Light" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Nerd Font Mono Light Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Nerd Font Mono Light Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Nerd Font Mono Medium" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Nerd Font Mono Medium Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Nerd Font Mono Medium Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Nerd Font Mono Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Nerd Font Mono Semi-Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Nerd Font Mono Semi-Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Nerd Font Mono Semi-Bold Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Nerd Font Mono Thin" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Nerd Font Mono Thin Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Nerd Font Mono Thin Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Nerd Font Mono Ultra-Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Nerd Font Mono Ultra-Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Nerd Font Mono Ultra-Bold Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Nerd Font Mono Ultra-Light" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Nerd Font Mono Ultra-Light Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Nerd Font Mono Ultra-Light Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Nerd Font Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Nerd Font Propo" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Nerd Font Propo Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Nerd Font Propo Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Nerd Font Propo Bold Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Nerd Font Propo Heavy" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Nerd Font Propo Heavy Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Nerd Font Propo Heavy Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Nerd Font Propo Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Nerd Font Propo Light" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Nerd Font Propo Light Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Nerd Font Propo Light Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Nerd Font Propo Medium" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Nerd Font Propo Medium Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Nerd Font Propo Medium Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Nerd Font Propo Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Nerd Font Propo Semi-Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Nerd Font Propo Semi-Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Nerd Font Propo Semi-Bold Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Nerd Font Propo Thin" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Nerd Font Propo Thin Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Nerd Font Propo Thin Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Nerd Font Propo Ultra-Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Nerd Font Propo Ultra-Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Nerd Font Propo Ultra-Bold Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Nerd Font Propo Ultra-Light" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Nerd Font Propo Ultra-Light Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Nerd Font Propo Ultra-Light Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Nerd Font Semi-Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Nerd Font Semi-Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Nerd Font Semi-Bold Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Nerd Font Thin" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Nerd Font Thin Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Nerd Font Thin Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Nerd Font Ultra-Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Nerd Font Ultra-Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Nerd Font Ultra-Bold Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Nerd Font Ultra-Light" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Nerd Font Ultra-Light Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Nerd Font Ultra-Light Oblique" checksum="(null)">
+  </resource>
+
   <resource identifier="Iosevka Oblique" checksum="(null)">
   </resource>
 
@@ -2525,9 +2768,6 @@
   </resource>
 
   <resource identifier="Nimbus Sans Narrow Semi-Condensed" checksum="(null)">
-  </resource>
-
-  <resource identifier="Noto Color Emoji" checksum="(null)">
   </resource>
 
   <resource identifier="NotoEmoji Nerd Font Mono" checksum="(null)">

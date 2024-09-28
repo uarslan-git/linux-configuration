@@ -11,6 +11,16 @@ source=('rootfs.tar')
 noextract=('rootfs.tar')
 sha512sums=('SKIP')
 
+if lspci -nnk | rg nvidia; then
+	depends+=(
+	nvidia
+	davinci-resolve-studio
+    	lib32-nvidia-utils
+    	opencl-nvidia
+    	nvidia-settings
+	)
+
+fi
 
 #startPackages
 depends=(
@@ -21,6 +31,7 @@ depends=(
     base
     base-devel
     blender
+    bluez-utils
     bottles
     breeze-hacked-cursor-theme-git
     brightnessctl
@@ -29,7 +40,6 @@ depends=(
     copyq
     curl
     darktable
-    davinci-resolve-studio
     docker
     docker-compose
     dracula-gtk-theme-full
@@ -53,6 +63,7 @@ depends=(
     git-filter-repo
     github-cli
     git-secret
+    gnome-network-displays
     google-chrome
     gradle
     gst-plugin-pipewire
@@ -67,6 +78,7 @@ depends=(
     gzip
     i3blocks
     i3lock
+    i3lock-color
     i3status
     i3-wm
     ibus-mozc
@@ -78,10 +90,10 @@ depends=(
     jdownloader2
     k9s
     kdeconnect
+    kdenlive
     keepassxc
     kitty
     krita
-    lib32-nvidia-utils
     lib32-pipewire
     lib32-pipewire-jack
     libpulse
@@ -111,13 +123,10 @@ depends=(
     nodejs
     npm
     ntfs-3g
-    nvidia
-    nvidia-settings
     nvim-packer-git
     nvtop
     obs-studio
     oh-my-zsh-git
-    opencl-nvidia
     openssh
     papirus-icon-theme
     paru
@@ -168,6 +177,7 @@ depends=(
     texstudio
     thunar
     thunderbird
+    tlp
     tmux
     torbrowser-launcher
     tree

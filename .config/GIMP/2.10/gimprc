@@ -24,8 +24,8 @@
 (undo-levels 10)
 (import-add-alpha yes)
 (import-raw-plug-in "${gimp_plug_in_dir}/plug-ins/file-raw-placeholder/file-raw-placeholder")
-(monitor-xresolution 179)
-(monitor-yresolution 184)
+(monitor-xresolution 82)
+(monitor-yresolution 82)
 (default-view
     (show-menubar yes)
     (show-statusbar yes)
@@ -47,6 +47,7 @@
 (filter-tool-show-color-options yes)
 (toolbox-wilber no)
 (toolbox-group-menu-mode click)
+(layer-add-mask-type black)
 (selection-border-radius 2)
 (fill-options
     (style solid)
