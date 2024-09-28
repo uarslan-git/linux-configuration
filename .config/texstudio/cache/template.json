@@ -5,21 +5,21 @@
     ],
     "childdocs": [
     ],
-    "filename": "/home/umut/Drive/Important/CV/new/moderncv/template.tex",
+    "filename": "/home/user/Drive/Drive2/template.tex",
     "labels": [
     ],
     "modified": "Thu Feb 1 21:00:13 2024",
     "packages": [
-        "#unicode-math",
-        "#fontspec",
-        "english#babel",
-        "T1#fontenc",
+        "#lmodern",
         "11pt,a4paper,sans#class-moderncv",
         "11pt,a4paper,sans#latex-document",
         "11pt,a4paper,sans#tex",
+        "english#babel",
+        "#unicode-math",
+        "T1#fontenc",
         "scale=0.75#geometry",
         "utf8#inputenc",
-        "#lmodern"
+        "#fontspec"
     ],
     "refs": [
     ],
@@ -33,6 +33,9 @@
         "2#Interests#109"
     ],
     "usercommands": [
-        "\\bibliographyitemlabel"
+        [
+            "\\bibliographyitemlabel",
+            "\\bibliographyitemlabel"
+        ]
     ]
 }

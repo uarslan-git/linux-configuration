@@ -1,14 +1,22 @@
 {
     "InternalPDFViewer": {
-        "Embedded": false,
-        "File": ""
+        "Embedded": true,
+        "File": "../../Drive/Drive2/template.pdf"
     },
     "Session": {
         "Bookmarks": [
         ],
-        "CurrentFile": "",
+        "CurrentFile": "../../Drive/Drive2/template.tex",
         "FileVersion": 1,
         "Files": [
+            {
+                "Col": 0,
+                "EditorGroup": 0,
+                "FileName": "../../Drive/Drive2/template.tex",
+                "FirstLine": 0,
+                "FoldedLines": "",
+                "Line": 0
+            }
         ],
         "MasterFile": "",
         "VerticalSplit": false
