@@ -4,5 +4,5 @@ After=i3-session.target
 
 [Service]
 Type=oneshot
-ExecStart=sh /home/user/drive.sh
+ExecStart=./home/user/drive.sh
 RemainAfterExit=true

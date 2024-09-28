@@ -5,32 +5,32 @@
     ],
     "childdocs": [
     ],
-    "filename": "/home/user/Drive/Drive2/template.tex",
+    "filename": "/home/user/Drive/Drive2/Important/CV/moderncv/template.tex",
     "labels": [
     ],
-    "modified": "Thu Feb 1 21:00:13 2024",
+    "modified": "Sat Sep 28 16:25:20 2024",
     "packages": [
-        "#lmodern",
         "11pt,a4paper,sans#class-moderncv",
         "11pt,a4paper,sans#latex-document",
         "11pt,a4paper,sans#tex",
-        "english#babel",
-        "#unicode-math",
-        "T1#fontenc",
+        "#lmodern",
         "scale=0.75#geometry",
-        "utf8#inputenc",
-        "#fontspec"
+        "#fontspec",
+        "#unicode-math",
+        "english#babel",
+        "T1#fontenc",
+        "utf8#inputenc"
     ],
     "refs": [
     ],
     "toc": [
         "2#Education#79",
-        "2#Experience#84",
-        "3#Vocational#85",
-        "3#Internships#91",
-        "2#Languages#97",
-        "2#Computer skills#103",
-        "2#Interests#109"
+        "2#Experience#86",
+        "3#Vocational#87",
+        "3#Internships#94",
+        "2#Languages#100",
+        "2#Computer skills#106",
+        "2#Interests#112"
     ],
     "usercommands": [
         [

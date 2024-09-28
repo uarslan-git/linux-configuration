@@ -4,7 +4,7 @@ After=graphical-session-pre.target
 BindsTo=graphical-session.target
 Wants=feh.service
 Wants=picom.service
-#Wants=drive.timer
+Wants=drive.timer
 Wants=xss-lock.service
 
 [Install]
