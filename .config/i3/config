@@ -46,7 +46,6 @@ bindsym $mod+p exec --no-startup-id ranger
 # Auto start
 exec --no-startup-id cd ~/.dotfiles && git pull
 exec_always --no-startup-id autorandr -l $(autorandr)
-exec_always --no-startup-id systemctl --user restart i3-session.target
 exec_always --no-startup-id autotiling
 exec --no-startup-id fcitx5
 exec --no-startup-id keepassc

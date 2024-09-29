@@ -177,7 +177,6 @@ depends=(
     texstudio
     thunar
     thunderbird
-    tlp
     tmux
     torbrowser-launcher
     tree
