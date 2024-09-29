@@ -27,7 +27,9 @@ depends=(
     amd-ucode
     ani-cli
     anki-bin
+    arandr
     autorandr
+    autotiling
     base
     base-devel
     blender
@@ -46,7 +48,6 @@ depends=(
     dracula-icons-git
     dunst
     efibootmgr
-    evince
     fd
     feh
     firefox
@@ -63,13 +64,12 @@ depends=(
     github-cli
     git-secret
     gnome-network-displays
+    gnome-terminal
     google-chrome
     gradle
     gst-plugin-pipewire
-    gvfs
     gzip
     i3blocks
-    i3lock
     i3lock-color
     i3status
     i3-wm
@@ -141,7 +141,6 @@ depends=(
     rclone
     ripgrep
     rofi
-    snapshot
     steam
     systemd
     texlive-basic
@@ -169,6 +168,7 @@ depends=(
     texstudio
     thunar
     thunderbird
+    tlp
     tmux
     torbrowser-launcher
     tree
