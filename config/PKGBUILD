@@ -191,6 +191,7 @@ depends=(
     winetricks
     wireplumber
     xclip
+    xdg-desktop-portal-gnome
     xf86-video-vesa
     xorg-bdftopcf
     xorg-docs
