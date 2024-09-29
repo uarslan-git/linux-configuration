@@ -1,8 +1,5 @@
 [Unit]
-Description=Drive Mount Service
-After=i3-session.target
+Description=Run Rclone Service
 
 [Service]
-Type=oneshot
-ExecStart=./home/user/drive.sh
-RemainAfterExit=true
+ExecStart=/home/user/drive.sh

@@ -1,11 +1,11 @@
 [Unit]
-Description=15 seconds timer to sync
+Description=Run Rclone every 5 minutes
+After=i3-session.target
+Requires=i3-session.target
 
 [Timer]
-OnBootSec=1min
 OnActiveSec=2min
-OnUnitInactiveSync=15sec
-Unit=drive.service
+OnUnitActiveSec=2min
 
 [Install]
 WantedBy=timers.target
