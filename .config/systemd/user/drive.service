@@ -2,4 +2,6 @@
 Description=Run Rclone Service
 
 [Service]
+Type=oneshot
+RemainAfterExit=true
 ExecStart=/home/user/drive.sh

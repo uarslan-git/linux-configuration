@@ -1,7 +1,7 @@
 # GIMP gimp-crop-tool options
 
-(aspect-denominator 780)
-(aspect-numerator 1152)
+(aspect-denominator 3000)
+(aspect-numerator 2121)
 (desired-fixed-size-height 0)
 (desired-fixed-size-width 0)
 (foreground (color-rgb 1 1 1))

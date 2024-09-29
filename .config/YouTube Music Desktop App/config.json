@@ -1,0 +1,68 @@
+{
+	"metadata": {
+		"version": 1
+	},
+	"general": {
+		"disableHardwareAcceleration": false,
+		"hideToTrayOnClose": true,
+		"showNotificationOnSongChange": false,
+		"startOnBoot": false,
+		"startMinimized": false
+	},
+	"appearance": {
+		"alwaysShowVolumeSlider": false,
+		"customCSSEnabled": false,
+		"customCSSPath": null,
+		"zoom": 100
+	},
+	"playback": {
+		"continueWhereYouLeftOff": true,
+		"continueWhereYouLeftOffPaused": true,
+		"enableSpeakerFill": false,
+		"progressInTaskbar": false,
+		"ratioVolume": false
+	},
+	"integrations": {
+		"companionServerEnabled": false,
+		"companionServerAuthTokens": null,
+		"companionServerCORSWildcardEnabled": false,
+		"discordPresenceEnabled": false,
+		"lastFMEnabled": false
+	},
+	"shortcuts": {
+		"playPause": "",
+		"next": "",
+		"previous": "",
+		"thumbsUp": "",
+		"thumbsDown": "",
+		"volumeUp": "",
+		"volumeDown": ""
+	},
+	"state": {
+		"lastUrl": "https://music.youtube.com/watch?v=iXg7BVAzlxM&list=RDAMPLPL8MBR3FfEkxEZHOXNyYHWonZ56xtd97eX",
+		"lastPlaylistId": "PL8MBR3FfEkxEZHOXNyYHWonZ56xtd97eX",
+		"lastVideoId": "iXg7BVAzlxM",
+		"windowBounds": {
+			"x": 0,
+			"y": 17,
+			"width": 1280,
+			"height": 703
+		},
+		"windowMaximized": false
+	},
+	"lastfm": {
+		"api_key": "2a69bcf769a7a28a8bf2f6a5100accad",
+		"secret": "46eea23770a459a49eb4d26cbf46b41c",
+		"token": null,
+		"sessionKey": null,
+		"scrobblePercent": 50
+	},
+	"developer": {
+		"enableDevTools": false
+	},
+	"__internal__": {
+		"migrations": {
+			"version": "2.0.5"
+		}
+	}
+}
