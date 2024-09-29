@@ -2,6 +2,10 @@
 Description=Run Rclone Service
 
 [Service]
-Type=oneshot
+Type=simple
 RemainAfterExit=true
-ExecStart=/usr/local/share/bin/drive
+ExecStart=/usr/local/bin/drive
+TimeoutStartSec=0
+
+[Install]
+WantedBy=multi-user.target
