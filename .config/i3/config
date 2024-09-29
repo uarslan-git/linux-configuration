@@ -44,8 +44,9 @@ bindsym $mod+shift+w exec --no-startup-id loginctl lock-session
 bindsym $mod+p exec --no-startup-id ranger
 
 # Auto start
-exec --no-startup-id cd ~/.dotfiles && git pull
+exec_always --no-startup-id cd ~/ && git pull
 exec_always --no-startup-id autotiling
+exec_always --no-startup-id systemctl --user restart feh.service
 exec --no-startup-id fcitx5
 exec --no-startup-id keepassc
 exec --no-startup-id nm-applet
