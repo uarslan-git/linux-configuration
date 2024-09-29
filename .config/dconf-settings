@@ -13,7 +13,7 @@ window-maximized=true
 window-size=(768, 600)
 
 [org/gnome/control-center]
-last-panel='universal-access'
+last-panel='background'
 window-state=(1280, 705, true)
 
 [org/gnome/desktop/app-folders]
@@ -38,9 +38,9 @@ translate=true
 [org/gnome/desktop/background]
 color-shading-type='solid'
 picture-options='zoom'
-picture-uri='file:///usr/share/backgrounds/gnome/swoosh-l.jxl'
-picture-uri-dark='file:///usr/share/backgrounds/gnome/swoosh-d.jxl'
-primary-color='#730166'
+picture-uri='file:///usr/share/backgrounds/gnome/amber-l.jxl'
+picture-uri-dark='file:///usr/share/backgrounds/gnome/amber-d.jxl'
+primary-color='#ff7800'
 secondary-color='#000000'
 
 [org/gnome/desktop/input-sources]
@@ -85,8 +85,8 @@ application-id='org.keepassxc.KeePassXC.desktop'
 [org/gnome/desktop/screensaver]
 color-shading-type='solid'
 picture-options='zoom'
-picture-uri='file:///usr/share/backgrounds/gnome/swoosh-l.jxl'
-primary-color='#730166'
+picture-uri='file:///usr/share/backgrounds/gnome/amber-l.jxl'
+primary-color='#ff7800'
 secondary-color='#000000'
 
 [org/gnome/desktop/search-providers]
