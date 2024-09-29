@@ -33,6 +33,7 @@ depends=(
     base
     base-devel
     blender
+    bluez
     bluez-utils
     bottles
     breeze-hacked-cursor-theme-git
@@ -48,6 +49,7 @@ depends=(
     dracula-icons-git
     dunst
     efibootmgr
+    evince
     fd
     feh
     firefox
@@ -68,6 +70,7 @@ depends=(
     google-chrome
     gradle
     gst-plugin-pipewire
+    gvfs
     gzip
     i3blocks
     i3lock-color
