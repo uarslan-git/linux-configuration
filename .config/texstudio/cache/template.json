@@ -10,16 +10,16 @@
     ],
     "modified": "Sat Sep 28 16:25:20 2024",
     "packages": [
+        "#lmodern",
+        "scale=0.75#geometry",
+        "utf8#inputenc",
+        "english#babel",
         "11pt,a4paper,sans#class-moderncv",
         "11pt,a4paper,sans#latex-document",
         "11pt,a4paper,sans#tex",
-        "#lmodern",
-        "scale=0.75#geometry",
-        "#fontspec",
         "#unicode-math",
-        "english#babel",
         "T1#fontenc",
-        "utf8#inputenc"
+        "#fontspec"
     ],
     "refs": [
     ],
