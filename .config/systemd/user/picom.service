@@ -8,6 +8,10 @@ Type=exec
 ExecStart=/usr/bin/picom
 ExecReload=/usr/bin/kill -s SIGUSR1 $MAINPID
 Restart=always
+MemoryMax=1G
+Nice=-10
+ManagedOOMMemoryPressure=kill
+ManagedOOMMemoryPressureLimit=10%
 
 ProtectSystem=true
 NoNewPrivileges=true

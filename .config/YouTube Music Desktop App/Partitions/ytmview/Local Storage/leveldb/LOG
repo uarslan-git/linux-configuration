@@ -1,0 +1,6 @@
+2024/09/29-13:50:50.365 3c59 Reusing MANIFEST /home/user/.config/YouTube Music Desktop App/Partitions/ytmview/Local Storage/leveldb/MANIFEST-000001
+2024/09/29-13:50:50.366 3c59 Recovering log #3
+2024/09/29-13:50:50.367 3c59 Reusing old log /home/user/.config/YouTube Music Desktop App/Partitions/ytmview/Local Storage/leveldb/000003.log 
+2024/09/29-14:05:23.888 3c5a Level-0 table #5: started
+2024/09/29-14:05:23.906 3c5a Level-0 table #5: 14200 bytes OK
+2024/09/29-14:05:23.912 3c5a Delete type=0 #3

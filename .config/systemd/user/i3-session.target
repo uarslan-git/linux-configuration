@@ -6,6 +6,7 @@ Wants=feh.service
 Wants=picom.service
 Wants=drive.timer
 Wants=xss-lock.service
+Wants=youtube-music-player.service
 
 [Install]
 WantedBy=graphical-session.target

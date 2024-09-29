@@ -55,7 +55,6 @@ depends=(
     fzf-tab-git
     gamemode
     gdb
-    gdm
     ghidra
     gimp
     git
@@ -68,13 +67,6 @@ depends=(
     gradle
     gst-plugin-pipewire
     gvfs
-    gvfs-afc
-    gvfs-goa
-    gvfs-google
-    gvfs-gphoto2
-    gvfs-mtp
-    gvfs-nfs
-    gvfs-smb
     gzip
     i3blocks
     i3lock
