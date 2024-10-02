@@ -24,6 +24,7 @@ depends=(
     base-devel
     blender
     bluez
+    lutris
     bluez-utils
     bottles
     breeze-hacked-cursor-theme-git
@@ -68,6 +69,7 @@ depends=(
     gvfs
     gzip
     haskell-language-server
+    heroic-games-launcher-bin
     i3blocks
     i3lock-color
     i3status
@@ -99,10 +101,10 @@ depends=(
     linux-zen-headers
     localsend-bin
     lua-language-server
-    lutris
     lxappearance
     ly
     man-db
+    mangohud
     man-pages
     marksman-bin
     matcha-gtk-theme
@@ -237,6 +239,7 @@ depends=(
     xorg-xwud
     xss-lock-session
     ytmdesktop-git
+    zerotier-one
     zip
     zoom
     zsh
