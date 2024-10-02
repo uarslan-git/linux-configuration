@@ -2,8 +2,8 @@
 dark-theme=true
 show-sandbox-warning=false
 startup-view='page_list'
-window-height=1053
-window-width=1910
+window-height=1371
+window-width=1259
 
 [org/gnome/desktop/app-folders]
 folder-children=['Utilities', 'YaST', 'Pardus']
@@ -41,7 +41,7 @@ welcome-dialog-last-shown-version='47.0'
 locations=@av []
 
 [org/gnome/software]
-check-timestamp=int64 1727814516
+check-timestamp=int64 1727852502
 first-run=false
 
 [org/gtk/gtk4/settings/file-chooser]
@@ -67,5 +67,5 @@ sort-column='name'
 sort-directories-first=false
 sort-order='ascending'
 type-format='category'
-window-position=(-1, 7)
-window-size=(1920, 1080)
+window-position=(2560, 0)
+window-size=(2592, 1458)
