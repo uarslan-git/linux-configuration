@@ -52,7 +52,7 @@ exec --no-startup-id keepassc
 exec --no-startup-id nm-applet
 exec --no-startup-id flameshot
 exec --no-startup-id copyq
-exec --no-startup-id volumeicon
+exec --no-startup-id volumeicon &
 
 # Window Rules
 for_window [title="Qalculate!"] floating enable, move position center

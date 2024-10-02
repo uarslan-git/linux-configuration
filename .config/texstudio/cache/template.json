@@ -5,37 +5,31 @@
     ],
     "childdocs": [
     ],
-    "filename": "/home/user/Drive/Drive2/Important/CV/moderncv/template.tex",
+    "filename": "/home/user/Drive/Drive1/Important/CV/moderncv_ger/template.tex",
     "labels": [
     ],
-    "modified": "Sat Sep 28 16:25:20 2024",
+    "modified": "Wed Oct 2 09:54:12 2024",
     "packages": [
-        "#lmodern",
         "scale=0.75#geometry",
-        "utf8#inputenc",
         "english#babel",
+        "T1#fontenc",
         "11pt,a4paper,sans#class-moderncv",
         "11pt,a4paper,sans#latex-document",
         "11pt,a4paper,sans#tex",
+        "#lmodern",
+        "utf8#inputenc",
         "#unicode-math",
-        "T1#fontenc",
         "#fontspec"
     ],
     "refs": [
     ],
     "toc": [
-        "2#Education#79",
-        "2#Experience#86",
-        "3#Vocational#87",
-        "3#Internships#94",
-        "2#Languages#100",
-        "2#Computer skills#106",
-        "2#Interests#112"
+        "3#Professional#86",
+        "3#Internship#93",
+        "2#Languages#97",
+        "2#Skills#103",
+        "2#Interests#109"
     ],
     "usercommands": [
-        [
-            "\\bibliographyitemlabel",
-            "\\bibliographyitemlabel"
-        ]
     ]
 }

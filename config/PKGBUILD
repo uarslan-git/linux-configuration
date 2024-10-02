@@ -11,16 +11,6 @@ source=('rootfs.tar')
 noextract=('rootfs.tar')
 sha512sums=('SKIP')
 
-if lspci -nnk | rg nvidia; then
-	depends+=(
-	nvidia
-	davinci-resolve-studio
-    	lib32-nvidia-utils
-    	opencl-nvidia
-    	nvidia-settings
-	)
-
-fi
 
 #startPackages
 depends=(
@@ -40,11 +30,15 @@ depends=(
     brightnessctl
     btop
     calibre
+    ccls
     copyq
+    csharp-ls
     curl
     darktable
+    deno
     docker
     docker-compose
+    dockerfile-language-server
     dracula-gtk-theme-full
     dracula-icons-git
     dunst
@@ -69,9 +63,11 @@ depends=(
     gnome-terminal
     google-chrome
     gradle
+    graphql-lsp
     gst-plugin-pipewire
     gvfs
     gzip
+    haskell-language-server
     i3blocks
     i3lock-color
     i3status
@@ -82,12 +78,14 @@ depends=(
     intellij-idea-ultimate-edition
     intellij-idea-ultimate-edition-jre
     intel-ucode
+    java-language-server
     jdownloader2
     k9s
     kdeconnect
     kdenlive
     keepassxc
     kitty
+    kotlin-language-server
     krita
     lib32-pipewire
     lib32-pipewire-jack
@@ -100,11 +98,13 @@ depends=(
     linux-zen
     linux-zen-headers
     localsend-bin
+    lua-language-server
     lutris
     lxappearance
     ly
     man-db
     man-pages
+    marksman-bin
     matcha-gtk-theme
     maven
     mov-cli
@@ -120,11 +120,13 @@ depends=(
     ntfs-3g
     nvim-packer-git
     nvtop
+    obsidian
     obs-studio
     oh-my-zsh-git
     openssh
     papirus-icon-theme
     paru
+    paru-debug
     paruz
     pavucontrol
     pcsx2-git
@@ -136,6 +138,7 @@ depends=(
     pipewire-pulse
     playerctl
     pycharm-professional
+    pyright
     python
     python-virtualenv
     qalculate-gtk
@@ -144,8 +147,10 @@ depends=(
     rclone
     ripgrep
     rofi
+    sql-language-server
     steam
     systemd
+    texlab
     texlive-basic
     texlive-bibtexextra
     texlive-binextra
@@ -176,6 +181,7 @@ depends=(
     torbrowser-launcher
     tree
     ttf-iosevka-nerd
+    typescript-language-server
     ufw
     unrar
     unzip
@@ -185,6 +191,9 @@ depends=(
     visual-studio-code-bin
     vlc
     volumeicon
+    vscode-html-languageserver
+    vscode-json-languageserver
+    vue-language-server
     webstorm
     webstorm-jre
     which
@@ -238,6 +247,8 @@ depends=(
     zsh-you-should-use
   )
   #endPackages
+
+  if lspci | rg -i nvidia &>/dev/null; then depends+=(nvidia davinci-resolve-studio lib32-nvidia-utils opencl-nvidia nvidia-settings); fi
 
   # Functions
   paru() {
