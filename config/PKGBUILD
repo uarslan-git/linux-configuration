@@ -24,7 +24,6 @@ depends=(
     base-devel
     blender
     bluez
-    lutris
     bluez-utils
     bottles
     breeze-hacked-cursor-theme-git
@@ -101,6 +100,7 @@ depends=(
     linux-zen-headers
     localsend-bin
     lua-language-server
+    lutris
     lxappearance
     ly
     man-db
@@ -128,7 +128,6 @@ depends=(
     openssh
     papirus-icon-theme
     paru
-    paru-debug
     paruz
     pavucontrol
     pcsx2-git
