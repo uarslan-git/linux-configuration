@@ -2,8 +2,8 @@
 dark-theme=true
 show-sandbox-warning=false
 startup-view='page_list'
-window-height=1431
-window-width=2592
+window-height=1371
+window-width=1259
 
 [org/gnome/desktop/app-folders]
 folder-children=['Utilities', 'YaST', 'Pardus']
