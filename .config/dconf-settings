@@ -158,6 +158,10 @@ ignore-phase2-ca-cert=false
 ignore-ca-cert=false
 ignore-phase2-ca-cert=false
 
+[org/gnome/nm-applet/eap/456cea4f-5452-4765-a555-cdba726f997c]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
 [org/gnome/nm-applet/eap/c85454fb-f667-4d0b-9de5-238b6f4fbc8a]
 ignore-ca-cert=false
 ignore-phase2-ca-cert=false
@@ -270,9 +274,9 @@ show-hidden=false
 show-size-column=true
 show-type-column=true
 sidebar-width=267
-sort-column='name'
+sort-column='modified'
 sort-directories-first=false
-sort-order='ascending'
+sort-order='descending'
 type-format='category'
-window-position=(678, 269)
+window-position=(1307, 282)
 window-size=(1203, 902)
