@@ -20,6 +20,7 @@ plugins=(
 
 )
 
+
 ZSH_CACHE_DIR=$HOME/.cache/oh-my-zsh
 if [[ ! -d $ZSH_CACHE_DIR ]]; then
   mkdir $ZSH_CACHE_DIR
@@ -253,6 +254,8 @@ function convertVideos(){
 
 function extractAudio(){
 }
+
+bindkey -s ^f "tmux-sessionizer\n"
 
 alias backup="pushd ~/; dconf-save; ga -u; gcd; gp; popd"
 alias cal="cal -wm"
