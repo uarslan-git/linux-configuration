@@ -6,7 +6,7 @@ xdata = pkgtype=pkg
 pkgver = 0.1.0-1
 pkgdesc = linux config
 url = https://github.com/uarslan-git/linux-config
-builddate = 1728236309
+builddate = 1728244247
 packager = Unknown Packager
 size = 1834
 arch = x86_64
@@ -244,8 +244,3 @@ depend = zsh-completions
 depend = zsh-syntax-highlighting
 depend = zsh-theme-powerlevel10k-git
 depend = zsh-you-should-use
-depend = nvidia
-depend = davinci-resolve-studio
-depend = lib32-nvidia-utils
-depend = opencl-nvidia
-depend = nvidia-settings
