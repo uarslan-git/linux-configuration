@@ -257,6 +257,8 @@ function extractAudio(){
 
 bindkey -s ^f "tmux-sessionizer\n"
 
+systemctl --user import-environment 2> /dev/null
+
 alias backup="pushd ~/; dconf-save; ga -u; gcd; gp; popd"
 alias cal="cal -wm"
 alias chrome="google-chrome-stable"
