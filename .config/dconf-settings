@@ -1,5 +1,5 @@
 [desktop/ibus/general]
-engines-order=['xkb:de:us:deu', 'mozc-jp']
+engines-order=['mozc-jp', 'xkb:de:us:deu']
 preload-engines=['mozc-jp', 'xkb:de:us:deu']
 version='1.5.30'
 
