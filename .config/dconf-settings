@@ -1,13 +1,25 @@
-[com/usebottles/bottles]
-dark-theme=true
-show-sandbox-warning=false
-startup-view='page_list'
-window-height=1371
-window-width=1259
-
 [desktop/ibus/general]
-preload-engines=['xkb:us::eng']
+engines-order=['xkb:de:us:deu', 'mozc-jp']
+preload-engines=['mozc-jp', 'xkb:de:us:deu']
 version='1.5.30'
+
+[org/gnome/Console]
+last-window-maximised=true
+last-window-size=(1158, 583)
+
+[org/gnome/Extensions]
+window-height=378
+window-maximized=true
+window-width=678
+
+[org/gnome/calendar]
+active-view='month'
+window-maximized=true
+window-size=(768, 600)
+
+[org/gnome/control-center]
+last-panel='bluetooth'
+window-state=(1280, 705, true)
 
 [org/gnome/desktop/app-folders]
 folder-children=['Utilities', 'YaST', 'Pardus']
@@ -28,37 +40,236 @@ categories=['X-SuSE-YaST']
 name='suse-yast.directory'
 translate=true
 
+[org/gnome/desktop/background]
+color-shading-type='solid'
+picture-options='zoom'
+picture-uri='file:///usr/share/backgrounds/gnome/amber-l.jxl'
+picture-uri-dark='file:///usr/share/backgrounds/gnome/amber-d.jxl'
+primary-color='#ff7800'
+secondary-color='#000000'
+
 [org/gnome/desktop/input-sources]
+mru-sources=[('xkb', 'us')]
+show-all-sources=true
 sources=[('xkb', 'us')]
 xkb-options=['terminate:ctrl_alt_bksp']
+
+[org/gnome/desktop/interface]
+color-scheme='prefer-dark'
+cursor-theme='Breeze_Hacked'
+enable-animations=false
+enable-hot-corners=false
+gtk-theme='Matcha-dark-pueril'
+icon-theme='breeze-dark'
+show-battery-percentage=true
+
+[org/gnome/desktop/notifications]
+application-children=['gnome-power-panel', 'google-chrome', 'org-gnome-console', 'org-gnome-tweaks', 'org-gnome-shell-extensions', 'org-gnome-evolution-alarm-notify', 'org-keepassxc-keepassxc']
+
+[org/gnome/desktop/notifications/application/gnome-power-panel]
+application-id='gnome-power-panel.desktop'
+
+[org/gnome/desktop/notifications/application/google-chrome]
+application-id='google-chrome.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-console]
+application-id='org.gnome.Console.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-evolution-alarm-notify]
+application-id='org.gnome.Evolution-alarm-notify.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-shell-extensions]
+application-id='org.gnome.Shell.Extensions.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-tweaks]
+application-id='org.gnome.tweaks.desktop'
+
+[org/gnome/desktop/notifications/application/org-keepassxc-keepassxc]
+application-id='org.keepassxc.KeePassXC.desktop'
+
+[org/gnome/desktop/screensaver]
+color-shading-type='solid'
+picture-options='zoom'
+picture-uri='file:///usr/share/backgrounds/gnome/amber-l.jxl'
+primary-color='#ff7800'
+secondary-color='#000000'
+
+[org/gnome/desktop/search-providers]
+sort-order=['org.gnome.Settings.desktop', 'org.gnome.Contacts.desktop', 'org.gnome.Nautilus.desktop']
+
+[org/gnome/desktop/wm/keybindings]
+close=['<Shift><Super>q']
+
+[org/gnome/desktop/wm/preferences]
+action-middle-click-titlebar='none'
+button-layout='close,minimize,maximize:appmenu'
+
+[org/gnome/evince/default]
+continuous=true
+dual-page=false
+dual-page-odd-left=false
+enable-spellchecking=true
+fullscreen=false
+inverted-colors=false
+show-sidebar=true
+sidebar-page='links'
+sidebar-size=144
+sizing-mode='free'
+window-ratio=(1.4586401862498219, 1.5726706894094171)
+zoom=1.1523727419117979
 
 [org/gnome/evolution-data-server]
 migrated=true
 
+[org/gnome/evolution-data-server/calendar]
+reminders-past=['19854c2510f937b5c3094ab60c6c1bf4f7d5e576\n9901901fe2cefdb45786dfb8f9602d639c5fabe5\t20240928T090000\n1727505000\n1727506800\n1727533800\nBEGIN:VEVENT\r\nDTSTART;TZID=Europe/Berlin:20240928T090000\r\nDTEND;TZID=Europe/Berlin:20240928T163000\r\nDTSTAMP:20240410T065816Z\r\nUID:\r\n ccrj8phk6co32bb664o64b9k6gr66b9oc4p3ib9m74p3gpj468s3ior26g@google.com\r\nCREATED:20240410T065816Z\r\nDESCRIPTION:Do you care?\\nDieser Community-Day richtet sich an alle\\, die \r\n an ihre Arbeit einen gewissen Anspruch haben\\; an alle\\, die mehr als \r\n „nur“ ein lauffähiges Programm wollen.\\n\\nWe want to share!\\nWir \r\n möchten mit Euch diskutieren\\, was vernünftige Software-Entwicklung im \r\n 21. Jahrhundert bedeutet. Software Craft ist eine von Programmiersprachen \r\n unabhängige Bewegung: ob Java\\, .NET\\, PHP oder Ruby (oder gar keine)\\, \r\n jeder ist herzlich willkommen.\\n\\nWas Dich erwartet:\\nDas Programm \r\n besteht aus Vorträgen\\, Diskussionen und natürlich: Live Hacking! Den \r\n Tag gestalten wir dynamisch nach dem Open Space Prinzip.\\n\\nAblauf:\\n09:\r\n 00 Frühstück\\n09:15 LeanCoffee in kleinen Gruppen\\n10:00 Einführung: \r\n OpenSpace\\, Marketplace für den Vormittag\\n10:30 Session\\n11:15 \r\n Session\\n12:00 Session\\n12:45 Mittagspause\\, Marketplace für den \r\n Nachmittag\\n13:45 Session\\n14:30 Session\\n15:15 Session\\n16:00 \r\n Retrospektive des Tages\\n16:30 Ende\\n\\nUm neue Dinge gleich selbst \r\n ausprobieren zu können\\, solltest Du ein Notebook mit \r\n einsatzbereiter/-en Entwicklungsumgebung(en) Deiner Wahl mitbringen. (Ist \r\n aber kein Muss!)\r\nLAST-MODIFIED:20240410T065816Z\r\nLOCATION:https://meetu.ps/e/N0Vtd/138jxx/i\r\nSEQUENCE:0\r\nSTATUS:CONFIRMED\r\nSUMMARY:SoCraTes Day Bielefeld 2024\r\nTRANSP:OPAQUE\r\nX-EVOLUTION-CALDAV-ETAG:63848415496\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:This is an event reminder\r\nTRIGGER:-PT30M\r\nX-EVOLUTION-ALARM-UID:9901901fe2cefdb45786dfb8f9602d639c5fabe5\r\nEND:VALARM\r\nEND:VEVENT\r\n']
+
+[org/gnome/gnome-system-monitor]
+current-tab='processes'
+maximized=true
+show-dependencies=false
+show-whose-processes='user'
+window-height=720
+window-width=800
+
+[org/gnome/gnome-system-monitor/proctree]
+col-26-visible=false
+col-26-width=0
+
+[org/gnome/mutter]
+center-new-windows=true
+experimental-features=['x11-randr-fractional-scaling']
+overlay-key='Super_L'
+
 [org/gnome/nautilus/preferences]
+default-folder-viewer='icon-view'
 migrated-gtk-settings=true
+search-filter-time-type='last_modified'
+
+[org/gnome/nautilus/window-state]
+initial-size=(890, 550)
+initial-size-file-chooser=(890, 550)
+
+[org/gnome/nm-applet/eap/1122dcf4-2b90-4c7a-9760-8a23acedda9e]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
+[org/gnome/nm-applet/eap/2a9a6ed7-4265-4e15-8dc7-b1ad2ed5225c]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
+[org/gnome/nm-applet/eap/456cea4f-5452-4765-a555-cdba726f997c]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
+[org/gnome/nm-applet/eap/c85454fb-f667-4d0b-9de5-238b6f4fbc8a]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
+[org/gnome/nm-applet/eap/cae1913c-252e-4cf0-b104-5f85a33970dc]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
+[org/gnome/nm-applet/eap/cc0c6f29-8ac2-4cd8-aa03-c557fd495ae1]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
+[org/gnome/settings-daemon/plugins/color]
+night-light-enabled=false
+night-light-schedule-automatic=false
+
+[org/gnome/settings-daemon/plugins/media-keys]
+custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/']
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0]
+binding='<Shift><Super>o'
+command='keepassxc'
+name='Keepassxc'
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1]
+binding='<Super>Return'
+command='gnome-terminal'
+name='gnome-terminal'
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2]
+binding='<Shift><Super>p'
+command='nautilus'
+name='nautilus'
 
 [org/gnome/shell]
+app-picker-layout=[{'org.gnome.Contacts.desktop': <{'position': <0>}>, 'org.gnome.Weather.desktop': <{'position': <1>}>, 'org.gnome.clocks.desktop': <{'position': <2>}>, 'org.gnome.Maps.desktop': <{'position': <3>}>, 'bssh.desktop': <{'position': <4>}>, 'bvnc.desktop': <{'position': <5>}>, 'org.gnome.Totem.desktop': <{'position': <6>}>, 'org.gnome.Calculator.desktop': <{'position': <7>}>, 'avahi-discover.desktop': <{'position': <8>}>, 'simple-scan.desktop': <{'position': <9>}>, 'org.gnome.Settings.desktop': <{'position': <10>}>, 'org.gnome.SystemMonitor.desktop': <{'position': <11>}>, 'blackmagicraw-player.desktop': <{'position': <12>}>, 'org.gnome.Terminal.desktop': <{'position': <13>}>, 'Utilities': <{'position': <14>}>, 'blackmagicraw-speedtest.desktop': <{'position': <15>}>, 'yelp.desktop': <{'position': <16>}>, 'btop.desktop': <{'position': <17>}>, 'org.gnome.Calendar.desktop': <{'position': <18>}>, 'calibre-gui.desktop': <{'position': <19>}>, 'org.gnome.Snapshot.desktop': <{'position': <20>}>}, {'com.github.hluk.copyq.desktop': <{'position': <0>}>, 'DaVinciControlPanelsSetup.desktop': <{'position': <1>}>, 'DaVinciResolve.desktop': <{'position': <2>}>, 'DaVinciResolveCaptureLogs.desktop': <{'position': <3>}>, 'calibre-ebook-edit.desktop': <{'position': <4>}>, 'calibre-ebook-viewer.desktop': <{'position': <5>}>, 'electron31.desktop': <{'position': <6>}>, 'org.gnome.Extensions.desktop': <{'position': <7>}>, 'firefox.desktop': <{'position': <8>}>, 'org.flameshot.Flameshot.desktop': <{'position': <9>}>, 'org.gnome.NetworkDisplays.desktop': <{'position': <10>}>, 'lstopo.desktop': <{'position': <11>}>, 'imhex.desktop': <{'position': <12>}>, 'jdownloader.desktop': <{'position': <13>}>, 'org.kde.kdeconnect.app.desktop': <{'position': <14>}>, 'org.kde.kdeconnect.nonplasma.desktop': <{'position': <15>}>, 'org.kde.kdeconnect-settings.desktop': <{'position': <16>}>, 'org.kde.kdeconnect.sms.desktop': <{'position': <17>}>, 'org.keepassxc.KeePassXC.desktop': <{'position': <18>}>}, {'libreoffice-startcenter.desktop': <{'position': <0>}>, 'libreoffice-base.desktop': <{'position': <1>}>, 'libreoffice-calc.desktop': <{'position': <2>}>, 'libreoffice-draw.desktop': <{'position': <3>}>, 'libreoffice-impress.desktop': <{'position': <4>}>, 'libreoffice-math.desktop': <{'position': <5>}>, 'libreoffice-writer.desktop': <{'position': <6>}>, 'calibre-lrfviewer.desktop': <{'position': <7>}>, 'net.lutris.Lutris.desktop': <{'position': <8>}>, 'mpv.desktop': <{'position': <9>}>, 'nvim.desktop': <{'position': <10>}>, 'nvidia-settings.desktop': <{'position': <11>}>, 'nvtop.desktop': <{'position': <12>}>, 'com.obsproject.Studio.desktop': <{'position': <13>}>, 'jconsole-java11-openjdk.desktop': <{'position': <14>}>, 'jshell-java11-openjdk.desktop': <{'position': <15>}>, 'jconsole-java21-openjdk.desktop': <{'position': <16>}>, 'jshell-java21-openjdk.desktop': <{'position': <17>}>, 'jconsole-java-openjdk.desktop': <{'position': <18>}>, 'jshell-java-openjdk.desktop': <{'position': <19>}>, 'PCSX2.desktop': <{'position': <20>}>, 'picom.desktop': <{'position': <21>}>, 'PINCE.desktop': <{'position': <22>}>}, {'pycharm-professional.desktop': <{'position': <0>}>, 'qalculate-gtk.desktop': <{'position': <1>}>, 'org.qbittorrent.qBittorrent.desktop': <{'position': <2>}>, 'qv4l2.desktop': <{'position': <3>}>, 'qvidcap.desktop': <{'position': <4>}>, 'ranger.desktop': <{'position': <5>}>, 'rofi.desktop': <{'position': <6>}>, 'rofi-theme-selector.desktop': <{'position': <7>}>, 'steam.desktop': <{'position': <8>}>, 'texstudio.desktop': <{'position': <9>}>, 'torbrowser.desktop': <{'position': <10>}>, 'torbrowser-settings.desktop': <{'position': <11>}>, 'org.gnome.Tour.desktop': <{'position': <12>}>, 'ventoy.desktop': <{'position': <13>}>, 'vesktop.desktop': <{'position': <14>}>, 'vim.desktop': <{'position': <15>}>, 'vlc.desktop': <{'position': <16>}>, 'org.pulseaudio.pavucontrol.desktop': <{'position': <17>}>, 'org.gnome.Epiphany.desktop': <{'position': <18>}>, 'winetricks.desktop': <{'position': <19>}>, 'xdvi.desktop': <{'position': <20>}>}, {'Zoom.desktop': <{'position': <0>}>, 'org.gnome.Music.desktop': <{'position': <1>}>, 'org.gnome.Software.desktop': <{'position': <2>}>, 'org.gnome.TextEditor.desktop': <{'position': <3>}>}]
+disabled-extensions=['light-style@gnome-shell-extensions.gcampax.github.com', 'apps-menu@gnome-shell-extensions.gcampax.github.com', 'windowsNavigator@gnome-shell-extensions.gcampax.github.com', 'blur-my-shell@aunetx']
+enabled-extensions=['user-theme@gnome-shell-extensions.gcampax.github.com', 'system-monitor@gnome-shell-extensions.gcampax.github.com', 'status-icons@gnome-shell-extensions.gcampax.github.com', 'places-menu@gnome-shell-extensions.gcampax.github.com', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'arcmenu@arcmenu.com', 'dash-to-dock@micxgx.gmail.com', 'gsconnect@andyholmes.github.io', 'gTile@vibou']
+favorite-apps=['ytmdesktop.desktop', 'google-chrome.desktop', 'org.gnome.Nautilus.desktop', 'anki.desktop', 'org.gnome.Calendar.desktop', 'org.mozilla.Thunderbird.desktop', 'com.usebottles.bottles.desktop', 'localsend.desktop', 'DaVinciResolve.desktop', 'gimp.desktop', 'org.inkscape.Inkscape.desktop', 'org.darktable.darktable.desktop', 'org.kde.krita.desktop', 'blender.desktop', 'code.desktop', 'jetbrains-idea.desktop', 'jetbrains-webstorm.desktop']
+last-selected-power-profile='performance'
 welcome-dialog-last-shown-version='47.0'
+
+[org/gnome/shell/extensions/arcmenu]
+arcmenu-hotkey=['<Super>d']
+distro-icon=6
+menu-button-icon='Distro_Icon'
+menu-layout='Runner'
+multi-monitor=true
+prefs-visible-page=0
+recently-installed-apps=['org.gnome.Sysprof.desktop', 'org.gnome.Terminal.desktop']
+runner-position='Centered'
+search-entry-border-radius=(true, 25)
+
+[org/gnome/shell/extensions/blur-my-shell]
+settings-version=2
+
+[org/gnome/shell/extensions/blur-my-shell/appfolder]
+brightness=0.59999999999999998
+sigma=30
+
+[org/gnome/shell/extensions/blur-my-shell/dash-to-dock]
+blur=true
+brightness=0.59999999999999998
+sigma=30
+static-blur=true
+style-dash-to-dock=0
+
+[org/gnome/shell/extensions/blur-my-shell/panel]
+brightness=0.59999999999999998
+sigma=30
+
+[org/gnome/shell/extensions/blur-my-shell/window-list]
+brightness=0.59999999999999998
+sigma=30
+
+[org/gnome/shell/extensions/dash-to-dock]
+apply-custom-theme=false
+background-opacity=0.80000000000000004
+custom-theme-shrink=true
+dash-max-icon-size=32
+dock-position='BOTTOM'
+extend-height=false
+height-fraction=0.5
+multi-monitor=true
+preferred-monitor=-2
+preferred-monitor-by-connector='eDP-1'
+preview-size-scale=0.0
+transparency-mode='DYNAMIC'
+
+[org/gnome/shell/extensions/gtile]
+show-toggle-tiling=['<Alt>Return']
+
+[org/gnome/shell/extensions/user-theme]
+name='Matcha-dark-aliz'
 
 [org/gnome/shell/world-clocks]
 locations=@av []
 
 [org/gnome/software]
-check-timestamp=int64 1727852502
+check-timestamp=int64 1727608127
 first-run=false
 
+[org/gnome/tweaks]
+show-extensions-notice=false
+
 [org/gtk/gtk4/settings/file-chooser]
-date-format='regular'
-location-mode='path-bar'
 show-hidden=false
-sidebar-width=354
-sort-column='name'
 sort-directories-first=false
-sort-order='ascending'
-type-format='category'
-view-type='list'
-window-size=(1113, 390)
 
 [org/gtk/settings/file-chooser]
 date-format='regular'
@@ -66,10 +277,10 @@ location-mode='path-bar'
 show-hidden=false
 show-size-column=true
 show-type-column=true
-sidebar-width=211
-sort-column='name'
+sidebar-width=267
+sort-column='modified'
 sort-directories-first=false
-sort-order='ascending'
+sort-order='descending'
 type-format='category'
-window-position=(2558, 11)
-window-size=(2592, 1458)
+window-position=(677, 280)
+window-size=(1203, 902)

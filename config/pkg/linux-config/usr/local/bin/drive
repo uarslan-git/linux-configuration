@@ -1,6 +1,6 @@
 #!/bin/bash
-rclone copy drive1: /home/user/Drive/Drive1/ --ignore-existing --progress --transfers 25 --bwlimit off --fast-list --drive-acknowledge-abuse
+rclone copy drive1: /home/user/Drive/Drive1/ --update --progress --transfers 25 --bwlimit off --fast-list --drive-acknowledge-abuse
 rclone sync /home/user/Drive/Drive1/ drive1: --progress --transfers 25 --bwlimit off --fast-list --drive-acknowledge-abuse
 
-rclone copy drive2: /home/user/Drive/Drive2/ --ignore-existing --progress --transfers 25 --bwlimit off --fast-list --drive-acknowledge-abuse
+rclone copy drive2: /home/user/Drive/Drive2/ --update --progress --transfers 25 --bwlimit off --fast-list --drive-acknowledge-abuse
 rclone sync /home/user/Drive/Drive2/ drive2: --progress --transfers 25 --bwlimit off --fast-list --drive-acknowledge-abuse
