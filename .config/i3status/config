@@ -56,7 +56,8 @@ general {
            }
 
            tztime local {
-                   format = "%Y-%m-%d %U %H:%M:%S %Z"
+                   #format = "%Y-%m-%d %U %H:%M:%S %Z"
+                   format = "%A, %b %d, %Y | %H:%M:%S"
            }
 
            load {
