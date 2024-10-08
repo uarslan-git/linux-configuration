@@ -56,8 +56,8 @@ path_exists VPN {
 }
 
 tztime local {
-    format = "%Y年%m月%d日 (%A)"
-        locale = "ja_JP.UTF-8"
+    format = "%H:%M:%S - %Y年%m月%d日 (%A)"
+    locale = "ja_JP.UTF-8"
 }
 
 load {

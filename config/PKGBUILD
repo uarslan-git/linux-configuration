@@ -56,8 +56,8 @@ depends=(
     git
     git-delta
     git-filter-repo
-    github-cli
     git-secret
+    github-cli
     gnome-network-displays
     google-chrome
     gpick
@@ -67,16 +67,16 @@ depends=(
     gvfs
     gzip
     haskell-language-server
+    i3-wm
     i3blocks
     i3lock-color
     i3status
-    i3-wm
     ibus-mozc
     imhex-bin
     inkscape
+    intel-ucode
     intellij-idea-ultimate-edition
     intellij-idea-ultimate-edition-jre
-    intel-ucode
     java-language-server
     jdownloader2
     k9s
@@ -110,15 +110,15 @@ depends=(
     neofetch
     neovim
     nerd-fonts-complete-mono-glyphs
-    networkmanager
     network-manager-applet
+    networkmanager
     nmap
     nodejs
     npm
     nvim-packer-git
     nvtop
-    obsidian
     obs-studio
+    obsidian
     oh-my-zsh-git
     openssh
     papirus-icon-theme
@@ -200,9 +200,9 @@ depends=(
     xf86-video-vesa
     xorg-bdftopcf
     xorg-docs
+    xorg-font-util
     xorg-fonts-100dpi
     xorg-fonts-75dpi
-    xorg-font-util
     xorg-iceauth
     xorg-server-devel
     xorg-server-xephyr
@@ -247,11 +247,13 @@ depends=(
   if lspci | rg -i nvidia &>/dev/null; then depends+=(
       davinci-resolve-studio 
       gamemode
-      heroic-games-launcher-bin
       lib32-nvidia-utils 
       nvidia 
       nvidia-settings
       opencl-nvidia 
+      mangohud
+      zerotier-one
+      gamescope
       ); fi
 
   # Functions
