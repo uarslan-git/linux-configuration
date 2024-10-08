@@ -62,6 +62,7 @@ depends=(
     gnome-network-displays
     gnome-terminal
     google-chrome
+    gpick
     gradle
     graphql-lsp
     gst-plugin-pipewire
