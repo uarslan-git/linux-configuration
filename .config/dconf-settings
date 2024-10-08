@@ -1,7 +1,10 @@
 [desktop/ibus/general]
-engines-order=['mozc-jp', 'xkb:de:us:deu']
+engines-order=['xkb:de:us:deu', 'mozc-jp']
 preload-engines=['mozc-jp', 'xkb:de:us:deu']
 version='1.5.30'
+
+[desktop/ibus/general/hotkey]
+triggers=['<Control>space']
 
 [org/gnome/Console]
 last-window-maximised=true
