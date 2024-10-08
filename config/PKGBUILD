@@ -50,7 +50,6 @@ depends=(
     flameshot
     fzf
     fzf-tab-git
-    gamemode
     gdb
     ghidra
     gimp
@@ -60,7 +59,6 @@ depends=(
     github-cli
     git-secret
     gnome-network-displays
-    gnome-terminal
     google-chrome
     gpick
     gradle
@@ -69,7 +67,6 @@ depends=(
     gvfs
     gzip
     haskell-language-server
-    heroic-games-launcher-bin
     i3blocks
     i3lock-color
     i3status
@@ -101,11 +98,9 @@ depends=(
     linux-zen-headers
     localsend-bin
     lua-language-server
-    lutris
     lxappearance
     ly
     man-db
-    mangohud
     man-pages
     marksman-bin
     matcha-gtk-theme
@@ -120,7 +115,6 @@ depends=(
     nmap
     nodejs
     npm
-    ntfs-3g
     nvim-packer-git
     nvtop
     obsidian
@@ -239,7 +233,6 @@ depends=(
     xorg-xwud
     xss-lock-session
     ytmdesktop-git
-    zerotier-one
     zip
     zoom
     zsh
@@ -251,7 +244,15 @@ depends=(
   )
   #endPackages
 
-  if lspci | rg -i nvidia &>/dev/null; then depends+=(nvidia davinci-resolve-studio lib32-nvidia-utils opencl-nvidia nvidia-settings); fi
+  if lspci | rg -i nvidia &>/dev/null; then depends+=(
+      davinci-resolve-studio 
+      gamemode
+      heroic-games-launcher-bin
+      lib32-nvidia-utils 
+      nvidia 
+      nvidia-settings
+      opencl-nvidia 
+      ); fi
 
   # Functions
   paru() {
