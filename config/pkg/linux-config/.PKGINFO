@@ -6,7 +6,7 @@ xdata = pkgtype=pkg
 pkgver = 0.1.0-1
 pkgdesc = linux config
 url = https://github.com/uarslan-git/linux-config
-builddate = 1728556768
+builddate = 1728557254
 packager = Unknown Packager
 size = 1873
 arch = x86_64
@@ -68,6 +68,7 @@ depend = i3blocks
 depend = i3lock-color
 depend = i3status
 depend = i3-wm
+depend = ibus-daemon
 depend = ibus-mozc
 depend = imhex-bin
 depend = inkscape

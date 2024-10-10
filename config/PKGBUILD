@@ -71,6 +71,7 @@ depends=(
     i3lock-color
     i3status
     i3-wm
+    ibus-daemon
     ibus-mozc
     imhex-bin
     inkscape
