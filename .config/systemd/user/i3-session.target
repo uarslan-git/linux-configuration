@@ -4,6 +4,7 @@ After=graphical-session-pre.target
 BindsTo=graphical-session.target
 Wants=feh.service
 Wants=picom.service
+Wants=ibus.service
 Wants=drive.timer
 Wants=xss-lock.service
 Wants=youtube-music-player.service
