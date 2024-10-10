@@ -2,12 +2,16 @@
 dark-theme=true
 show-sandbox-warning=false
 startup-view='page_list'
-window-height=1416
-window-width=2582
+window-height=1426
+window-width=2592
 
 [desktop/ibus/general]
-preload-engines=['xkb:us::eng']
+engines-order=['xkb:de:us:deu', 'mozc-on']
+preload-engines=['mozc-on', 'xkb:de:us:deu']
 version='1.5.30'
+
+[desktop/ibus/general/hotkey]
+triggers=['<Control>space']
 
 [org/gnome/desktop/app-folders]
 folder-children=['Utilities', 'YaST', 'Pardus']
@@ -67,9 +71,9 @@ show-hidden=false
 show-size-column=true
 show-type-column=true
 sidebar-width=211
-sort-column='name'
+sort-column='modified'
 sort-directories-first=false
-sort-order='ascending'
+sort-order='descending'
 type-format='category'
-window-position=(0, 0)
+window-position=(2592, 18)
 window-size=(2560, 1440)
