@@ -2,31 +2,46 @@
     "bibitems": [
     ],
     "bibtexfiles": [
+        "/home/user/Drive/Drive2/Important/CV/CV_DEUTSCH/moderncv/publications.bib#publications"
     ],
     "childdocs": [
     ],
-    "filename": "/home/user/Drive/Drive1/Important/CV/moderncv_ger/template.tex",
+    "filename": "/home/user/Drive/Drive2/Important/CV/CV_DEUTSCH/moderncv/template.tex",
     "labels": [
     ],
-    "modified": "Thu Oct 10 12:01:59 2024",
+    "modified": "Fri Oct 11 14:42:36 2024",
     "packages": [
+        "utf8#inputenc",
+        "#fontspec",
+        "english#babel",
+        "#unicode-math",
+        "#lmodern",
+        "T1#fontenc",
         "11pt,a4paper,sans#class-moderncv",
         "11pt,a4paper,sans#latex-document",
         "11pt,a4paper,sans#tex",
-        "#unicode-math",
-        "T1#fontenc",
-        "english#babel",
-        "scale=0.75#geometry",
-        "#fontspec",
-        "utf8#inputenc",
-        "#lmodern"
+        "hmargin=0.5in,vmargin=10pt#geometry"
     ],
     "refs": [
     ],
     "toc": [
-        "2#Fähigkeiten#70",
-        "2#Interessen#76"
+        "2#Education#131",
+        "2#Master thesis#135",
+        "2#Experience#140",
+        "3#Vocational#141",
+        "3#Miscellaneous#161",
+        "2#Languages#164",
+        "2#Computer skills#170",
+        "2#Skill matrix#176",
+        "2#Interests#229",
+        "2#Extra 1#234",
+        "2#Extra 2#239",
+        "2#References#244"
     ],
     "usercommands": [
+        [
+            "\\bibliographyitemlabel",
+            "\\bibliographyitemlabel"
+        ]
     ]
 }
