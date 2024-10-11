@@ -43,6 +43,7 @@ depends=(
     dracula-icons-git
     dunst
     efibootmgr
+    element-desktop
     evince
     fd
     feh
