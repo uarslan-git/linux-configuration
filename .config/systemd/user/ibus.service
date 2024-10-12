@@ -1,0 +1,16 @@
+[Unit]
+Description=Ibus
+Requires=i3-session.target
+After=i3-session.target
+
+[Service]
+Type=exec
+ExecStart=/usr/bin/ibus-daemon
+ExecReload=/usr/bin/kill -s SIGUSR1 $MAINPID
+Restart=always
+
+ProtectSystem=true
+NoNewPrivileges=true
+ProtectKernelTunables=true
+ProtectControlGroups=true
+RestrictNamespaces=true
