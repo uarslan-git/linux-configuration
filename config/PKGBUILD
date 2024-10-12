@@ -248,6 +248,8 @@ depends=(
 
   if lspci | rg -i nvidia &>/dev/null; then depends+=(
       davinci-resolve-studio 
+      unityhub
+      unreal-engine-bin
       gamemode
       lib32-nvidia-utils 
       nvidia 
