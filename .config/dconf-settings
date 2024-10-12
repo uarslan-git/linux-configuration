@@ -56,13 +56,13 @@ first-run=false
 date-format='regular'
 location-mode='path-bar'
 show-hidden=false
-sidebar-width=354
+sidebar-width=327
 sort-column='name'
 sort-directories-first=false
 sort-order='ascending'
 type-format='category'
 view-type='list'
-window-size=(1113, 390)
+window-size=(1066, 881)
 
 [org/gtk/settings/file-chooser]
 date-format='regular'
