@@ -10,22 +10,22 @@ order += "ethernet lo"
 order += "wireless wlan0"
 order += "ipv6"
 order += "disk /"
-order += "run_watch DHCP"
-order += "run_watch VPNC"
-order += "path_exists VPN"
+#order += "run_watch DHCP"
+#order += "run_watch VPNC"
+#order += "path_exists VPN"
 order += "battery 0"
-order += "cpu_temperature 0"
+#order += "cpu_temperature 0"
 order += "memory"
 order += "load"
 order += "tztime local"
 
-wireless wlan0 {
-    format_up = "󰖩 (%quality at %essid, %bitrate) %ip"
-        format_down = "󰖪"
+wireless wlp58s0 {
+     format_up = "󰖩 (%quality at %essid, %bitrate) %ip"
+     format_down = "󰖪"
 }
 
 ethernet lo {
-    format_up = "󰈁 %ip (%speed)"
+        format_up = "󰈁 %ip (%speed)"
         format_down = "󰈂"
 }
 
