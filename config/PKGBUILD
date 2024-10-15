@@ -183,7 +183,7 @@ depends=(
     typescript-language-server
     ufw
     unityhub
-    unrar
+    rar
     unzip
     ventoy-bin
     vesktop-bin
