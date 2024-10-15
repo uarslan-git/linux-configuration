@@ -142,6 +142,7 @@ depends=(
     qalculate-gtk
     qbittorrent
     ranger
+    rar
     rclone
     ripgrep
     rofi
@@ -181,6 +182,7 @@ depends=(
     ttf-iosevka-nerd
     typescript-language-server
     ufw
+    unityhub
     unrar
     unzip
     ventoy-bin
@@ -249,7 +251,6 @@ depends=(
   if lspci | rg -i nvidia &>/dev/null; then depends+=(
       davinci-resolve-studio 
       unityhub
-      unreal-engine-bin
       gamemode
       lib32-nvidia-utils 
       nvidia 
@@ -258,6 +259,7 @@ depends=(
       mangohud
       zerotier-one
       gamescope
+      upscayl-bin
       ); fi
 
   # Functions
