@@ -2,8 +2,8 @@
 
 (history-item "tools-size-decrease" 2)
 (history-item "tools-scale" 3)
-(history-item "tools-size-increase" 2)
-(history-item "image-new" 0)
+(history-item "tools-size-increase" 1)
+(history-item "image-new" 1)
 (history-item "file-quit" 1)
 (history-item "select-none" 0)
 (history-item "edit-copy" 3)

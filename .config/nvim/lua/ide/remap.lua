@@ -40,7 +40,7 @@ vim.keymap.set("n", "<leader>xc", "<cmd>!xclip %<CR>", { silent = true })
 
 -- Code Runners
 vim.keymap.set("n", "<leader>rp", "<cmd>term python %<CR>")
-vim.keymap.set("n", "<leader>rtp", "<cmd>!python -m unittest discover -p '*.py'")
+vim.keymap.set("n", "<leader>rtp", "<cmd>!python -m unittest discover -p '*.py'<CR>")
 
 vim.keymap.set("n", "<leader><leader>", function()
     vim.cmd("so")
