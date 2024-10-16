@@ -38,6 +38,10 @@ vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 vim.keymap.set("n", "<leader>xc", "<cmd>!xclip %<CR>", { silent = true })
 
+-- Code Runners
+vim.keymap.set("n", "<leader>rp", "<cmd>term python %<CR>")
+vim.keymap.set("n", "<leader>rtp", "<cmd>term python -m unittest discover '*.py' <CR>")
+
 vim.keymap.set("n", "<leader><leader>", function()
     vim.cmd("so")
 end)
