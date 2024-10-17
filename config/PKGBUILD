@@ -14,6 +14,7 @@ sha512sums=('SKIP')
 
 #startPackages
 depends=(
+    alacritty
     amd-ucode
     ani-cli
     anki-bin
@@ -183,7 +184,6 @@ depends=(
     typescript-language-server
     ufw
     unityhub
-    rar
     unzip
     ventoy-bin
     vesktop-bin
