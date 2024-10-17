@@ -4,3 +4,4 @@ enable lightdm.service
 enable tlp.service
 enable bluetooth.service
 enable autorandr.service
+enable cups.service
