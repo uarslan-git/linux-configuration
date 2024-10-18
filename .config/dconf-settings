@@ -2,8 +2,8 @@
 dark-theme=true
 show-sandbox-warning=false
 startup-view='page_list'
-window-height=1429
-window-width=2592
+window-height=1369
+window-width=1259
 
 [desktop/ibus/general]
 engines-order=['xkb:de:us:deu', 'mozc-on']
@@ -41,6 +41,10 @@ migrated=true
 
 [org/gnome/nautilus/preferences]
 migrated-gtk-settings=true
+
+[org/gnome/nm-applet/eap/9df57ee3-ac41-3abf-af83-accf5b61cb8b]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
 
 [org/gnome/shell]
 welcome-dialog-last-shown-version='47.0'
