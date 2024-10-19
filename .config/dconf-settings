@@ -2,8 +2,8 @@
 dark-theme=true
 show-sandbox-warning=false
 startup-view='page_list'
-window-height=1369
-window-width=1259
+window-height=1351
+window-width=1243
 
 [desktop/ibus/general]
 engines-order=['xkb:de:us:deu', 'mozc-on']

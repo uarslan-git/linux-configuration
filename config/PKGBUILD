@@ -153,6 +153,7 @@ depends=(
     sql-language-server
     steam
     systemd
+    teamspeak
     texlab
     texlive-basic
     texlive-bibtexextra

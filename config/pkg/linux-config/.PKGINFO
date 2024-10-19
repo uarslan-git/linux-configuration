@@ -6,7 +6,7 @@ xdata = pkgtype=pkg
 pkgver = 0.1.0-1
 pkgdesc = linux config
 url = https://github.com/uarslan-git/linux-config
-builddate = 1729261125
+builddate = 1729281912
 packager = Unknown Packager
 size = 2812
 arch = x86_64
@@ -150,6 +150,7 @@ depend = rofi
 depend = sql-language-server
 depend = steam
 depend = systemd
+depend = teamspeak
 depend = texlab
 depend = texlive-basic
 depend = texlive-bibtexextra
