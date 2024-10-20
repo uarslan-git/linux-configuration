@@ -1,10 +1,10 @@
 # GIMP action-history
 
 (history-item "tools-size-decrease" 2)
-(history-item "tools-scale" 3)
-(history-item "tools-size-increase" 0)
+(history-item "tools-scale" 2)
 (history-item "image-new" 1)
-(history-item "file-quit" 2)
+(history-item "tools-size-increase" 0)
+(history-item "file-quit" 3)
 (history-item "select-none" 0)
 (history-item "edit-copy" 3)
 (history-item "layers-new" 0)

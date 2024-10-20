@@ -1,11 +1,22 @@
 #!/bin/bash
 
-# find /home/user/Drive/Drive1 -type f -print > DELETION_LOG.txt
 DRIVE1="/home/user/Drive/Drive1"
 LOG_FILE1=$DRIVE1/log_file.txt
 DELETE_TODO=$DRIVE1/delete_todo.txt
 
-#rclone copy drive1:/log_file.txt $DRIVE1 --update --progress --transfers 25 --bwlimit off --fast-list --drive-acknowledge-abuse
+HOSTNAME=$(hostname)
+
+if [ "$HOSTNAME" == "pc" ]; then
+    DEVICE="#pc"
+elif [ "$HOSTNAME" == "laptop"]; then
+    DEVICE="#laptop"
+else
+    echo "Unknown device. Exiting."
+    exit 1
+fi
+
+rclone copy drive1:/log_file.txt $DRIVE1 --update --progress --transfers 25 --bwlimit off --fast-list --drive-acknowledge-abuse
+rclone copy drive1:/delete_todo.txt $DRIVE1 --update --progress --transfers 25 --bwlimit off --fast-list --drive-acknowledge-abuse
 
 if [ ! -f "$LOG_FILE1" ]; then
     echo "log file not existing. creating one"
@@ -21,26 +32,63 @@ if [ ! -f "$DELETE_TODO" ]; then
     exit 0
 fi
 
-CURRENT_FILES=$(find $DRIVE1 -type f -print) #all files
+CURRENT_FILES=$(find $DRIVE1 -type f -print) # all files
 
+# Delete files listed in delete_todo
 while IFS= read -r FILE; do
-    echo "Deleting $FILE"
-    rm -rf $FILE
+    CLEAN_FILE=$(echo "$FILE" | sed "s/#pc//g" | sed "s/#laptop//g" | xargs)  # Clean up the markers
+    if [ -e "$CLEAN_FILE" ]; then
+        echo "Deleting $CLEAN_FILE"
+        rm -rf "$CLEAN_FILE"
+        if [ $? -ne 0 ]; then  # Check if rm failed
+            echo "rm failed for $CLEAN_FILE. Adding $DEVICE marker."
+            if [[ "$FILE" != *"$DEVICE"* ]]; then
+                sed -i "s|$FILE|$FILE $DEVICE|" "$DELETE_TODO"  # Add appropriate marker
+            fi
+        else
+            rclone delete drive1:/$(echo "$CLEAN_FILE" | sed "s|$DRIVE1||") # Adjust for relative path
+        fi
+    fi
 done < "$DELETE_TODO"
 
 # Delete Locally Created File From Cloud
 while IFS= read -r FILE; do
     if [[ ! "$CURRENT_FILES" =~ "$FILE" ]]; then
         echo "Deleting: $FILE"
-        rm $FILE
-        echo "Writing $FILE into Delete Todo"
-        echo $FILE > $DELETE_TODO
-        echo "Deleting from Cloud"
-        rclone delete drive1:/$FILE # This Breaks because of the URL of the file. CUT THE URL PART AWAY so it gets the drives relative path
+        rm "$FILE"
+        if [ $? -ne 0 ]; then  # Check if rm failed
+            echo "rm failed for $FILE. Adding $DEVICE marker."
+            if [[ "$FILE" != *"$DEVICE"* ]]; then
+                sed -i "s|$FILE|$FILE $DEVICE|" "$DELETE_TODO"  # Add appropriate marker
+            fi
+        else
+            echo "Writing $FILE into Delete Todo with $DEVICE"
+            echo "$FILE $DEVICE" >> $DELETE_TODO
+            echo "Deleting from Cloud"
+            rclone delete drive1:/$(echo "$FILE" | sed "s|$DRIVE1||") # Adjust for relative path
+        fi
     fi
 done < "$LOG_FILE1"
 
-rclone copy $DRIVE1 drive1: --update --progress --transfers 25 --bwlimit off --fast-list --drive-acknowledge-abuse
-rclone copy drive1: $DRIVE1 --update --progress --transfers 25 --bwlimit off --fast-list --drive-acknowledge-abuse
-
 echo "$CURRENT_FILES" > "$LOG_FILE1"
+
+rclone copy $DRIVE1 drive1: --update --progress --transfers 25 --bwlimit off --fast-list --drive-acknowledge-abuse
+#rclone sync drive1: $DRIVE1 --update --progress --transfers 25 --bwlimit off --fast-list --drive-acknowledge-abuse
+
+# Clean up delete todo file
+if [ -s "$DELETE_TODO" ]; then
+    echo "Cleaning up Delete Todo"
+    
+    # Keep lines only missing either #pc or #laptop
+    TEMP_TODO="${DELETE_TODO}.tmp"
+    while IFS= read -r LINE; do
+        if [[ "$LINE" == *"#pc"* && "$LINE" == *"#laptop"* ]]; then
+            echo "Removing entry from Delete Todo: $LINE"
+        else
+            echo "$LINE" >> "$TEMP_TODO"
+        fi
+    done < "$DELETE_TODO"
+    
+    mv "$TEMP_TODO" "$DELETE_TODO"
+fi
+
