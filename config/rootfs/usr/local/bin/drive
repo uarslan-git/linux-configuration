@@ -25,7 +25,7 @@ CURRENT_FILES=$(find $DRIVE1 -type f -print) #all files
 
 while IFS= read -r FILE; do
     echo "Deleting $FILE"
-    rm $FILE
+    rm -rf $FILE
 done < "$DELETE_TODO"
 
 # Delete Locally Created File From Cloud
