@@ -3,8 +3,9 @@
 # find /home/user/Drive/Drive1 -type f -print > DELETION_LOG.txt
 DRIVE1="/home/user/Drive/Drive1"
 LOG_FILE1=$DRIVE1/log_file.txt
+DELETE_TODO=$DRIVE1/delete_todo.txt
 
-rclone copy drive1:/log_file.txt $DRIVE1 --update --progress --transfers 25 --bwlimit off --fast-list --drive-acknowledge-abuse
+#rclone copy drive1:/log_file.txt $DRIVE1 --update --progress --transfers 25 --bwlimit off --fast-list --drive-acknowledge-abuse
 
 if [ ! -f "$LOG_FILE1" ]; then
     echo "log file not existing. creating one"
@@ -13,12 +14,28 @@ if [ ! -f "$LOG_FILE1" ]; then
     exit 0
 fi
 
+if [ ! -f "$DELETE_TODO" ]; then
+    echo "delete todo not existing. creating one"
+    touch $DELETE_TODO
+    echo "Created Delete Todo"
+    exit 0
+fi
+
 CURRENT_FILES=$(find $DRIVE1 -type f -print) #all files
 
-# Is File Deleted and in List?
+while IFS= read -r FILE; do
+    echo "Deleting $FILE"
+    rm $FILE
+done < "$DELETE_TODO"
+
+# Delete Locally Created File From Cloud
 while IFS= read -r FILE; do
     if [[ ! "$CURRENT_FILES" =~ "$FILE" ]]; then
         echo "Deleting: $FILE"
+        rm $FILE
+        echo "Writing $FILE into Delete Todo"
+        echo $FILE > $DELETE_TODO
+        echo "Deleting from Cloud"
         rclone delete drive1:/$FILE # This Breaks because of the URL of the file. CUT THE URL PART AWAY so it gets the drives relative path
     fi
 done < "$LOG_FILE1"
