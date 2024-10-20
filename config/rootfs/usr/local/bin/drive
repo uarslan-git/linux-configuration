@@ -1,31 +1,29 @@
 #!/bin/bash
 
-# Function to check if a folder is empty
-is_folder_empty() {
-  if [ -z "$(ls -A "$1")" ]; then
-    return 0    # Folder is empty
-  else
-    return 1    # Folder is not empty
-  fi
-}
+# find /home/user/Drive/Drive1 -type f -print > DELETION_LOG.txt
+DRIVE1="/home/user/Drive/Drive1"
+LOG_FILE1=$DRIVE1/log_file.txt
 
-# Drive1
-if is_folder_empty "/home/user/Drive/Drive1/"; then
-  echo "Local Drive1 is empty. Copying files from cloud to local."
-  rclone copy drive1: /home/user/Drive/Drive1/ --update --progress --transfers 25 --bwlimit off --fast-list --drive-acknowledge-abuse
-else
-  echo "Local Drive1 has files. Syncing local changes to cloud."
-  rclone sync /home/user/Drive/Drive1/ drive1: --update --progress --transfers 25 --bwlimit off --fast-list --drive-acknowledge-abuse --delete-during
-  rclone copy drive1: /home/user/Drive/Drive1/ --update --progress --transfers 25 --bwlimit off --fast-list --drive-acknowledge-abuse
+rclone copy drive1:/log_file.txt $DRIVE1 --update --progress --transfers 25 --bwlimit off --fast-list --drive-acknowledge-abuse
+
+if [ ! -f "$LOG_FILE1" ]; then
+    echo "log file not existing. creating one"
+    find $DRIVE1 -type f -print > "$LOG_FILE1"
+    echo "Created Log File with current files"
+    exit 0
 fi
 
-# Drive2
-if is_folder_empty "/home/user/Drive/Drive2/"; then
-  echo "Local Drive2 is empty. Copying files from cloud to local."
-  rclone copy drive2: /home/user/Drive/Drive2/ --update --progress --transfers 25 --bwlimit off --fast-list --drive-acknowledge-abuse
-else
-  echo "Local Drive2 has files. Syncing local changes to cloud."
-  rclone sync /home/user/Drive/Drive2/ drive2: --update --progress --transfers 25 --bwlimit off --fast-list --drive-acknowledge-abuse --delete-during
-  rclone copy drive2: /home/user/Drive/Drive2/ --update --progress --transfers 25 --bwlimit off --fast-list --drive-acknowledge-abuse
-fi
+CURRENT_FILES=$(find $DRIVE1 -type f -print) #all files
 
+# Is File Deleted and in List?
+while IFS= read -r FILE; do
+    if [[ ! "$CURRENT_FILES" =~ "$FILE" ]]; then
+        echo "Deleting: $FILE"
+        rclone delete drive1:/$FILE # This Breaks because of the URL of the file. CUT THE URL PART AWAY so it gets the drives relative path
+    fi
+done < "$LOG_FILE1"
+
+rclone copy $DRIVE1 drive1: --update --progress --transfers 25 --bwlimit off --fast-list --drive-acknowledge-abuse
+rclone copy drive1: $DRIVE1 --update --progress --transfers 25 --bwlimit off --fast-list --drive-acknowledge-abuse
+
+echo "$CURRENT_FILES" > "$LOG_FILE1"
