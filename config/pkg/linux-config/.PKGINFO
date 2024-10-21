@@ -6,9 +6,9 @@ xdata = pkgtype=pkg
 pkgver = 0.1.0-1
 pkgdesc = linux config
 url = https://github.com/uarslan-git/linux-config
-builddate = 1729443558
+builddate = 1729510174
 packager = Unknown Packager
-size = 3089
+size = 5006
 arch = x86_64
 license = GPL3
 depend = alacritty
