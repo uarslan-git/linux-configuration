@@ -1,4 +1,5 @@
 [global]
+timeout = 3
 font = "DejaVu Sans"
 
 # Allow a small subset of html markup:
