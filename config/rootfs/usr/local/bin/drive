@@ -1,5 +1,11 @@
 #!/bin/bash
 
+if [ $(hostname) == "pc" ]; then
+    echo "you are on your pc"
+elif [ $(hostname) == "laptop" ]; then
+    echo "you are on your laptop"
+fi
+
 # Function to check if a folder is empty
 is_folder_empty() {
   if [ -z "$(ls -A "$1")" ]; then
