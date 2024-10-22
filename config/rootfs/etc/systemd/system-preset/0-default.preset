@@ -5,3 +5,4 @@ enable tlp.service
 enable bluetooth.service
 enable autorandr.service
 enable cups.service
+enable systemd-resolve.service
