@@ -118,8 +118,8 @@ show-sidebar=true
 sidebar-page='thumbnails'
 sidebar-size=144
 sizing-mode='free'
-window-ratio=(2.0847472432955465, 1.6023470999774319)
-zoom=0.66688237379154969
+window-ratio=(4.2971663564464206, 1.6736153179156421)
+zoom=0.86603761799944512
 
 [org/gnome/evolution-data-server]
 migrated=true
@@ -281,9 +281,9 @@ show-hidden=false
 show-size-column=true
 show-type-column=true
 sidebar-width=267
-sort-column='name'
+sort-column='modified'
 sort-directories-first=false
-sort-order='ascending'
+sort-order='descending'
 type-format='category'
 window-position=(1307, 283)
 window-size=(1203, 902)
