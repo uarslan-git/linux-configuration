@@ -1,36 +1,5 @@
 #!/bin/bash
 
-if [ $(hostname) == "pc" ]; then
-    echo "you are on your pc"
-elif [ $(hostname) == "laptop" ]; then
-    echo "you are on your laptop"
-fi
+rclone mount drive1: $HOME/Drive/drive1
+rclone mount drive2: $HOME/Drive/drive2
 
-# Function to check if a folder is empty
-is_folder_empty() {
-  if [ -z "$(ls -A "$1")" ]; then
-    return 0    # Folder is empty
-  else
-    return 1    # Folder is not empty
-  fi
-}
-
-# Drive1
-if is_folder_empty "/home/user/Drive/Drive1/"; then
-  echo "Local Drive1 is empty. Copying files from cloud to local."
-  rclone copy drive1: /home/user/Drive/Drive1/ --update --progress --transfers 25 --bwlimit off --fast-list --drive-acknowledge-abuse
-else
-  echo "Local Drive1 has files. Syncing local changes to cloud."
-  rclone sync /home/user/Drive/Drive1/ drive1: --update --progress --transfers 25 --bwlimit off --fast-list --drive-acknowledge-abuse --delete-during
-  rclone copy drive1: /home/user/Drive/Drive1/ --update --progress --transfers 25 --bwlimit off --fast-list --drive-acknowledge-abuse
-fi
-
-# Drive2
-if is_folder_empty "/home/user/Drive/Drive2/"; then
-  echo "Local Drive2 is empty. Copying files from cloud to local."
-  rclone copy drive2: /home/user/Drive/Drive2/ --update --progress --transfers 25 --bwlimit off --fast-list --drive-acknowledge-abuse
-else
-  echo "Local Drive2 has files. Syncing local changes to cloud."
-  rclone sync /home/user/Drive/Drive2/ drive2: --update --progress --transfers 25 --bwlimit off --fast-list --drive-acknowledge-abuse --delete-during
-  rclone copy drive2: /home/user/Drive/Drive2/ --update --progress --transfers 25 --bwlimit off --fast-list --drive-acknowledge-abuse
-fi
