@@ -2,6 +2,3 @@
 
 rclone mount drive1: $HOME/Drive/Drive1 --allow-non-empty
 rclone mount drive2: $HOME/Drive/Drive2 --allow-non-empty
-
-rclone copy drive1:/1Vd54B35KOvbq4ab8dmuAT5zuuwgmBVwc.oetiUg $HOME/Drive/ --update
-rclone copy $HOME/Drive/1Vd54B35KOvbq4ab8dmuAT5zuuwgmBVwc.oetiUg drive1: --update
