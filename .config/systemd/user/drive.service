@@ -3,4 +3,4 @@ Description=Run Rclone Service
 
 [Service]
 Type=simple
-ExecStart=/bin/bash /usr/local/bin/drive
+ExecStart=/bin/bash -c '/usr/bin/grive -p ${HOME}/Drive/Drive1 && /usr/bin/grive -p ${HOME}/Drive/Drive2' 

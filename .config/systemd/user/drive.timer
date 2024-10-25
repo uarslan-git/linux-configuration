@@ -1,5 +1,5 @@
 [Unit]
-Description=Run Rclone every 5 minutes
+Description=Run grive every 2 minutes
 #After=i3-session.target
 #Requires=i3-session.target
 

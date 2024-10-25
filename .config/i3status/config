@@ -10,6 +10,7 @@ order += "ethernet lo"
 order += "wireless wlan0"
 order += "ipv6"
 order += "disk /"
+order += "disk /home/user/HDD"
 #order += "run_watch DHCP"
 #order += "run_watch VPNC"
 #order += "path_exists VPN"
@@ -76,8 +77,12 @@ memory {
 }
 
 disk "/" {
-    format = "󱛟 %free"
+    format = "󱛟 SSD: %free"
 }
+disk "/home/user/HDD" {
+    format = "󱛟 HDD: %free"
+}
+
 
 read_file uptime {
     path = "/proc/uptime"
