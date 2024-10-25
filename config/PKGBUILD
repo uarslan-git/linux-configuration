@@ -67,6 +67,7 @@ depends=(
     gpick
     gradle
     graphql-lsp
+    grive
     gst-plugin-pipewire
     gvfs
     gzip
@@ -79,6 +80,7 @@ depends=(
     ibus-daemon
     ibus-mozc
     imhex-bin
+    inetutils
     inkscape
     intellij-idea-ultimate-edition
     intellij-idea-ultimate-edition-jre
