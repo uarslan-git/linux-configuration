@@ -1,4 +1,4 @@
 #!/bin/bash
 
-rclone mount drive1: $HOME/Drive/Drive1 --allow-non-empty
-rclone mount drive2: $HOME/Drive/Drive2 --allow-non-empty
+rclone mount drive1: $HOME/Drive/Drive1 --allow-non-empty && disown
+rclone mount drive2: $HOME/Drive/Drive2 --allow-non-empty && disown
