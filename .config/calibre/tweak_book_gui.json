@@ -1,7 +1,7 @@
 {
   "check-book-splitter-state": {
     "__class__": "bytearray",
-    "__value__": "AAAA/wAAAAEAAAAC//////////8A/////wEAAAABAA=="
+    "__value__": "AAAA/wAAAAEAAAACAAAARgAAAEYA/////wEAAAABAA=="
   },
   "custom_colors_for_color_dialog": [
     [
@@ -162,50 +162,50 @@
   },
   "geometry-of-main_window_geometry": {
     "frame_geometry": {
-      "height": 325,
-      "width": 1125,
-      "x": 0,
-      "y": 29
+      "height": 223,
+      "width": 269,
+      "x": 3998,
+      "y": 500
     },
     "full_screened": false,
     "geometry": {
-      "height": 297,
-      "width": 1125,
-      "x": 0,
-      "y": 57
+      "height": 221,
+      "width": 267,
+      "x": 3999,
+      "y": 501
     },
     "maximized": false,
     "normal_geometry": {
-      "height": 297,
-      "width": 1125,
-      "x": 0,
-      "y": 57
+      "height": 221,
+      "width": 267,
+      "x": 3999,
+      "y": 501
     },
     "qt": {
       "__class__": "bytearray",
-      "__value__": "AdnQywADAAAAAAAAAAAAHQAABGQAAAFhAAAAAAAAADkAAARkAAABYQAAAAAAAAAACJAAAAAAAAAAOQAABGQAAAFh"
+      "__value__": "AdnQywADAAAAAA+eAAAB9AAAEKoAAALSAAAPnwAAAfUAABCpAAAC0QAAAAAAAAAABsAAAA+fAAAB9QAAEKkAAALR"
     },
     "screen": {
       "depth": 24,
-      "device_pixel_ratio": 2.0,
+      "device_pixel_ratio": 1.5,
       "geometry_in_logical_pixels": {
-        "height": 1233,
-        "width": 2192,
-        "x": 0,
+        "height": 972,
+        "width": 1728,
+        "x": 2560,
         "y": 0
       },
       "index_in_screens_list": 0,
       "manufacturer": "BNQ",
-      "model": "BenQ EL2870U",
-      "name": "DP-2-1",
-      "serial": "B1M04773SL0",
+      "model": "BenQ GL2760",
+      "name": "DVI-D-0",
+      "serial": "CAJ02062019",
       "size_in_logical_pixels": {
-        "height": 1233,
-        "width": 2192
+        "height": 972,
+        "width": 1728
       },
       "virtual_geometry": {
-        "height": 1233,
-        "width": 2192,
+        "height": 972,
+        "width": 4288,
         "x": 0,
         "y": 0
       }
@@ -213,8 +213,20 @@
   },
   "main_window_state": {
     "__class__": "bytearray",
-    "__value__": "AAAA/wAAAAD9AAAABAAAAAAAAAEAAAAA1PwCAAAABfsAAAAkAGYAaQBsAGUAcwAtAGIAcgBvAHcAcwBlAHIALQBkAG8AYwBrAQAAAD4AAADUAAAAWgD////7AAAAHgB0AG8AYwAtAHYAaQBlAHcAZQByAC0AZABvAGMAawAAAAAA/////wAAAFoA////+wAAACAAdABlAHgAdAAtAHMAZQBhAHIAYwBoAC0AZABvAGMAawAAAAAA/////wAAAIAA////+wAAACAAYwBoAGUAYwBrAHAAbwBpAG4AdABzAC0AZABvAGMAawAAAAAA/////wAAAIwA////+wAAACYAcwBhAHYAZQBkAC0AcwBlAGEAcgBjAGgAZQBzAC0AZABvAGMAawAAAAAA/////wAAAhYA////AAAAAQAAAtoAAADU/AIAAAAC+wAAABgAcAByAGUAdgBpAGUAdwAtAGQAbwBjAGsBAAAAPgAAANQAAABTAP////sAAAAaAGwAaQB2AGUALQBjAHMAcwAtAGQAbwBjAGsAAAAAAP////8AAABaAP///wAAAAIAAAAAAAAAAPwBAAAAAfsAAAAeAGMAaABlAGMAawAtAGIAbwBvAGsALQBkAG8AYwBrAAAAAAD/////AAAAkAD///8AAAADAAAAAAAAAAD8AQAAAAH7AAAAHABpAG4AcwBwAGUAYwB0AG8AcgAtAGQAbwBjAGsAAAAAAP////8AAAA7AP///wAAAH8AAADUAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAMAAAAUAGcAbABvAGIAYQBsAC0AYgBhAHIBAAAAAP////8AAAAAAAAAAAAAABIAdABvAG8AbABzAC0AYgBhAHIBAAABJv////8AAAAAAAAAAAAAABYAcABsAHUAZwBpAG4AcwAtAGIAYQByAAAAAAD/////AAAAAAAAAAA="
+    "__value__": "AAAA/wAAAAD9AAAABAAAAAAAAABGAAAAiPwCAAAABfsAAAAkAGYAaQBsAGUAcwAtAGIAcgBvAHcAcwBlAHIALQBkAG8AYwBrAQAAAD4AAACIAAAAWgD////7AAAAHgB0AG8AYwAtAHYAaQBlAHcAZQByAC0AZABvAGMAawAAAAAA/////wAAAFoA////+wAAACAAdABlAHgAdAAtAHMAZQBhAHIAYwBoAC0AZABvAGMAawAAAAAA/////wAAAIAA////+wAAACAAYwBoAGUAYwBrAHAAbwBpAG4AdABzAC0AZABvAGMAawAAAAAA/////wAAAIwA////+wAAACYAcwBhAHYAZQBkAC0AcwBlAGEAcgBjAGgAZQBzAC0AZABvAGMAawAAAAAA/////wAAAhUA////AAAAAQAAADUAAACI/AIAAAAC+wAAABgAcAByAGUAdgBpAGUAdwAtAGQAbwBjAGsBAAAAPgAAAIgAAABTAP////sAAAAaAGwAaQB2AGUALQBjAHMAcwAtAGQAbwBjAGsAAAAAAP////8AAABaAP///wAAAAIAAAAAAAAAAPwBAAAAAfsAAAAeAGMAaABlAGMAawAtAGIAbwBvAGsALQBkAG8AYwBrAAAAAAD/////AAAAkAD///8AAAADAAAAAAAAAAD8AQAAAAH7AAAAHABpAG4AcwBwAGUAYwB0AG8AcgAtAGQAbwBjAGsAAAAAAP////8AAAA1AP///wAAAIQAAACIAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAMAAAAUAGcAbABvAGIAYQBsAC0AYgBhAHIBAAAAAP////8AAAAAAAAAAAAAABIAdABvAG8AbABzAC0AYgBhAHIBAAAAzf////8AAAAAAAAAAAAAABYAcABsAHUAZwBpAG4AcwAtAGIAYQByAAAAAAD/////AAAAAAAAAAA="
   },
+  "recent-books": [
+    "/home/user/Calibre Library/Sam Feuerbach/Der Totengrabersohn_ Buch 1 (German Edition) (32)/Der Totengrabersohn_ Buch 1 (German Editio - Sam Feuerbach.epub",
+    "/home/user/Calibre Library/Sam Feuerbach/Der Totengrabersohn_ Buch 4 (German Edition) (33)/Der Totengrabersohn_ Buch 4 (German Editio - Sam Feuerbach.epub",
+    "/home/user/Calibre Library/Sam Feuerbach/Der Totengrabersohn - Buch 3 (34)/Der Totengrabersohn - Buch 3 - Sam Feuerbach.epub",
+    "/home/user/Calibre Library/Feuerbach, Sam/Der Totengrabersohn_ Buch 2 (35)/Der Totengrabersohn_ Buch 2 - Feuerbach, Sam.epub",
+    "/home/user/Calibre Library/Jon Erickson/Hacking_ The Art of Exploitation, 2nd Edition (36)/Hacking_ The Art of Exploitation, 2nd Edit - Jon Erickson.epub",
+    "/home/user/Calibre Library/Martin Fowler/Refactoring_ Improving the Design of Existing Code, 2_e (41)/Refactoring_ Improving the Design of Exist - Martin Fowler.epub",
+    "/home/user/Calibre Library/Continuous Integration Improving Software Quality/(Addison-Wesley Signature Series) Paul M. Duvall, Steve Matyas, Andrew Glover (39)/(Addison-Wesley Signature Series) Paul M. - Continuous Integration Improving Software .epub",
+    "/home/user/Calibre Library/Thomas H. Cormen;Charles E. Leiserson;Ronald L. Rivest;Clifford Stein;/Introduction to Algorithms, Fourth Edition (38)/Introduction to Algorithms, Fourth Edition - Thomas H. Cormen;Charles E. Leiserson;Rona.epub",
+    "/home/user/Calibre Library/Jez Humble/Continuous Delivery_ Reliable Software Releases Through Build, Test, and Deployment Automation ( (37)/Continuous Delivery_ Reliable Software Rel - Jez Humble.epub",
+    "/home/user/Calibre Library/Jason Bell/Machine Learning (42)/Machine Learning - Jason Bell.epub"
+  ],
   "reports-ui-state": {},
   "saved_seaches_state": {
     "direction": "down",

@@ -3,8 +3,8 @@ auto-close-bottles=false
 dark-theme=true
 show-sandbox-warning=false
 startup-view='page_list'
-window-height=1429
-window-width=2592
+window-height=1359
+window-width=1249
 
 [desktop/ibus/general]
 engines-order=['xkb:de:us:deu', 'mozc-on']
