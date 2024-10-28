@@ -35,6 +35,7 @@ gaps outer 10
 
 # Key binding
 bindsym $mod+shift+p exec --no-startup-id thunar
+bindsym $mod+shift+n exec --no-startup-id google-chrome-stable --force-device-scale-factor=1 --user-data-dir=.config/google-chrome-for-notion/ --app=https://notion.so
 bindsym $mod+shift+o exec --no-startup-id keepassxc
 bindsym $mod+shift+i exec --no-startup-id pavucontrol
 bindsym $mod+shift+u exec --no-startup-id arandr
@@ -57,6 +58,7 @@ exec --no-startup-id volumeicon &
 
 # Window Rules
 for_window [title="Qalculate!"] floating enable, move position center
+for_window [class="^Google-chrome" instance="^notion"] floating enable, move scratchpad, scratchpad show
 for_window [title="Fusion Reactor"] floating enable, move position center
 for_window [class="copyq"] floating enable, move position center
 for_window [class="gpick"] floating enable, move position center
