@@ -36,7 +36,7 @@ gaps outer 10
 # Key binding
 bindsym $mod+shift+p exec --no-startup-id thunar
 bindsym $mod+shift+n exec --no-startup-id google-chrome-stable --force-device-scale-factor=1 --user-data-dir=.config/google-chrome-for-notion/ --app=https://notion.so
-bindsym $mod+shift+o exec --no-startup-id keepassxc
+bindsym $mod+shift+o exec --no-startup-id QT_SCALE_FACTOR=0.75 keepassxc
 bindsym $mod+shift+i exec --no-startup-id pavucontrol
 bindsym $mod+shift+u exec --no-startup-id arandr
 bindsym $mod+shift+semicolon exec --no-startup-id copyq show
@@ -50,7 +50,6 @@ exec_always --no-startup-id autotiling
 exec_always --no-startup-id systemctl --user restart feh.service
 exec --no-startup-id systemctl --user restart i3-session.target
 exec --no-startup-id fcitx5
-exec --no-startup-id keepasscxc
 exec --no-startup-id nm-applet
 exec --no-startup-id flameshot
 exec --no-startup-id copyq
