@@ -87,6 +87,7 @@ depends=(
     intel-ucode
     java-language-server
     jdownloader2
+    jupyterlab
     k9s
     kdeconnect
     kdenlive
@@ -144,6 +145,7 @@ depends=(
     pycharm-professional
     pyright
     python
+    python-jupyterlab-vim
     python-virtualenv
     qalculate-gtk
     qbittorrent
