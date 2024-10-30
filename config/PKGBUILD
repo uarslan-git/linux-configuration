@@ -135,7 +135,6 @@ depends=(
     paru
     paruz
     pavucontrol
-    pcsx2-git
     picom
     pince-git
     pipewire
