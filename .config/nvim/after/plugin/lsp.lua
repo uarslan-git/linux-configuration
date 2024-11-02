@@ -55,10 +55,13 @@ local cmp = require('cmp')
 cmp.setup({
   sources = {
     {name = 'nvim_lsp'},
+    {name = 'luasnip'},
+    {name = 'buffer'},
   },
   snippet = {
     expand = function(args)
       -- You need Neovim v0.10 to use vim.snippet
+      require('luasnip').lsp_expand(args.body)
       vim.snippet.expand(args.body)
     end,
   },
