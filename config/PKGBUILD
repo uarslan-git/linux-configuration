@@ -19,6 +19,7 @@ depends=(
     ani-cli
     anki-bin
     arandr
+    ardour
     autorandr
     autotiling
     base
@@ -31,6 +32,7 @@ depends=(
     brightnessctl
     btop
     calibre
+    carla
     ccls
     copyq
     csharp-ls
@@ -70,7 +72,9 @@ depends=(
     graphql-lsp
     grive
     gst-plugin-pipewire
+    guitarix
     gvfs
+    gxplugins-lv2-git
     gzip
     haskell-language-server
     hplip
@@ -96,9 +100,6 @@ depends=(
     kitty
     kotlin-language-server
     krita
-    lib32-pipewire
-    lib32-pipewire-jack
-    libpulse
     libreoffice-still
     lightdm
     lightdm-gtk-greeter
@@ -134,14 +135,14 @@ depends=(
     papirus-icon-theme
     paru
     paruz
-    pavucontrol
     picom
     pince-git
-    pipewire
-    pipewire-alsa
+    pipewire-docs
     pipewire-jack
-    pipewire-pulse
+    pipewire-media-session
     playerctl
+    pulseaudio
+    pulseaudio-jack
     pycharm-professional
     pyright
     python
@@ -149,6 +150,7 @@ depends=(
     python-virtualenv
     qalculate-gtk
     qbittorrent
+    qjackctl
     ranger
     rar
     rclone
@@ -206,7 +208,6 @@ depends=(
     webstorm-jre
     which
     winetricks
-    wireplumber
     xclip
     xdg-desktop-portal-gnome
     xf86-video-vesa

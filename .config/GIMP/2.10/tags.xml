@@ -3652,6 +3652,54 @@
   <resource identifier="ProggyCleanTTSZ Nerd Font Mono" checksum="(null)">
   </resource>
 
+  <resource identifier="Roboto" checksum="(null)">
+  </resource>
+
+  <resource identifier="Roboto Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Roboto Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Roboto Condensed," checksum="(null)">
+  </resource>
+
+  <resource identifier="Roboto Condensed, Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Roboto Condensed, Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Roboto Condensed, Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Roboto Condensed, Light" checksum="(null)">
+  </resource>
+
+  <resource identifier="Roboto Condensed, Light Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Roboto Heavy" checksum="(null)">
+  </resource>
+
+  <resource identifier="Roboto Heavy Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Roboto Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Roboto Light" checksum="(null)">
+  </resource>
+
+  <resource identifier="Roboto Light Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Roboto Medium" checksum="(null)">
+  </resource>
+
+  <resource identifier="Roboto Medium Italic" checksum="(null)">
+  </resource>
+
   <resource identifier="RobotoMono Nerd Font Mono" checksum="(null)">
   </resource>
 
@@ -3680,6 +3728,12 @@
   </resource>
 
   <resource identifier="RobotoMono Nerd Font Mono weight=250 Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Roboto weight=250" checksum="(null)">
+  </resource>
+
+  <resource identifier="Roboto weight=250 Italic" checksum="(null)">
   </resource>
 
   <resource identifier="Sans-serif" checksum="(null)">

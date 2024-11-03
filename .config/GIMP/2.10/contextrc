@@ -4,7 +4,6 @@
 (paint-info "gimp-paintbrush")
 (foreground (color-rgb 1 1 1))
 (background (color-rgb 0 0 0))
-(opacity 0.90000000000000002)
 (brush "2. Hardness 025")
 (dynamics "Dynamics Off")
 (mybrush "100% Opaque")

@@ -37,7 +37,7 @@
                 (aux-info
                     (show-button-bar "true"))))
         (book
-            (position 572)
+            (position 937)
             (current-page 0)
             (dockable "gimp-layer-list"
                 (tab-style automatic)
@@ -56,7 +56,7 @@
                     (show-button-bar "true"))))))
 (session-info "toplevel"
     (factory-entry "gimp-image-new-dialog")
-    (position 925 260))
+    (position 923 258))
 (session-info "toplevel"
     (factory-entry "gimp-keyboard-shortcuts-dialog")
     (position 1431 198)
