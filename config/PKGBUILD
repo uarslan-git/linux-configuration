@@ -146,7 +146,7 @@ depends=(
     pycharm-professional
     pyright
     python
-    python-jupyterlab-vim
+#    python-jupyterlab-vim
     python-virtualenv
     qalculate-gtk
     qbittorrent
@@ -198,7 +198,6 @@ depends=(
     ventoy-bin
     vesktop-bin
     vim
-    visual-studio-code-bin
     vlc
     volumeicon
     vscode-html-languageserver
