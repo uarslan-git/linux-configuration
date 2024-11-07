@@ -100,5 +100,5 @@ sort-column='modified'
 sort-directories-first=false
 sort-order='descending'
 type-format='category'
-window-position=(2519, -275)
-window-size=(2670, 2033)
+window-position=(-2, 12)
+window-size=(2560, 1440)
