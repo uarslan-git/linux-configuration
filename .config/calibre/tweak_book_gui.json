@@ -111,50 +111,50 @@
   },
   "geometry-of-import-foreign-geometry": {
     "frame_geometry": {
-      "height": 190,
-      "width": 568,
-      "x": 802,
-      "y": 496
+      "height": 191,
+      "width": 570,
+      "x": 570,
+      "y": 387
     },
     "full_screened": false,
     "geometry": {
-      "height": 190,
+      "height": 189,
       "width": 568,
-      "x": 802,
-      "y": 496
+      "x": 571,
+      "y": 388
     },
     "maximized": false,
     "normal_geometry": {
-      "height": 190,
+      "height": 189,
       "width": 568,
-      "x": 802,
-      "y": 496
+      "x": 571,
+      "y": 388
     },
     "qt": {
       "__class__": "bytearray",
-      "__value__": "AdnQywADAAAAAAMiAAAB8AAABVkAAAKtAAADIgAAAfAAAAVZAAACrQAAAAAAAAAACJAAAAMiAAAB8AAABVkAAAKt"
+      "__value__": "AdnQywADAAAAAAI6AAABgwAABHMAAAJBAAACOwAAAYQAAARyAAACQAAAAAEAAAAABqsAAAI7AAABhAAABHIAAAJA"
     },
     "screen": {
       "depth": 24,
-      "device_pixel_ratio": 2.0,
+      "device_pixel_ratio": 1.5,
       "geometry_in_logical_pixels": {
-        "height": 1233,
-        "width": 2192,
+        "height": 960,
+        "width": 1707,
         "x": 0,
         "y": 0
       },
-      "index_in_screens_list": 0,
-      "manufacturer": "BNQ",
-      "model": "BenQ EL2870U",
-      "name": "DP-2-1",
-      "serial": "B1M04773SL0",
+      "index_in_screens_list": 1,
+      "manufacturer": "Dell Inc.",
+      "model": "DELL UP2716D",
+      "name": "HDMI-0",
+      "serial": "KRXTR92K654L",
       "size_in_logical_pixels": {
-        "height": 1233,
-        "width": 2192
+        "height": 960,
+        "width": 1707
       },
       "virtual_geometry": {
-        "height": 1233,
-        "width": 2192,
+        "height": 972,
+        "width": 4288,
         "x": 0,
         "y": 0
       }
@@ -162,46 +162,46 @@
   },
   "geometry-of-main_window_geometry": {
     "frame_geometry": {
-      "height": 223,
-      "width": 269,
-      "x": 3998,
-      "y": 500
+      "height": 900,
+      "width": 828,
+      "x": 858,
+      "y": 40
     },
     "full_screened": false,
     "geometry": {
-      "height": 221,
-      "width": 267,
-      "x": 3999,
-      "y": 501
+      "height": 898,
+      "width": 826,
+      "x": 859,
+      "y": 41
     },
     "maximized": false,
     "normal_geometry": {
-      "height": 221,
-      "width": 267,
-      "x": 3999,
-      "y": 501
+      "height": 898,
+      "width": 826,
+      "x": 859,
+      "y": 41
     },
     "qt": {
       "__class__": "bytearray",
-      "__value__": "AdnQywADAAAAAA+eAAAB9AAAEKoAAALSAAAPnwAAAfUAABCpAAAC0QAAAAAAAAAABsAAAA+fAAAB9QAAEKkAAALR"
+      "__value__": "AdnQywADAAAAAANaAAAAKAAABpUAAAOrAAADWwAAACkAAAaUAAADqgAAAAEAAAAABqsAAANbAAAAKQAABpQAAAOq"
     },
     "screen": {
       "depth": 24,
       "device_pixel_ratio": 1.5,
       "geometry_in_logical_pixels": {
-        "height": 972,
-        "width": 1728,
-        "x": 2560,
+        "height": 960,
+        "width": 1707,
+        "x": 0,
         "y": 0
       },
-      "index_in_screens_list": 0,
-      "manufacturer": "BNQ",
-      "model": "BenQ GL2760",
-      "name": "DVI-D-0",
-      "serial": "CAJ02062019",
+      "index_in_screens_list": 1,
+      "manufacturer": "Dell Inc.",
+      "model": "DELL UP2716D",
+      "name": "HDMI-0",
+      "serial": "KRXTR92K654L",
       "size_in_logical_pixels": {
-        "height": 972,
-        "width": 1728
+        "height": 960,
+        "width": 1707
       },
       "virtual_geometry": {
         "height": 972,
@@ -213,7 +213,7 @@
   },
   "main_window_state": {
     "__class__": "bytearray",
-    "__value__": "AAAA/wAAAAD9AAAABAAAAAAAAABGAAAAiPwCAAAABfsAAAAkAGYAaQBsAGUAcwAtAGIAcgBvAHcAcwBlAHIALQBkAG8AYwBrAQAAAD4AAACIAAAAWgD////7AAAAHgB0AG8AYwAtAHYAaQBlAHcAZQByAC0AZABvAGMAawAAAAAA/////wAAAFoA////+wAAACAAdABlAHgAdAAtAHMAZQBhAHIAYwBoAC0AZABvAGMAawAAAAAA/////wAAAIAA////+wAAACAAYwBoAGUAYwBrAHAAbwBpAG4AdABzAC0AZABvAGMAawAAAAAA/////wAAAIwA////+wAAACYAcwBhAHYAZQBkAC0AcwBlAGEAcgBjAGgAZQBzAC0AZABvAGMAawAAAAAA/////wAAAhUA////AAAAAQAAADUAAACI/AIAAAAC+wAAABgAcAByAGUAdgBpAGUAdwAtAGQAbwBjAGsBAAAAPgAAAIgAAABTAP////sAAAAaAGwAaQB2AGUALQBjAHMAcwAtAGQAbwBjAGsAAAAAAP////8AAABaAP///wAAAAIAAAAAAAAAAPwBAAAAAfsAAAAeAGMAaABlAGMAawAtAGIAbwBvAGsALQBkAG8AYwBrAAAAAAD/////AAAAkAD///8AAAADAAAAAAAAAAD8AQAAAAH7AAAAHABpAG4AcwBwAGUAYwB0AG8AcgAtAGQAbwBjAGsAAAAAAP////8AAAA1AP///wAAAIQAAACIAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAMAAAAUAGcAbABvAGIAYQBsAC0AYgBhAHIBAAAAAP////8AAAAAAAAAAAAAABIAdABvAG8AbABzAC0AYgBhAHIBAAAAzf////8AAAAAAAAAAAAAABYAcABsAHUAZwBpAG4AcwAtAGIAYQByAAAAAAD/////AAAAAAAAAAA="
+    "__value__": "AAAA/wAAAAD9AAAABAAAAAAAAABGAAADLfwCAAAABfsAAAAkAGYAaQBsAGUAcwAtAGIAcgBvAHcAcwBlAHIALQBkAG8AYwBrAQAAAD4AAAMtAAAAWgD////7AAAAHgB0AG8AYwAtAHYAaQBlAHcAZQByAC0AZABvAGMAawAAAAAA/////wAAAFoA////+wAAACAAdABlAHgAdAAtAHMAZQBhAHIAYwBoAC0AZABvAGMAawAAAAAA/////wAAAIAA////+wAAACAAYwBoAGUAYwBrAHAAbwBpAG4AdABzAC0AZABvAGMAawAAAAAA/////wAAAIwA////+wAAACYAcwBhAHYAZQBkAC0AcwBlAGEAcgBjAGgAZQBzAC0AZABvAGMAawAAAAAA/////wAAAhUA////AAAAAQAAADUAAAMt/AIAAAAC+wAAABgAcAByAGUAdgBpAGUAdwAtAGQAbwBjAGsBAAAAPgAAAy0AAABTAP////sAAAAaAGwAaQB2AGUALQBjAHMAcwAtAGQAbwBjAGsAAAAAAP////8AAABaAP///wAAAAIAAAAAAAAAAPwBAAAAAfsAAAAeAGMAaABlAGMAawAtAGIAbwBvAGsALQBkAG8AYwBrAAAAAAD/////AAAAkAD///8AAAADAAAAAAAAAAD8AQAAAAH7AAAAHABpAG4AcwBwAGUAYwB0AG8AcgAtAGQAbwBjAGsAAAAAAP////8AAAA1AP///wAAArMAAAMtAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAMAAAAUAGcAbABvAGIAYQBsAC0AYgBhAHIBAAAAAP////8AAAAAAAAAAAAAABIAdABvAG8AbABzAC0AYgBhAHIBAAABJv////8AAAAAAAAAAAAAABYAcABsAHUAZwBpAG4AcwAtAGIAYQByAAAAAAD/////AAAAAAAAAAA="
   },
   "recent-books": [
     "/home/user/Calibre Library/Sam Feuerbach/Der Totengrabersohn_ Buch 1 (German Edition) (32)/Der Totengrabersohn_ Buch 1 (German Editio - Sam Feuerbach.epub",
