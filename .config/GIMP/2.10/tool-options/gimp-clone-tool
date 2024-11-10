@@ -6,7 +6,7 @@
 (dynamics "Dynamics Off")
 (pattern "Pine")
 (palette "Standard")
-(brush-size 9)
+(brush-size 1)
 (brush-spacing 0.050000000000000003)
 (brush-force 0.46999999999999997)
 

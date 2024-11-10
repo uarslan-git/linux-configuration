@@ -11,7 +11,7 @@
         (dynamics "Dynamics Off")
         (gradient "Abstract 1")
         (palette "Standard")
-        (brush-size 9)
+        (brush-size 1)
         (brush-spacing 0.050000000000000003)
         (brush-force 0.46999999999999997)
         (gradient-reverse yes))
