@@ -1,7 +1,7 @@
 # GIMP action-history
 
-(history-item "tools-size-decrease" 1)
-(history-item "image-new" 1)
+(history-item "image-new" 2)
+(history-item "tools-size-decrease" 2)
 (history-item "tools-scale" 1)
 (history-item "file-quit" 2)
 (history-item "tools-size-increase" 2)
