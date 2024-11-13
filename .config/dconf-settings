@@ -9,7 +9,7 @@ window-width=2592
 [desktop/ibus/general]
 engines-order=['xkb:de:us:deu', 'mozc-on']
 preload-engines=['mozc-on', 'xkb:de:us:deu']
-version='1.5.30'
+version='1.5.31'
 
 [desktop/ibus/general/hotkey]
 triggers=['<Control>space']
@@ -100,5 +100,5 @@ sort-column='name'
 sort-directories-first=false
 sort-order='ascending'
 type-format='category'
-window-position=(3177, 415)
+window-position=(601, 406)
 window-size=(1354, 652)
