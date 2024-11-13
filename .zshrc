@@ -248,11 +248,17 @@ function convertVideos(){
 		echo "creating original directory"
 		mkdir $originalDir
 	fi
-	for video in *.mov *.mp4; do
+	for video in *.mp4; do
 		noExt=${video%.mp4}
 		ffmpeg -i $video -acodec pcm_s16le -vcodec copy "${noExt}.mov"
 		mv "$video" "$originalDir"
 	done
+    for video in *.mov; do
+		noExt=${video%.mov}
+		ffmpeg -i $video -acodec pcm_s16le -vcodec copy "${noExt}.mov"
+		mv "$video" "$originalDir"
+	done
+
 	echo $noExt
 }
 

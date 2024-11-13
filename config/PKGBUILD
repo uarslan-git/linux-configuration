@@ -257,7 +257,7 @@ depends=(
   #endPackages
 
   if lspci | rg -i nvidia &>/dev/null; then depends+=(
-      davinci-resolve-studio 
+      #davinci-resolve-studio 
       unityhub
       gamemode
       lib32-nvidia-utils 
