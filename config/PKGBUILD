@@ -40,6 +40,7 @@ depends=(
     cups-pdf
     curl
     darktable
+    davinci-resolve-studio
     deno
     docker
     docker-compose
@@ -49,6 +50,7 @@ depends=(
     dunst
     efibootmgr
     element-desktop
+    espeak-ng
     evince
     fd
     feh
@@ -135,6 +137,8 @@ depends=(
     papirus-icon-theme
     paru
     paruz
+    pavucontrol
+    pcsx2-latest-bin
     picom
     pince-git
     pipewire-docs
@@ -146,7 +150,6 @@ depends=(
     pycharm-professional
     pyright
     python
-#    python-jupyterlab-vim
     python-virtualenv
     qalculate-gtk
     qbittorrent
@@ -210,6 +213,10 @@ depends=(
     xclip
     xdg-desktop-portal-gnome
     xf86-video-vesa
+    xmobar
+    xmonad
+    xmonad-contrib
+    xmonad-utils
     xorg-bdftopcf
     xorg-docs
     xorg-fonts-100dpi
@@ -257,7 +264,7 @@ depends=(
   #endPackages
 
   if lspci | rg -i nvidia &>/dev/null; then depends+=(
-      #davinci-resolve-studio 
+      davinci-resolve-studio 
       unityhub
       gamemode
       lib32-nvidia-utils 
