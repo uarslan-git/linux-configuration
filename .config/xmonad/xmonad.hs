@@ -14,7 +14,7 @@ import XMonad.Util.Run
 main :: IO ()
 main = do
     n <- countScreens
-    xmprocs <- mapM (\i -> spawnPipe $ "xmobar /home/user/.xmobarrc-" ++ show i ++ " -x " ++ show i) [0..n-1]
+    xmprocs <- mapM (\i -> spawnPipe $ "xmobar /home/user/.xmobarrc" ++ " -x " ++ show i) [0..n-1]
     xmonad $ ewmhFullscreen $ ewmh $  xmobarProp $ docks def
         { modMask            = mod4Mask
         , terminal           = "alacritty"
