@@ -46,10 +46,10 @@ myKeys =
     [ ("M-S-<Return>", spawn "alacritty")
     , ("M-d", spawn "rofi -show drun -show-icons")
     , ("M-S-p", spawn "thunar")
-    , ("M-S-p", spawn "QT_SCALE_FACTOR=0.75 keepassxc")
+    , ("M-S-o", spawn "QT_SCALE_FACTOR=0.75 keepassxc")
     , ("M-S-;", spawn "copyq show")
     , ("M-S-s", spawn "flameshot gui")
-    , ("M-S-w", spawn "loginctl lock-session")
+    , ("M-S-l", spawn "loginctl lock-session")
     , ("M-S-c", kill)  -- Close focused window
     , ("M-b", sendMessage ToggleStruts)
     , ("M-f", sendMessage (Toggle "Full"))

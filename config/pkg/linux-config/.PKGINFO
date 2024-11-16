@@ -6,7 +6,7 @@ xdata = pkgtype=pkg
 pkgver = 0.1.0-1
 pkgdesc = linux config
 url = https://github.com/uarslan-git/linux-config
-builddate = 1731627205
+builddate = 1731789362
 packager = Unknown Packager
 size = 3692
 arch = x86_64
@@ -210,7 +210,6 @@ depend = winetricks
 depend = xclip
 depend = xdg-desktop-portal-gnome
 depend = xf86-video-vesa
-depend = xmobar
 depend = xmonad
 depend = xmonad-contrib
 depend = xmonad-utils
