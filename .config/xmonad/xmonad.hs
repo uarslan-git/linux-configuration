@@ -10,6 +10,9 @@ import XMonad.Layout.IndependentScreens
 import XMonad.Layout.Fullscreen
 import XMonad.Hooks.ManageHelpers
 import XMonad.Util.Run
+import Graphics.X11.Xlib
+import Graphics.X11.Xrandr
+import System.Process (callCommand)
 
 main :: IO ()
 main = do
@@ -31,6 +34,8 @@ myStartupHook = do
     spawnOnce "nitrogen --restore"
     spawnOnce "picom"
     spawn "systemctl --user restart i3-session.target"
+
+    --liftIO getScreenWidth
 
 myLayout = avoidStruts $ toggleLayouts Full $ spacing 8 $ Tall 1 (3/100) (1/2)
 
@@ -54,3 +59,12 @@ myKeys =
     , ("M-b", sendMessage ToggleStruts)
     , ("M-f", sendMessage (Toggle "Full"))
     ]
+
+getScreenWidth :: IO ()
+getScreenWidth = do
+    print "hello"
+
+runTray :: Int -> IO ()
+runTray width = do
+    let centerOffset = width `div` 2
+    callCommand $ "stalonetray -geometry 5x1+" ++ show centerOffset ++ "+0"
