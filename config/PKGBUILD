@@ -31,6 +31,7 @@ depends=(
     breeze-hacked-cursor-theme-git
     brightnessctl
     btop
+    cabal-install
     calibre
     carla
     ccls
@@ -42,6 +43,7 @@ depends=(
     darktable
     davinci-resolve-studio
     deno
+    dmenu
     docker
     docker-compose
     dockerfile-language-server
@@ -59,6 +61,7 @@ depends=(
     fzf
     fzf-tab-git
     gdb
+    ghc-static
     ghidra
     gimp
     git
@@ -79,6 +82,7 @@ depends=(
     gxplugins-lv2-git
     gzip
     haskell-language-server
+    hoogle
     hplip
     i3blocks
     i3lock-color
@@ -159,7 +163,9 @@ depends=(
     rclone
     ripgrep
     rofi
+    samba
     sql-language-server
+    stalonetray
     steam
     systemd
     teamspeak
@@ -192,6 +198,7 @@ depends=(
     tlp
     tmux
     torbrowser-launcher
+    trayer
     tree
     ttf-iosevka-nerd
     typescript-language-server
@@ -213,6 +220,7 @@ depends=(
     xclip
     xdg-desktop-portal-gnome
     xf86-video-vesa
+    xmobar
     xmonad
     xmonad-contrib
     xmonad-utils

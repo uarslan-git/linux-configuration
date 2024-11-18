@@ -11,6 +11,7 @@ import XMonad.Layout.Fullscreen
 import XMonad.Hooks.ManageHelpers
 import XMonad.Util.Run
 import Graphics.X11.Xlib
+import Graphics.X11.Xinerama
 import Graphics.X11.Xrandr
 import System.Process (callCommand)
 
@@ -60,9 +61,14 @@ myKeys =
     , ("M-f", sendMessage (Toggle "Full"))
     ]
 
-getScreenWidth :: IO ()
+getScreenWidth :: IO Dimension
 getScreenWidth = do
-    print "hello"
+    display <- openDisplay ""
+    screens <- getScreenInfo display
+    let firstScreen = head screens
+    let width = rect_width firstScreen
+    closeDisplay display
+    return width
 
 runTray :: Int -> IO ()
 runTray width = do
