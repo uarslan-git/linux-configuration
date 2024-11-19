@@ -19,6 +19,8 @@ main :: IO ()
 main = do
     n <- countScreens
     xmprocs <- mapM (\i -> spawnPipe $ "xmobar /home/user/.xmobarrc" ++ " -x " ++ show i) [0..n-1]
+    --width <- getScreenWidth
+    --runTray (fromIntegral width)
     xmonad $ ewmhFullscreen $ ewmh $  xmobarProp $ docks def
         { modMask            = mod4Mask
         , terminal           = "alacritty"
@@ -34,9 +36,9 @@ main = do
 myStartupHook = do
     spawnOnce "nitrogen --restore"
     spawnOnce "picom"
+    spawnOnce "keepassxc"
     spawn "systemctl --user restart i3-session.target"
 
-    --liftIO getScreenWidth
 
 myLayout = avoidStruts $ toggleLayouts Full $ spacing 8 $ Tall 1 (3/100) (1/2)
 
@@ -70,7 +72,7 @@ getScreenWidth = do
     closeDisplay display
     return width
 
-runTray :: Int -> IO ()
+runTray :: Dimension -> IO ()
 runTray width = do
     let centerOffset = width `div` 2
     callCommand $ "stalonetray -geometry 5x1+" ++ show centerOffset ++ "+0"

@@ -9,18 +9,18 @@
     "filename": "/home/user/Drive/Drive2/Important/CV/CV_DEUTSCH/moderncv/template.tex",
     "labels": [
     ],
-    "modified": "Fri Oct 11 14:42:36 2024",
+    "modified": "Tue Oct 29 11:57:33 2024",
     "packages": [
-        "utf8#inputenc",
-        "#fontspec",
-        "english#babel",
-        "#unicode-math",
-        "#lmodern",
-        "T1#fontenc",
         "11pt,a4paper,sans#class-moderncv",
         "11pt,a4paper,sans#latex-document",
         "11pt,a4paper,sans#tex",
-        "hmargin=0.5in,vmargin=10pt#geometry"
+        "hmargin=0.5in,vmargin=10pt#geometry",
+        "#unicode-math",
+        "#fontspec",
+        "english#babel",
+        "T1#fontenc",
+        "#lmodern",
+        "utf8#inputenc"
     ],
     "refs": [
     ],
