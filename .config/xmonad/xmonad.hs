@@ -19,8 +19,9 @@ main :: IO ()
 main = do
     n <- countScreens
     xmprocs <- mapM (\i -> spawnPipe $ "xmobar /home/user/.xmobarrc" ++ " -x " ++ show i) [0..n-1]
-    --width <- getScreenWidth
-    --runTray (fromIntegral width)
+    width <- liftIO getScreenWidth
+    liftIO $ runTray width
+
     xmonad $ ewmhFullscreen $ ewmh $  xmobarProp $ docks def
         { modMask            = mod4Mask
         , terminal           = "alacritty"
@@ -61,6 +62,7 @@ myKeys =
     , ("M-S-c", kill)  -- Close focused window
     , ("M-b", sendMessage ToggleStruts)
     , ("M-f", sendMessage (Toggle "Full"))
+    , ("M-q", spawn "xmonad --recompile; pkill xmobar && pkill stalonetray; xmonad --restart")
     ]
 
 getScreenWidth :: IO Dimension
@@ -75,4 +77,4 @@ getScreenWidth = do
 runTray :: Dimension -> IO ()
 runTray width = do
     let centerOffset = width `div` 2
-    callCommand $ "stalonetray -geometry 5x1+" ++ show centerOffset ++ "+0"
+    spawn $ "stalonetray -geometry 5x1+" ++ show centerOffset ++ "+0"

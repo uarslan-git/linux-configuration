@@ -3,7 +3,7 @@ auto-close-bottles=false
 dark-theme=true
 show-sandbox-warning=false
 startup-view='page_list'
-window-height=1398
+window-height=1394
 window-width=2539
 
 [desktop/ibus/general]
@@ -100,5 +100,5 @@ sort-column='name'
 sort-directories-first=false
 sort-order='ascending'
 type-format='category'
-window-position=(2560, 44)
-window-size=(2520, 1374)
+window-position=(0, 0)
+window-size=(2516, 1370)
