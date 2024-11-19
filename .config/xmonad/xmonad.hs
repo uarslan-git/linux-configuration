@@ -35,9 +35,9 @@ main = do
         } `additionalKeysP` myKeys
 
 myStartupHook = do
-    spawnOnce "nitrogen --restore"
-    spawnOnce "picom"
     spawnOnce "keepassxc"
+    spawnOnce "nm-applet"
+    spawnOnce "copyq"
     spawn "systemctl --user restart i3-session.target"
 
 
@@ -57,6 +57,7 @@ myKeys =
     , ("M-S-p", spawn "thunar")
     , ("M-S-o", spawn "QT_SCALE_FACTOR=0.75 keepassxc")
     , ("M-S-;", spawn "copyq show")
+    , ("M-S-i", spawn "pavucontrol")
     , ("M-S-s", spawn "flameshot gui")
     , ("M-S-l", spawn "loginctl lock-session")
     , ("M-S-c", kill)  -- Close focused window
