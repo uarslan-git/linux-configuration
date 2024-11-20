@@ -11,7 +11,7 @@ Config {
    -- layout
    , sepChar =  "%"   -- delineator between plugin names and straight text
    , alignSep = "}{"  -- separator between left-right alignment
-   , template = "<icon=test.xpm/> | %battery% | %multicpu% | %coretemp% | %memory% | %dynnetwork% | %disku% }{ %RJTT% | %date% || %kbd% "
+   , template = "<icon=test.xpm/> | %battery% | %multicpu% | %coretemp% | %memory% | %dynnetwork% | %disku% }{ %EDLI% | %date% || %kbd% "
 
    -- general behavior
    , lowerOnStart =     True    -- send to bottom of window stack on start
@@ -39,9 +39,9 @@ Config {
    , commands = 
 
         -- weather monitor
-        [ Run Weather "EDLI" [ "--template", "<skyCondition> | <fc=#4682B4><tempC></fc>°C | <fc=#4682B4><rh></fc>% | <fc=#4682B4><pressure></fc>hPa"
+        [ Run Weather "EDLI" [ "--template", "<station>: | <skyCondition> | <fc=#4682B4><tempC></fc>°C | <fc=#4682B4><rh></fc>% | <fc=#4682B4><pressure></fc>hPa"
                              ] 36000
-        
+
         -- Disks
         , Run DiskU [("/", "SSD: <free>/<size> | "), ("/home/user/HDD", "HDD: <free>/<size>")] [] 60
 

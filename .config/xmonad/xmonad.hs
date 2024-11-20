@@ -35,13 +35,13 @@ main = do
         } `additionalKeysP` myKeys
 
 myStartupHook = do
-    spawnOnce "keepassxc"
+    spawnOnce "QT_SCALE_FACTOR=0.75 keepassxc"
     spawnOnce "nm-applet"
     spawnOnce "copyq"
     spawn "systemctl --user restart i3-session.target"
 
 
-myLayout = avoidStruts $ toggleLayouts Full $ spacing 8 $ Tall 1 (3/100) (1/2)
+myLayout = toggleLayouts  Full $ spacing 8 $ Tall 1 (3/100) (1/2)
 
 myManageHook = composeAll
     [ className =? "Firefox" --> doShift "2"

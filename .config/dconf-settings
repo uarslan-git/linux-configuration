@@ -4,7 +4,7 @@ dark-theme=true
 show-sandbox-warning=false
 startup-view='page_list'
 window-height=1394
-window-width=2539
+window-width=1370
 
 [desktop/ibus/general]
 engines-order=['xkb:de:us:deu', 'mozc-on']
@@ -87,7 +87,7 @@ sort-directories-first=false
 sort-order='ascending'
 type-format='category'
 view-type='list'
-window-size=(1044, 849)
+window-size=(1020, 825)
 
 [org/gtk/settings/file-chooser]
 date-format='regular'
@@ -101,4 +101,4 @@ sort-directories-first=false
 sort-order='ascending'
 type-format='category'
 window-position=(0, 0)
-window-size=(2516, 1370)
+window-size=(2508, 1362)

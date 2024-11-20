@@ -242,7 +242,7 @@ function () :r(){
   exec zsh
 }
 
-function convertVideos(){
+function convertAudio(){
 	originalDir="./original"
 	if [ ! -d "$originalDir" ]; then
 		echo "creating original directory"
