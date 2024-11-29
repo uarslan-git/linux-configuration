@@ -41,7 +41,6 @@ depends=(
     cups-pdf
     curl
     darktable
-    davinci-resolve-studio
     deno
     dmenu
     docker
@@ -96,7 +95,6 @@ depends=(
     intellij-idea-ultimate-edition
     intellij-idea-ultimate-edition-jre
     intel-ucode
-    java-language-server
     jdownloader2
     jupyterlab
     k9s
@@ -119,7 +117,6 @@ depends=(
     ly
     man-db
     man-pages
-    marksman-bin
     matcha-gtk-theme
     maven
     mov-cli
@@ -270,7 +267,6 @@ depends=(
   #endPackages
 
   if lspci | rg -i nvidia &>/dev/null; then depends+=(
-      davinci-resolve-studio 
       unityhub
       gamemode
       lib32-nvidia-utils 
