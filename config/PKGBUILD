@@ -129,6 +129,8 @@ depends=(
     nmap
     nodejs
     npm
+    nvidia
+    nvidia-lts
     nvim-packer-git
     nvtop
     obsidian
@@ -269,9 +271,9 @@ depends=(
   if lspci | rg -i nvidia &>/dev/null; then depends+=(
       unityhub
       gamemode
-      lib32-nvidia-utils 
-      nvidia 
-      nvidia-settings
+      #lib32-nvidia-utils 
+      #nvidia 
+      #nvidia-settings
       opencl-nvidia 
       mangohud
       zerotier-one

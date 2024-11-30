@@ -1,9 +1,7 @@
-[com/usebottles/bottles]
-dark-theme=true
-startup-view='page_list'
-window-height=1348
-window-width=1240
-
 [desktop/ibus/general]
-preload-engines=['xkb:de:us:deu', 'mozc-jp']
+engines-order=['xkb:de:us:deu', 'mozc-jp']
+preload-engines=['mozc-jp', 'xkb:de:us:deu']
 version='1.5.31'
+
+[desktop/ibus/general/hotkey]
+triggers=['<Control>space']
