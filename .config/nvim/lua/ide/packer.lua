@@ -22,6 +22,7 @@ return require('packer').startup(function(use)
 
 	use({'VonHeikemen/lsp-zero.nvim', branch = 'v4.x'})
 	use({'neovim/nvim-lspconfig'})
+    use({'nvim-tree/nvim-tree.lua'})
 	use({'hrsh7th/nvim-cmp'})
 	use({'hrsh7th/cmp-nvim-lsp'})
 	use({'mbbill/undotree'})
