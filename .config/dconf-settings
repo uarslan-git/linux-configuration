@@ -1,3 +1,7 @@
+[com/usebottles/bottles]
+dark-theme=true
+startup-view='page_list'
+
 [desktop/ibus/general]
 engines-order=['xkb:de:us:deu', 'mozc-jp']
 preload-engines=['mozc-jp', 'xkb:de:us:deu']

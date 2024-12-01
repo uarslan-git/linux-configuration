@@ -219,9 +219,6 @@ depends=(
     xclip
     xdg-desktop-portal-gnome
     xf86-video-vesa
-    xmonad
-    xmonad-contrib
-    xmonad-utils
     xorg-bdftopcf
     xorg-docs
     xorg-fonts-100dpi
