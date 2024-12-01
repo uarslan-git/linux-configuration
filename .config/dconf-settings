@@ -1,6 +1,9 @@
 [com/usebottles/bottles]
 dark-theme=true
+show-sandbox-warning=false
 startup-view='page_list'
+window-height=1351
+window-width=1243
 
 [desktop/ibus/general]
 engines-order=['xkb:de:us:deu', 'mozc-jp']
@@ -9,3 +12,15 @@ version='1.5.31'
 
 [desktop/ibus/general/hotkey]
 triggers=['<Control>space']
+
+[org/gtk/gtk4/settings/file-chooser]
+date-format='regular'
+location-mode='path-bar'
+show-hidden=true
+sidebar-width=219
+sort-column='name'
+sort-directories-first=true
+sort-order='ascending'
+type-format='category'
+view-type='list'
+window-size=(1113, 390)
