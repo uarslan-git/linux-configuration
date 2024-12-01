@@ -129,9 +129,7 @@ depends=(
     nmap
     nodejs
     npm
-    nvidia
-    nvidia-lts
-    nvim-packer-git
+        nvim-packer-git
     nvtop
     obsidian
     obs-studio
@@ -265,16 +263,16 @@ depends=(
   )
   #endPackages
 
-  if lspci | rg -i nvidia &>/dev/null; then depends+=(
+  if [[ "$(hostname)" == "pc" ]]; then depends+=(
       unityhub
       gamemode
-      #lib32-nvidia-utils 
-      #nvidia 
-      #nvidia-settings
       opencl-nvidia 
       mangohud
+      stable-diffusion-webui-git
       zerotier-one
       gamescope
+      nvidia
+      nvidia-lts
       upscayl-bin
       ); fi
 

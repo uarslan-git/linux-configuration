@@ -23,7 +23,7 @@ sort-directories-first=true
 sort-order='ascending'
 type-format='category'
 view-type='list'
-window-size=(1113, 390)
+window-size=(1179, 1380)
 
 [org/gtk/settings/file-chooser]
 date-format='regular'
@@ -36,5 +36,5 @@ sort-column='name'
 sort-directories-first=false
 sort-order='ascending'
 type-format='category'
-window-position=(2560, 0)
+window-position=(2558, 13)
 window-size=(2554, 1437)
