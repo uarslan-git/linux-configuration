@@ -6,9 +6,9 @@ After=i3-session.target
 [Service]
 Type=oneshot
 Environment=DISPLAY=:0
-ExecStart=/usr/bin/feh --bg-fill /home/user/.config/background.jpg
-ExecReload=/usr/bin/feh --bg-fill /home/user/.config/background.jpg
-ExecStop=/usr/bin/feh --bg-fill /home/user/.config/background.jpg
+ExecStart=/usr/bin/feh --bg-fill %h/.config/background.jpg
+ExecReload=/usr/bin/feh --bg-fill %h/.config/background.jpg
+ExecStop=/usr/bin/feh --bg-fill %h/.config/background.jpg
 RemainAfterExit=true
 Restart=on-failure
 RestartSec=5
