@@ -28,6 +28,7 @@ depends=(
     bluez
     bluez-utils
     bottles
+    brave-bin
     breeze-hacked-cursor-theme-git
     brightnessctl
     btop
@@ -129,7 +130,7 @@ depends=(
     nmap
     nodejs
     npm
-        nvim-packer-git
+    nvim-packer-git
     nvtop
     obsidian
     obs-studio
@@ -137,6 +138,7 @@ depends=(
     openssh
     papirus-icon-theme
     paru
+    paru-debug
     paruz
     pavucontrol
     pcsx2-latest-bin
