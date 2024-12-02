@@ -1,29 +1,22 @@
-[com/usebottles/bottles]
-dark-theme=true
-show-sandbox-warning=false
-startup-view='page_list'
-window-height=1408
-window-width=2554
-
 [desktop/ibus/general]
-engines-order=['xkb:de:us:deu', 'mozc-jp']
-preload-engines=['mozc-jp', 'xkb:de:us:deu']
+preload-engines=['xkb:us::eng']
 version='1.5.31'
 
-[desktop/ibus/general/hotkey]
-triggers=['<Control>space']
+[org/gnome/nm-applet/eap/01281a50-1afd-4cc7-a429-26fb6d49022e]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
 
-[org/gtk/gtk4/settings/file-chooser]
-date-format='regular'
-location-mode='path-bar'
-show-hidden=true
-sidebar-width=219
-sort-column='name'
-sort-directories-first=true
-sort-order='ascending'
-type-format='category'
-view-type='list'
-window-size=(1179, 1380)
+[org/gnome/nm-applet/eap/67a78ed9-979d-40c1-8160-3fa802790c7e]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
+[org/gnome/nm-applet/eap/a3ee3f0f-4a50-4825-9283-7a9391d703f9]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
+[org/gnome/nm-applet/eap/afcb0a02-84ae-4571-b72a-37fb7e1491a1]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
 
 [org/gtk/settings/file-chooser]
 date-format='regular'
@@ -36,5 +29,5 @@ sort-column='name'
 sort-directories-first=false
 sort-order='ascending'
 type-format='category'
-window-position=(2558, 13)
-window-size=(2554, 1437)
+window-position=(0, 0)
+window-size=(2560, 1440)
